@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>html,body{margin:0;}*,*::before,*::after{box-sizing:border-box;}a{color:var(--link,#0B6A73);}a:hover{color:var(--primary,#0E7C86);}button,select,input{font:inherit;}:focus-visible{outline:3px solid var(--focus,#0B2233);outline-offset:2px;}</style>
+</helmet>
+<div style="{{ rootStyle }}">
+<div style="height:100%;overflow-y:auto;overflow-x:hidden;padding-bottom:var(--barPad);">
+  <dc-import name="Header" active="Packages" style="position:sticky;top:0;z-index:30;display:block;" hint-size="100%,72px"></dc-import>
+
+  <div style="max-width:var(--max);margin:0 auto;padding:20px var(--gut) 0;">
+    <nav aria-label="Breadcrumb" style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);">
+      <a href="#" style="display:flex;align-items:center;min-height:44px;color:var(--link);">Packages</a><span aria-hidden="true">/</span><span style="color:var(--text);">Dubai City Escape</span>
+    </nav>
+    <div style="display:grid;grid-template-columns:var(--gCols);grid-template-rows:var(--gRows);gap:10px;margin-top:4px;">
+      <sc-for list="{{ photos }}" as="ph" hint-placeholder-count="5">
+        <button type="button" onClick="{{ ph.open }}" aria-label="{{ ph.aria }}" style="position:relative;grid-column:{{ ph.col }};grid-row:{{ ph.row }};border:0;padding:0;cursor:zoom-in;border-radius:{{ ph.r }};overflow:hidden;background:repeating-linear-gradient(135deg,var(--ph1) 0 12px,var(--ph2) 12px 24px);display:flex;align-items:flex-end;justify-content:flex-start;text-align:left;">
+          <span style="margin:10px;padding:3px 7px;border-radius:4px;background:rgba(255,255,255,.85);font-family:'JetBrains Mono',ui-monospace,monospace;font-size:{{ ph.fs }};color:var(--phText);">{{ ph.label }}</span>
+        </button>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="max-width:var(--max);margin:0 auto;padding:32px var(--gut) var(--secY);display:grid;grid-template-columns:var(--detail);gap:48px;align-items:start;">
+    <main style="display:flex;flex-direction:column;gap:48px;min-width:0;">
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:center;gap:8px;font-size:15px;font-weight:500;color:var(--muted);">
+          <span aria-label="Flag of the United Arab Emirates" style="display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:22px;padding:0 5px;border-radius:3px;background:var(--dark);color:var(--onDark);font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:600;">AE</span>Dubai, United Arab Emirates
+        </div>
+        <h1 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h1);line-height:1.08;">Dubai City Escape</h1>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;">
+          <span style="font-size:var(--fsL);">From <strong style="font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);">₦1,850,000</strong> per person</span>
+          <span style="font-size:14px;color:var(--muted);">Final quote on WhatsApp</span>
+        </div>
+        <span style="color:var(--muted);">5 days · 4 nights · Next dates: 14 Nov, 12 Dec, 27 Dec 2026</span>
+      </div>
+
+      <dl style="margin:0;display:grid;grid-template-columns:var(--c4);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;">
+        <sc-for list="{{ facts }}" as="f" hint-placeholder-count="4">
+          <div style="background:var(--surface);padding:18px 20px;display:flex;flex-direction:column;gap:4px;">
+            <dt style="font-size:14px;color:var(--muted);">{{ f.k }}</dt>
+            <dd style="margin:0;font-family:var(--fh);font-weight:var(--hw2);font-size:18px;line-height:1.3;">{{ f.v }}</dd>
+          </div>
+        </sc-for>
+      </dl>
+
+      <section style="display:flex;flex-direction:column;gap:12px;">
+        <h2 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h2);line-height:1.15;">Overview</h2>
+        <p style="margin:0;max-width:68ch;text-wrap:pretty;">Five days in Dubai with the big sights and time to rest. You stay four nights in a 4-star hotel near Downtown, see the city from the Burj Khalifa, cross the dunes on a desert safari and eat dinner on a dhow along the creek. A day trip to Abu Dhabi and a free final morning for shopping round off the trip. Flights from Lagos, transfers and your UAE visa are handled by our team.</p>
+      </section>
+
+      <section style="display:flex;flex-direction:column;gap:16px;">
+        <h2 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h2);line-height:1.15;">Day by day</h2>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <sc-for list="{{ days }}" as="d" hint-placeholder-count="5">
+            <div style="background:var(--surface);border:1px solid {{ d.border }};border-radius:var(--r);overflow:hidden;">
+              <button type="button" onClick="{{ d.toggle }}" aria-expanded="{{ d.exp }}" style="width:100%;min-height:64px;display:flex;align-items:center;gap:16px;padding:12px 20px;border:0;background:transparent;text-align:left;cursor:pointer;color:var(--text);">
+                <span style="flex:none;min-width:64px;padding:6px 10px;border-radius:var(--br);background:{{ d.badgeBg }};color:{{ d.badgeFg }};font-size:14px;font-weight:700;text-align:center;">Day {{ d.n }}</span>
+                <span style="flex:1;font-family:var(--fh);font-weight:var(--hw2);letter-spacing:var(--ht);font-size:18px;line-height:1.3;">{{ d.t }}</span>
+                <span aria-hidden="true" style="flex:none;font-size:22px;color:var(--primary);">{{ d.sign }}</span>
+              </button>
+              <sc-if value="{{ d.open }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:0 20px 20px;display:flex;flex-direction:column;gap:10px;">
+                  <p style="margin:0;text-wrap:pretty;">{{ d.d }}</p>
+                  <span style="font-size:14px;color:var(--muted);">{{ d.meta }}</span>
+                </div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section style="display:grid;grid-template-columns:var(--c2);gap:32px;">
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <h2 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h3);line-height:1.2;">Included</h2>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;">
+            <sc-for list="{{ inc }}" as="i" hint-placeholder-count="7">
+              <li style="display:flex;gap:12px;align-items:flex-start;"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none;"><circle cx="12" cy="12" r="11" style="fill:var(--okBg);"></circle><path d="M7 12.5l3.2 3L17 9" style="fill:none;stroke:var(--ok);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;"></path></svg><span>{{ i }}</span></li>
+            </sc-for>
+          </ul>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <h2 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h3);line-height:1.2;">Not included</h2>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;">
+            <sc-for list="{{ exc }}" as="i" hint-placeholder-count="5">
+              <li style="display:flex;gap:12px;align-items:flex-start;"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none;"><circle cx="12" cy="12" r="11" style="fill:var(--line);"></circle><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" style="fill:none;stroke:var(--muted);stroke-width:2.2;stroke-linecap:round;"></path></svg><span>{{ i }}</span></li>
+            </sc-for>
+          </ul>
+        </div>
+      </section>
+
+      <section style="display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;">
+          <h2 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h3);line-height:1.2;">Optional add-ons</h2>
+          <span style="padding:4px 10px;border-radius:var(--br);background:var(--tint);color:var(--tagText);font-size:14px;font-weight:600;">Information only</span>
+        </div>
+        <p style="margin:0;color:var(--muted);">Add-ons are not booked on this page. Mention the ones you want in your WhatsApp chat and we add them to your quote.</p>
+        <div style="display:grid;grid-template-columns:var(--c3);gap:12px;">
+          <sc-for list="{{ addons }}" as="a" hint-placeholder-count="3">
+            <div style="padding:18px 20px;border:1px dashed var(--line2);border-radius:var(--r);display:flex;flex-direction:column;gap:6px;">
+              <strong style="font-weight:600;">{{ a.t }}</strong>
+              <span style="font-size:16px;">From {{ a.p }} per person</span>
+              <span style="font-size:14px;color:var(--muted);">Final quote on WhatsApp</span>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section style="display:flex;flex-direction:column;gap:8px;">
+        <h2 style="margin:0 0 8px;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h3);line-height:1.2;">Package FAQs</h2>
+        <div style="border-top:1px solid var(--line2);">
+          <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="4">
+            <div style="border-bottom:1px solid var(--line2);">
+              <button type="button" onClick="{{ f.toggle }}" aria-expanded="{{ f.exp }}" style="width:100%;min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;border:0;background:transparent;text-align:left;font-family:var(--fh);font-weight:var(--hw2);letter-spacing:var(--ht);font-size:17px;line-height:1.35;color:var(--text);cursor:pointer;">{{ f.q }}<span aria-hidden="true" style="flex:none;width:32px;height:32px;border-radius:50%;background:var(--tint);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:20px;font-family:var(--fb);">{{ f.sign }}</span></button>
+              <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><p style="margin:0 48px 18px 0;color:var(--muted);text-wrap:pretty;">{{ f.a }}</p></sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+    </main>
+
+    <aside style="display:var(--dB);position:sticky;top:96px;">
+      <div style="background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:20px;box-shadow:0 24px 48px -32px rgba(0,0,0,.35);">
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <span style="font-size:16px;">From</span>
+          <span style="font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:34px;line-height:1.1;">₦1,850,000</span>
+          <span style="font-size:16px;">per person</span>
+          <span style="font-size:14px;color:var(--muted);margin-top:4px;">Final quote on WhatsApp</span>
+        </div>
+        <fieldset style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;">
+          <legend style="font-size:14px;font-weight:600;margin-bottom:8px;">Next dates</legend>
+          <sc-for list="{{ dates }}" as="dt" hint-placeholder-count="3">
+            <button type="button" onClick="{{ dt.pick }}" aria-pressed="{{ dt.pressed }}" style="min-height:48px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-radius:var(--rs);border:1.5px solid {{ dt.border }};background:{{ dt.bg }};color:var(--text);font-size:16px;cursor:pointer;text-align:left;"><span>{{ dt.l }}</span><span style="font-size:14px;color:var(--muted);">{{ dt.s }}</span></button>
+          </sc-for>
+        </fieldset>
+        <a href="{{ waPkg }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 20px;border-radius:var(--br);background:var(--btn);color:var(--btnText);border:var(--btnBorder);font-weight:600;font-size:16px;text-decoration:none;transition:background .2s ease;" style-hover="background:var(--btnHover);color:var(--btnText);" style-active="background:var(--btnPress);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"></path></svg>
+          Chat about this package
+        </a>
+        <a href="tel:+2348000000000" style="display:flex;align-items:center;justify-content:center;min-height:44px;font-weight:600;color:var(--link);">Or call +234 800 000 0000</a>
+        <p style="margin:0;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;">Nothing is paid on this website. We confirm dates, hotels and your quote with you on WhatsApp.</p>
+      </div>
+    </aside>
+  </div>
+
+  <section style="background:var(--tint);background-image:var(--patternLight);">
+    <div style="max-width:var(--max);margin:0 auto;padding:var(--secY) var(--gut);display:flex;flex-direction:column;gap:32px;">
+      <h2 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h2);line-height:1.15;">You might also like</h2>
+      <div style="display:grid;grid-template-columns:var(--c3);gap:24px;">
+        <sc-for list="{{ related }}" as="p" hint-placeholder-count="3">
+          <dc-import name="PackageCard" pkg="{{ p }}" hint-size="100%,560px"></dc-import>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+  <dc-import name="Footer" hint-size="100%,420px"></dc-import>
+</div>
+
+<div style="position:absolute;left:0;right:0;bottom:0;z-index:40;display:var(--mF);flex-direction:column;gap:8px;padding:12px 20px 16px;background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -12px 28px -16px rgba(0,0,0,.3);">
+  <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;">
+    <span style="font-size:16px;">From <strong style="font-family:var(--fh);font-weight:var(--hw);">₦1,850,000</strong> per person</span>
+    <span style="font-size:14px;color:var(--muted);">Final quote on WhatsApp</span>
+  </div>
+  <a href="{{ waPkg }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border-radius:var(--br);background:var(--btn);color:var(--btnText);border:var(--btnBorder);font-weight:600;font-size:16px;text-decoration:none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"></path></svg>
+    Chat about this package
+  </a>
+</div>
+
+<dc-import name="WhatsApp Float" style="position:absolute;right:20px;bottom:var(--floatB);z-index:60;" hint-size="60px,60px"></dc-import>
+
+<sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+  <div role="dialog" aria-modal="true" aria-label="Photo gallery" style="position:absolute;inset:0;z-index:80;background:rgba(10,10,10,.92);display:flex;flex-direction:column;padding:16px;gap:16px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;color:#FFFFFF;">
+      <span style="font-size:16px;">{{ lbCount }}</span>
+      <button type="button" onClick="{{ lbClose }}" aria-label="Close gallery" style="width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:transparent;color:#FFFFFF;font-size:24px;cursor:pointer;">×</button>
+    </div>
+    <div style="flex:1;min-height:0;display:flex;align-items:center;gap:12px;">
+      <button type="button" onClick="{{ lbPrev }}" aria-label="Previous photo" style="flex:none;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:transparent;color:#FFFFFF;font-size:20px;cursor:pointer;">←</button>
+      <div style="flex:1;height:100%;max-height:720px;border-radius:var(--rs);background:repeating-linear-gradient(135deg,var(--ph1) 0 14px,var(--ph2) 14px 28px);display:flex;align-items:flex-end;">
+        <span style="margin:14px;padding:4px 8px;border-radius:4px;background:rgba(255,255,255,.88);font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:var(--phText);">{{ lbLabel }}</span>
+      </div>
+      <button type="button" onClick="{{ lbNext }}" aria-label="Next photo" style="flex:none;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:transparent;color:#FFFFFF;font-size:20px;cursor:pointer;">→</button>
+    </div>
+  </div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;variant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;A&quot;,&quot;B&quot;],&quot;default&quot;:&quot;A&quot;,&quot;tsType&quot;:&quot;'A'|'B'&quot;},&quot;device&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;desktop&quot;,&quot;mobile&quot;],&quot;default&quot;:&quot;desktop&quot;,&quot;tsType&quot;:&quot;'desktop'|'mobile'&quot;},&quot;frameHeight&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:null,&quot;tsType&quot;:&quot;number&quot;}}">
+const svgUrl = s => 'url("data:image/svg+xml,' + encodeURIComponent(s) + '")';
+const WAVE = "<svg xmlns='http://www.w3.org/2000/svg' width='80' height='24'><path d='M0 12 Q20 2 40 12 T80 12' fill='none' stroke='#0E7C86' stroke-width='2.5' stroke-linecap='round'/></svg>";
+const ADIRE = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='24'><path d='M0 1H48M0 23H48' stroke='#B4532A' stroke-width='.8'/><path d='M0 12L12 5L24 12L36 19L48 12' fill='none' stroke='#B4532A' stroke-width='1.2'/><circle cx='24' cy='5' r='1.6' fill='#D9A441'/><circle cx='0' cy='19' r='1.6' fill='#D9A441'/><circle cx='48' cy='19' r='1.6' fill='#D9A441'/><circle cx='12' cy='17' r='1' fill='#1F6B45'/><circle cx='36' cy='7' r='1' fill='#1F6B45'/></svg>";
+const LATTICE = c => `repeating-linear-gradient(45deg, ${c} 0 1px, transparent 1px 24px), repeating-linear-gradient(-45deg, ${c} 0 1px, transparent 1px 24px)`;
+const THEMES = {
+  A: {'--primary':'#0E7C86','--accent':'#FF6B4A','--hi':'#FFC857','--bg':'#F8FAFB','--dark':'#0B2233','--text':'#1E293B','--muted':'#475569','--line':'#E2E8F0','--line2':'#8193A8','--surface':'#FFFFFF','--tint':'#E3F1F2','--tagText':'#0B5960','--headerBg':'#FFFFFF','--sec':'#0E7C86','--secHoverBg':'#E3F1F2','--link':'#0B6A73','--accentLine':'#FF6B4A','--focus':'#0B2233',
+    '--fh':"'Poppins', system-ui, sans-serif",'--fb':"'Inter', system-ui, sans-serif",'--hw':'700','--hw2':'600','--ht':'-0.025em',
+    '--r':'20px','--rs':'14px','--br':'999px','--arch':'0px','--inset':'0px','--tileR':'20px','--galR':'20px','--fieldR':'12px','--fieldBg':'#FFFFFF',
+    '--btn':'#FF6B4A','--btnHover':'#F2542F','--btnPress':'#D9431F','--btnText':'#FFFFFF','--btnBorder':'1px solid transparent',
+    '--onDark':'#FFFFFF','--onDarkMuted':'#B9CAD6','--ph1':'#D4EBEE','--ph2':'#C6E3E7','--phText':'#0B5960','--phd1':'#17506A','--phd2':'#13445B',
+    '--statsBg':'#0E7C86','--statsNum':'#FFFFFF','--statsLabel':'#E3F1F2','--badgeBg':'#FFC857','--badgeText':'#0B2233','--stepBg':'#FFC857','--stepText':'#0B2233','--star':'#E8A317',
+    '--ok':'#0E7C86','--okBg':'#E3F1F2','--b1bg':'#FFC857','--b1fg':'#0B2233','--b2bg':'#FFE2DA','--b2fg':'#A83A1E','--b3bg':'#D4EBEE','--b3fg':'#0B5960',
+    '--lift':'translateY(-6px)','--shadow':'0 1px 2px rgba(11,34,51,.06)','--shadowHover':'0 22px 40px -18px rgba(11,34,51,.35)','--tr':'transform .25s ease, box-shadow .25s ease',
+    '--divider':svgUrl(WAVE),'--pattern':'none','--patternLight':'none'},
+  B: {'--primary':'#B4532A','--accent':'#1F6B45','--hi':'#D9A441','--bg':'#FBF5EC','--dark':'#2B1A12','--text':'#2B1A12','--muted':'#6B5244','--line':'#EADCC8','--line2':'#A88D74','--surface':'#FFFDF8','--tint':'#F3E6D3','--tagText':'#7A3517','--headerBg':'#FBF5EC','--sec':'#1F6B45','--secHoverBg':'#E4EFE8','--link':'#9A4422','--accentLine':'#D9A441','--focus':'#1F6B45',
+    '--fh':"'Fraunces', Georgia, serif",'--fb':"'DM Sans', system-ui, sans-serif",'--hw':'600','--hw2':'600','--ht':'-0.01em',
+    '--r':'12px','--rs':'8px','--br':'8px','--arch':'170px 170px 8px 8px','--inset':'10px','--tileR':'999px 999px 12px 12px','--galR':'12px','--fieldR':'8px','--fieldBg':'#FFFDF8',
+    '--btn':'#B4532A','--btnHover':'#9C4522','--btnPress':'#853A1C','--btnText':'#FFFFFF','--btnBorder':'1px solid #D9A441',
+    '--onDark':'#FBF5EC','--onDarkMuted':'#D8C5AE','--ph1':'#F1DFC7','--ph2':'#EAD4B7','--phText':'#7A3517','--phd1':'#5C2F1B','--phd2':'#502816',
+    '--statsBg':'#2B1A12','--statsNum':'#D9A441','--statsLabel':'#F3E6D3','--badgeBg':'#1F6B45','--badgeText':'#FBF5EC','--stepBg':'#1F6B45','--stepText':'#FBF5EC','--star':'#C8912E',
+    '--ok':'#1F6B45','--okBg':'#E4EFE8','--b1bg':'#F3E6D3','--b1fg':'#7A3517','--b2bg':'#E4EFE8','--b2fg':'#1F6B45','--b3bg':'#F6EAD0','--b3fg':'#7A5714',
+    '--lift':'none','--shadow':'0 1px 2px rgba(43,26,18,.05)','--shadowHover':'0 18px 36px -20px rgba(43,26,18,.45)','--tr':'box-shadow .6s ease',
+    '--divider':svgUrl(ADIRE),'--pattern':LATTICE('rgba(217,164,65,.10)'),'--patternLight':LATTICE('rgba(180,83,42,.06)')}
+};
+const DEVICE = m => ({
+  '--h1':m?'40px':'56px','--h2':m?'30px':'40px','--h3':m?'20px':'24px','--fs':m?'16px':'17px','--fsL':m?'17px':'20px',
+  '--gut':m?'20px':'64px','--secY':m?'64px':'96px','--max':'1312px',
+  '--c2':m?'minmax(0,1fr)':'repeat(2,minmax(0,1fr))','--c3':m?'minmax(0,1fr)':'repeat(3,minmax(0,1fr))','--c4':m?'repeat(2,minmax(0,1fr))':'repeat(4,minmax(0,1fr))','--c6':m?'repeat(2,minmax(0,1fr))':'repeat(6,minmax(0,1fr))',
+  '--split':m?'minmax(0,1fr)':'minmax(0,5fr) minmax(0,7fr)','--dF':m?'none':'flex','--dB':m?'none':'block','--dG':m?'none':'grid','--mF':m?'flex':'none','--mB':m?'block':'none',
+  '--heroH':m?'auto':'680px','--heroPadT':m?'56px':'120px','--finder':m?'minmax(0,1fr)':'repeat(4,minmax(0,1fr)) auto','--finderPad':m?'20px':'24px',
+  '--revW':m?'100%':'50%','--galCols':m?'2':'4','--footCols':m?'repeat(2,minmax(0,1fr))':'1.5fr 1fr 1fr 1.4fr','--span':m?'1 / -1':'auto',
+  '--detail':m?'minmax(0,1fr)':'minmax(0,1fr) 380px','--gCols':m?'repeat(4,minmax(0,1fr))':'2fr 1fr 1fr','--gRows':m?'260px 76px':'236px 236px','--gLc':m?'1 / -1':'1','--gLr':m?'1':'1 / span 2',
+  '--statNum':m?'36px':'52px','--floatB':m?'124px':'24px','--barPad':m?'112px':'0px'
+});
+const themeStyle = (v, m, h) => Object.assign({}, THEMES[v] || THEMES.A, DEVICE(m), { position:'relative', height: h ? h + 'px' : '100vh', overflow:'hidden', background:'var(--bg)', color:'var(--text)', fontFamily:'var(--fb)', fontSize:'var(--fs)', lineHeight:1.55, WebkitFontSmoothing:'antialiased' });
+const WA = t => 'https://wa.me/2348000000000?text=' + encodeURIComponent(t);
+const fmt = n => '₦' + n.toLocaleString('en-US');
+
+const RELATED = [
+  { title:'Zanzibar Honeymoon', country:'Tanzania', code:'TZ', days:6, price:2400000, tags:['Stone Town','Beach villa','Sunset cruise'], a:'Photo · Zanzibar white-sand beach', b:'Photo · Newlyweds on a Zanzibar dhow' },
+  { title:'Istanbul and Cappadocia', country:'Türkiye', code:'TR', days:6, price:2750000, tags:['Balloon ride','Bosphorus cruise','Grand Bazaar'], a:'Photo · Cappadocia balloons at sunrise', b:'Photo · Travellers in a Cappadocia balloon' },
+  { title:'Bali Island Retreat', country:'Indonesia', code:'ID', days:7, price:3600000, tags:['Rice terraces','Temple tour','Spa day'], a:'Photo · Bali rice terraces, aerial', b:'Photo · Couple at a Bali temple' }
+];
+const PHOTOS = {
+  A: ['Burj Khalifa and Downtown at dusk', 'Desert safari dune drive', 'Dhow cruise on Dubai Creek', 'Sheikh Zayed Mosque, Abu Dhabi', 'Dubai Marina skyline'],
+  B: ['Nigerian couple at Burj Khalifa viewpoint', 'Family on a desert safari', 'Friends at a dhow cruise dinner', 'Traveller at Sheikh Zayed Mosque', 'Couple at Dubai Marina']
+};
+const DAYS = [
+  ['Arrive in Dubai, dhow cruise dinner', 'Your driver meets you at Dubai International and takes you to your hotel near Downtown. In the evening you board a traditional dhow for a buffet dinner along Dubai Creek.', 'Meals: dinner · Stay: 4-star hotel, Downtown'],
+  ['City tour and Burj Khalifa', 'A half-day guided tour covers Jumeirah Mosque, the Dubai Frame, the gold and spice souks and an abra ride across the creek. In the afternoon you go up to the Burj Khalifa observation deck on level 124.', 'Meals: breakfast · Stay: 4-star hotel, Downtown'],
+  ['Desert safari', 'Free morning. At 3pm a 4x4 picks you up for dune driving, camel riding and sandboarding, followed by a barbecue dinner and live shows at a desert camp.', 'Meals: breakfast, dinner · Stay: 4-star hotel, Downtown'],
+  ['Abu Dhabi day trip', 'Drive to Abu Dhabi to visit Sheikh Zayed Grand Mosque, Qasr Al Watan and the Corniche, with a photo stop at Ferrari World.', 'Meals: breakfast · Stay: 4-star hotel, Downtown'],
+  ['Shopping and departure', 'Free morning for Dubai Mall or Mall of the Emirates. Your driver takes you to the airport for your flight back to Lagos.', 'Meals: breakfast']
+];
+const FAQS = [
+  ['Do I need a visa for Dubai?', 'Yes. Nigerian passport holders need a UAE visa. We process it for you as part of the package once you send your documents.'],
+  ['Can I change the hotel?', 'Yes. We can quote 3-star, 5-star or beachfront options. Tell us on WhatsApp and we update your quote.'],
+  ['Can I travel on other dates?', 'Yes. The listed dates are group departures. Private trips can start on any date, subject to flight and hotel availability.'],
+  ['Is the price fixed?', 'The price is a starting price per person, sharing a room. Your final quote on WhatsApp reflects your dates, flights and room type.']
+];
+
+class Component extends DCLogic {
+  state = { day: 0, faq: -1, lb: -1, date: 0 };
+  renderVals() {
+    const v = this.props.variant === 'B' ? 'B' : 'A', m = this.props.device === 'mobile', s = this.state;
+    const labels = PHOTOS[v];
+    const dates = [['14 Nov 2026', '8 seats left'], ['12 Dec 2026', 'Filling fast'], ['27 Dec 2026', 'New Year trip']];
+    const pickedDate = dates[s.date][0];
+    return {
+      rootStyle: themeStyle(v, m, this.props.frameHeight),
+      photos: labels.map((l, i) => ({
+        label: i === 0 || !m ? 'Photo · ' + l : String(i + 1), aria: 'Open photo ' + (i + 1) + ': ' + l,
+        col: i === 0 ? 'var(--gLc)' : 'auto', row: i === 0 ? 'var(--gLr)' : 'auto',
+        r: i === 0 ? 'var(--arch)' : 'var(--rs)', fs: i === 0 ? '12px' : '11px',
+        open: () => this.setState({ lb: i })
+      })),
+      facts: [{ k: 'Duration', v: '5 days, 4 nights' }, { k: 'Group size', v: '2 to 16 travellers' }, { k: 'Best season', v: 'November to March' }, { k: 'Visa needed', v: 'Yes, we process it' }],
+      days: DAYS.map(([t, d, meta], i) => {
+        const open = s.day === i;
+        return { n: i + 1, t, d, meta, open, exp: String(open), sign: open ? '−' : '+', border: open ? 'var(--primary)' : 'var(--line)', badgeBg: open ? 'var(--primary)' : 'var(--tint)', badgeFg: open ? '#FFFFFF' : 'var(--tagText)', toggle: () => this.setState(x => ({ day: x.day === i ? -1 : i })) };
+      }),
+      inc: ['Return economy flights from Lagos', '4 nights in a 4-star hotel with breakfast', 'Airport transfers in Dubai', 'Half-day city tour with guide', 'Burj Khalifa level 124 ticket', 'Desert safari with barbecue dinner', 'Dhow cruise dinner', 'UAE visa processing'],
+      exc: ['Travel insurance', 'Lunches and most dinners', 'Tourism Dirham hotel fee', 'Personal shopping and tips', 'Upgrades to level 148'],
+      addons: [{ t: 'Burj Khalifa level 148 upgrade', p: '₦120,000' }, { t: 'Museum of the Future entry', p: '₦95,000' }, { t: 'Ferrari World day pass', p: '₦140,000' }],
+      faqs: FAQS.map(([q, a], i) => ({ q, a, open: s.faq === i, exp: String(s.faq === i), sign: s.faq === i ? '−' : '+', toggle: () => this.setState(x => ({ faq: x.faq === i ? -1 : i })) })),
+      dates: dates.map(([l, sub], i) => ({ l, s: sub, pressed: String(s.date === i), border: s.date === i ? 'var(--primary)' : 'var(--line)', bg: s.date === i ? 'var(--tint)' : 'transparent', pick: () => this.setState({ date: i }) })),
+      waPkg: WA(`Hi Prepping Travel and Tours, I'd like to chat about the Dubai City Escape package (from ₦1,850,000 per person). Preferred date: ${pickedDate}.`),
+      related: RELATED.map(p => ({ ...p, photo: v === 'A' ? p.a : p.b, priceText: fmt(p.price), durText: `${p.days} days · ${p.days - 1} nights`, wa: WA(`Hi Prepping Travel and Tours, I'm interested in the ${p.title} package.`) })),
+      lbOpen: s.lb >= 0, lbLabel: s.lb >= 0 ? 'Photo · ' + labels[s.lb] : '', lbCount: (s.lb + 1) + ' / ' + labels.length,
+      lbClose: () => this.setState({ lb: -1 }),
+      lbPrev: () => this.setState(x => ({ lb: (x.lb + labels.length - 1) % labels.length })),
+      lbNext: () => this.setState(x => ({ lb: (x.lb + 1) % labels.length }))
+    };
+  }
+}
+</script>
+</body>
+</html>

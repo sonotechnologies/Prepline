@@ -1,0 +1,47 @@
+{
+  "slug": "umrah-package",
+  "title": "Umrah Package",
+  "country": "Saudi Arabia",
+  "countryCode": "SA",
+  "city": "Makkah and Madinah",
+  "region": "Middle East",
+  "tripTypes": ["Religious", "Group"],
+  "durationDays": 10,
+  "nights": 9,
+  "priceFrom": 3450000,
+  "currency": "NGN",
+  "priceNote": "per person",
+  "dates": ["2026-11-06", "2027-01-08", "2027-02-19"],
+  "dateNotes": { "2027-02-19": "Ramadan departure" },
+  "featured": false,
+  "coverImage": "/images/packages/umrah-package/1.webp",
+  "coverAlt": "Masjid al-Haram in Makkah at dusk",
+  "gallery": [
+    { "src": "/images/packages/umrah-package/1.webp", "alt": "Masjid al-Haram in Makkah at dusk" },
+    { "src": "/images/packages/umrah-package/2.webp", "alt": "Green Dome of the Prophet's Mosque, Madinah" },
+    { "src": "/images/packages/umrah-package/3.webp", "alt": "Hotel room overlooking the Haram" },
+    { "src": "/images/packages/umrah-package/4.webp", "alt": "Group of pilgrims with their guide" },
+    { "src": "/images/packages/umrah-package/5.webp", "alt": "Quba Mosque, Madinah" }
+  ],
+  "highlights": ["Makkah and Madinah", "Guided rituals", "Hotels near the Haram"],
+  "overview": "A guided Umrah from Lagos with five nights in Makkah and four in Madinah. Hotels are within walking distance of both mosques, a scholar travels with the group, and ziyarat visits are included in both cities. We process your Umrah visa and handle every transfer.",
+  "itinerary": [
+    { "day": 1, "title": "Fly to Jeddah, transfer to Makkah", "description": "Group flight from Lagos, meet-and-greet in Jeddah and coach transfer to your Makkah hotel.", "meta": "Stay: hotel near Masjid al-Haram" },
+    { "day": 2, "title": "Perform Umrah", "description": "Guided Umrah rituals with the group scholar.", "meta": "Meals: breakfast, dinner · Stay: Makkah" },
+    { "day": 3, "title": "Makkah ziyarat", "description": "Visits to Jabal al-Nour, Jabal Thawr, Mina, Muzdalifah and Arafat.", "meta": "Meals: breakfast, dinner · Stay: Makkah" },
+    { "day": 4, "title": "Days of worship in Makkah", "description": "Free days for prayer and worship at the Haram, with daily group sessions.", "meta": "Meals: breakfast, dinner · Stay: Makkah" },
+    { "day": 6, "title": "Travel to Madinah", "description": "Transfer to Madinah by high-speed train.", "meta": "Meals: breakfast, dinner · Stay: hotel near Masjid an-Nabawi" },
+    { "day": 7, "title": "Madinah ziyarat", "description": "Quba Mosque, Mount Uhud and the Qiblatayn Mosque.", "meta": "Meals: breakfast, dinner · Stay: Madinah" },
+    { "day": 10, "title": "Return to Lagos", "description": "Transfer to Madinah airport for your flight home.", "meta": "Meals: breakfast" }
+  ],
+  "included": ["Return economy flights from Lagos", "5 nights in Makkah, 4 nights in Madinah", "Breakfast and dinner daily", "Umrah visa processing", "All transfers, including the Haramain train", "Ziyarat in Makkah and Madinah", "Group scholar and guide"],
+  "excluded": ["Travel insurance", "Lunches", "Personal spending and gifts"],
+  "addOns": [
+    { "title": "Upgrade to a Haram-view room", "priceFrom": 450000 },
+    { "title": "Taif day trip", "priceFrom": 80000 }
+  ],
+  "faqs": [
+    { "q": "Can women travel without a mahram?", "a": "Current Saudi rules allow women over 18 to perform Umrah in an approved group. We confirm the latest rules with you on WhatsApp." }
+  ],
+  "quickFacts": { "groupSize": "10 to 45 pilgrims", "bestSeason": "October to March", "visaRequired": true }
+}

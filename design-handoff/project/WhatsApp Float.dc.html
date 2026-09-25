@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="display:flex;align-items:center;gap:12px;font-family:var(--fb, sans-serif);">
+  <sc-if value="{{ show }}" hint-placeholder-val="{{ true }}">
+    <a href="{{ wa }}" target="_blank" rel="noopener" role="status" style="display:flex;align-items:center;min-height:44px;padding:0 18px;background:#FFFFFF;color:#1E293B;font-size:16px;font-weight:600;border-radius:999px;box-shadow:0 10px 28px -10px rgba(0,0,0,.45);white-space:nowrap;text-decoration:none;">Chat with us</a>
+  </sc-if>
+  <a href="{{ wa }}" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" style="flex:none;width:60px;height:60px;border-radius:50%;background:#25D366;color:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px -10px rgba(0,0,0,.5);transition:transform .2s ease;" style-hover="transform:scale(1.06);color:#FFFFFF;">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"></path></svg>
+  </a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;keepLabel&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;},&quot;hideLabel&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { show: true };
+  componentDidMount() { if (!this.props.keepLabel) this._t = setTimeout(() => this.setState({ show: false }), 6000); }
+  componentWillUnmount() { clearTimeout(this._t); }
+  renderVals() {
+    return {
+      show: this.props.hideLabel ? false : this.state.show,
+      wa: 'https://wa.me/2348000000000?text=' + encodeURIComponent("Hi Prepping Travel and Tours, I'd like to plan a trip.")
+    };
+  }
+}
+</script>
+</body>
+</html>

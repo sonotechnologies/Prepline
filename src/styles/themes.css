@@ -1,0 +1,206 @@
+/*
+ * Design tokens for Variant A (Bright and adventurous) and Variant B (Warm and local).
+ * Values come from the Claude Design hand-off (design-handoff/project/*.dc.html).
+ * Switch with <html data-theme="a"> or data-theme="b". Tailwind maps these in tailwind.config.ts.
+ */
+
+:root,
+[data-theme='a'] {
+  --primary: #0e7c86;
+  --accent: #ff6b4a;
+  --hi: #ffc857;
+  --bg: #f8fafb;
+  --dark: #0b2233;
+  --text: #1e293b;
+  --muted: #475569;
+  --line: #e2e8f0;
+  --line2: #8193a8;
+  --surface: #ffffff;
+  --tint: #e3f1f2;
+  --tag-text: #0b5960;
+  --header-bg: #ffffff;
+  --sec: #0b6a73; /* design #0E7C86 is 4.3:1 on tint sections; link teal passes AA everywhere */
+  --sec-hover-bg: #e3f1f2;
+  --link: #0b6a73;
+  --accent-line: #ff6b4a;
+  --focus: #0b2233;
+
+  --font-heading: var(--font-poppins), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --hw: 700;
+  --hw2: 600;
+  --ht: -0.025em;
+
+  --r: 20px;
+  --rs: 14px;
+  --br: 999px;
+  --arch: 20px;
+  --inset: 0px;
+  --tile-r: 20px;
+  --gal-r: 20px;
+  --field-r: 12px;
+  --field-bg: #ffffff;
+
+  /*
+   * The hand-off flags white on coral #FF6B4A at 2.8:1 (fails WCAG AA) and suggests #D9431F,
+   * which measures 4.4:1, still just under AA. #CC3F1C gives 4.9:1. Coral stays as the accent
+   * (nav underline, decoration).
+   */
+  --btn: #cc3f1c;
+  --btn-hover: #b53618;
+  --btn-press: #9c2e14;
+  --btn-text: #ffffff;
+  --btn-border: transparent;
+
+  --on-dark: #ffffff;
+  --on-dark-muted: #b9cad6;
+  --ph1: #d4ebee;
+  --ph2: #c6e3e7;
+  --ph-text: #0b5960;
+
+  --stats-bg: #0e7c86;
+  --stats-num: #ffffff;
+  --stats-label: #ffffff; /* design #E3F1F2 is 4.3:1 on teal */
+  --badge-bg: #ffc857;
+  --badge-text: #0b2233;
+  --step-bg: #ffc857;
+  --step-text: #0b2233;
+  --star: #e8a317;
+  --ok: #0e7c86;
+  --ok-bg: #e3f1f2;
+  --b1bg: #ffc857;
+  --b1fg: #0b2233;
+  --b2bg: #ffe2da;
+  --b2fg: #a83a1e;
+  --b3bg: #d4ebee;
+  --b3fg: #0b5960;
+
+  --lift: translateY(-6px);
+  --shadow: 0 1px 2px rgba(11, 34, 51, 0.06);
+  --shadow-hover: 0 22px 40px -18px rgba(11, 34, 51, 0.35);
+  --card-transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  --divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='24'%3E%3Cpath d='M0 12 Q20 2 40 12 T80 12' fill='none' stroke='%230E7C86' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  --pattern: none;
+  --pattern-light: none;
+}
+
+[data-theme='b'] {
+  --primary: #b4532a;
+  --accent: #1f6b45;
+  --hi: #d9a441;
+  --bg: #fbf5ec;
+  --dark: #2b1a12;
+  --text: #2b1a12;
+  --muted: #6b5244;
+  --line: #eadcc8;
+  --line2: #a88d74;
+  --surface: #fffdf8;
+  --tint: #f3e6d3;
+  --tag-text: #7a3517;
+  --header-bg: #fbf5ec;
+  --sec: #1f6b45;
+  --sec-hover-bg: #e4efe8;
+  --link: #9a4422;
+  --accent-line: #d9a441;
+  --focus: #1f6b45;
+
+  --font-heading: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-dm-sans), system-ui, sans-serif;
+  --hw: 600;
+  --hw2: 600;
+  --ht: -0.01em;
+
+  --r: 12px;
+  --rs: 8px;
+  --br: 8px;
+  --arch: 170px 170px 8px 8px;
+  --inset: 10px;
+  --tile-r: 999px 999px 12px 12px;
+  --gal-r: 12px;
+  --field-r: 8px;
+  --field-bg: #fffdf8;
+
+  --btn: #b4532a;
+  --btn-hover: #9c4522;
+  --btn-press: #853a1c;
+  --btn-text: #ffffff;
+  --btn-border: #d9a441;
+
+  --on-dark: #fbf5ec;
+  --on-dark-muted: #d8c5ae;
+  --ph1: #f1dfc7;
+  --ph2: #ead4b7;
+  --ph-text: #7a3517;
+
+  --stats-bg: #2b1a12;
+  --stats-num: #d9a441;
+  --stats-label: #f3e6d3;
+  --badge-bg: #1f6b45;
+  --badge-text: #fbf5ec;
+  --step-bg: #1f6b45;
+  --step-text: #fbf5ec;
+  --star: #c8912e;
+  --ok: #1f6b45;
+  --ok-bg: #e4efe8;
+  --b1bg: #f3e6d3;
+  --b1fg: #7a3517;
+  --b2bg: #e4efe8;
+  --b2fg: #1f6b45;
+  --b3bg: #f6ead0;
+  --b3fg: #7a5714;
+
+  --lift: none;
+  --shadow: 0 1px 2px rgba(43, 26, 18, 0.05);
+  --shadow-hover: 0 18px 36px -20px rgba(43, 26, 18, 0.45);
+  --card-transition: box-shadow 0.6s ease;
+
+  --divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='24'%3E%3Cpath d='M0 1H48M0 23H48' stroke='%23B4532A' stroke-width='.8'/%3E%3Cpath d='M0 12L12 5L24 12L36 19L48 12' fill='none' stroke='%23B4532A' stroke-width='1.2'/%3E%3Ccircle cx='24' cy='5' r='1.6' fill='%23D9A441'/%3E%3Ccircle cx='0' cy='19' r='1.6' fill='%23D9A441'/%3E%3Ccircle cx='48' cy='19' r='1.6' fill='%23D9A441'/%3E%3Ccircle cx='12' cy='17' r='1' fill='%231F6B45'/%3E%3Ccircle cx='36' cy='7' r='1' fill='%231F6B45'/%3E%3C/svg%3E");
+  --pattern: repeating-linear-gradient(45deg, rgba(217, 164, 65, 0.1) 0 1px, transparent 1px 24px),
+    repeating-linear-gradient(-45deg, rgba(217, 164, 65, 0.1) 0 1px, transparent 1px 24px);
+  --pattern-light: repeating-linear-gradient(45deg, rgba(180, 83, 42, 0.06) 0 1px, transparent 1px 24px),
+    repeating-linear-gradient(-45deg, rgba(180, 83, 42, 0.06) 0 1px, transparent 1px 24px);
+}
+
+/* Layout and type scale, mobile first. Breakpoints: 640, 768, 1024, 1280. */
+:root {
+  --whatsapp: #25d366;
+  --max: 1312px;
+  --header-h: 72px;
+  --gut: 20px;
+  --sec-y: 64px;
+  --h1: 40px;
+  --h2: 30px;
+  --h3: 20px;
+  --fs: 16px;
+  --fs-l: 17px;
+  --stat-num: 36px;
+  --fab-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gut: 32px;
+    --h1: 48px;
+    --h2: 34px;
+    --stat-num: 44px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --sec-y: 96px;
+    --h1: 56px;
+    --h2: 40px;
+    --h3: 24px;
+    --fs: 17px;
+    --fs-l: 20px;
+    --stat-num: 52px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --gut: 64px;
+  }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>html,body{margin:0;}*,*::before,*::after{box-sizing:border-box;}a{color:var(--link,#0B6A73);}a:hover{color:var(--primary,#0E7C86);}button,select,input{font:inherit;}:focus-visible{outline:3px solid var(--focus,#0B2233);outline-offset:2px;}</style>
+</helmet>
+<div style="{{ rootStyle }}">
+<div style="height:100%;overflow-y:auto;overflow-x:hidden;">
+  <dc-import name="Header" active="Packages" style="position:sticky;top:0;z-index:30;display:block;" hint-size="100%,72px"></dc-import>
+
+  <section style="background:var(--tint);background-image:var(--patternLight);">
+    <div style="max-width:var(--max);margin:0 auto;padding:var(--pageHeadY, 56px) var(--gut) 40px;display:flex;flex-direction:column;gap:14px;">
+      <h1 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h1);line-height:1.08;">Our packages</h1>
+      <p style="margin:0;max-width:620px;font-size:var(--fsL);color:var(--muted);text-wrap:pretty;">Ready-made trips from Lagos. Every price is a starting price per person, and your final quote comes on WhatsApp.</p>
+      <label style="position:relative;display:block;max-width:640px;margin-top:10px;">
+        <span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Search packages</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="position:absolute;left:16px;top:16px;"><circle cx="11" cy="11" r="7" style="fill:none;stroke:var(--muted);stroke-width:2;"></circle><path d="M16.5 16.5L21 21" style="stroke:var(--muted);stroke-width:2;stroke-linecap:round;"></path></svg>
+        <input type="search" value="{{ q }}" onChange="{{ setQ }}" placeholder="Search a country, city or activity" style="width:100%;height:52px;padding:0 16px 0 46px;border:1px solid var(--line2);border-radius:var(--br);background:var(--fieldBg);font-size:16px;color:var(--text);">
+      </label>
+    </div>
+  </section>
+
+  <div style="max-width:var(--max);margin:0 auto;padding:24px var(--gut) var(--secY);display:flex;flex-direction:column;gap:24px;">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;">
+      <div style="display:var(--dF);flex-wrap:wrap;align-items:center;gap:10px;">
+        <sc-for list="{{ chips }}" as="c" hint-placeholder-count="4">
+          <div style="position:relative;">
+            <button type="button" onClick="{{ c.toggle }}" aria-expanded="{{ c.exp }}" style="display:flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:var(--br);border:1.5px solid {{ c.border }};background:{{ c.bg }};color:{{ c.fg }};font-size:16px;font-weight:500;cursor:pointer;">{{ c.label }}<span aria-hidden="true" style="font-size:12px;">▾</span></button>
+            <sc-if value="{{ c.open }}" hint-placeholder-val="{{ false }}">
+              <div role="listbox" style="position:absolute;top:52px;left:0;z-index:20;min-width:260px;padding:8px;background:var(--surface);border:1px solid var(--line);border-radius:var(--rs);box-shadow:0 24px 40px -20px rgba(0,0,0,.35);display:flex;flex-direction:column;">
+                <sc-for list="{{ c.opts }}" as="o" hint-placeholder-count="4">
+                  <button type="button" role="option" aria-selected="{{ o.sel }}" onClick="{{ o.pick }}" style="display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;padding:0 12px;border:0;border-radius:calc(var(--rs) - 4px);background:{{ o.bg }};color:var(--text);font-size:16px;text-align:left;cursor:pointer;" style-hover="background:var(--tint);">{{ o.l }}<span style="color:var(--primary);font-weight:700;">{{ o.mark }}</span></button>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+        <sc-if value="{{ anyFilter }}" hint-placeholder-val="{{ false }}">
+          <button type="button" onClick="{{ clearAll }}" style="min-height:44px;padding:0 8px;border:0;background:transparent;color:var(--link);font-size:16px;font-weight:600;text-decoration:underline;text-underline-offset:4px;cursor:pointer;">Clear filters</button>
+        </sc-if>
+      </div>
+      <button type="button" onClick="{{ openSheet }}" style="display:var(--mF);align-items:center;gap:10px;min-height:48px;padding:0 18px;border-radius:var(--br);border:1.5px solid var(--sec);background:transparent;color:var(--sec);font-size:16px;font-weight:600;cursor:pointer;">
+        <span style="display:flex;flex-direction:column;gap:4px;width:18px;"><span style="height:2px;background:currentColor;"></span><span style="height:2px;width:12px;margin:0 auto;background:currentColor;"></span><span style="height:2px;width:6px;margin:0 auto;background:currentColor;"></span></span>
+        Filters{{ filterCountText }}
+      </button>
+      <label style="display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted);">Sort by
+        <select value="{{ sort }}" onChange="{{ setSort }}" style="height:44px;padding:0 12px;border:1px solid var(--line2);border-radius:var(--fieldR);background:var(--fieldBg);font-size:16px;color:var(--text);">
+          <option value="rec">Recommended</option>
+          <option value="lo">Price: low to high</option>
+          <option value="hi">Price: high to low</option>
+          <option value="dur">Duration: shortest first</option>
+        </select>
+      </label>
+    </div>
+    <p aria-live="polite" style="margin:0;font-size:16px;color:var(--muted);">{{ countText }}</p>
+
+    <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ true }}">
+      <div style="display:grid;grid-template-columns:var(--c3);gap:24px;">
+        <sc-for list="{{ results }}" as="p" hint-placeholder-count="6">
+          <dc-import name="PackageCard" pkg="{{ p }}" hint-size="100%,560px"></dc-import>
+        </sc-for>
+        <div style="min-height:360px;border-radius:var(--r);background-color:var(--dark);background-image:var(--pattern);color:var(--onDark);padding:32px;display:flex;flex-direction:column;justify-content:flex-end;gap:14px;">
+          <h3 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h3);line-height:1.2;color:var(--onDark);">Can't find your destination?</h3>
+          <p style="margin:0;color:var(--onDarkMuted);text-wrap:pretty;">We plan trips to any country. Tell us where, when and your budget.</p>
+          <a href="{{ waCustom }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border-radius:var(--br);background:var(--btn);color:var(--btnText);border:var(--btnBorder);font-weight:600;font-size:16px;text-decoration:none;" style-hover="background:var(--btnHover);color:var(--btnText);">Plan a custom trip</a>
+        </div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:56px 24px;border:1.5px dashed var(--line2);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;background-image:var(--patternLight);">
+        <span aria-hidden="true" style="width:64px;height:64px;border-radius:50%;background:var(--tint);color:var(--primary);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:var(--hw);font-size:28px;">?</span>
+        <h2 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:var(--h3);line-height:1.2;">No packages match these filters</h2>
+        <p style="margin:0;max-width:440px;color:var(--muted);text-wrap:pretty;">Try removing a filter, or tell us where you want to go and we'll plan a custom trip.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:6px;">
+          <button type="button" onClick="{{ clearAll }}" style="min-height:48px;padding:0 22px;border-radius:var(--br);border:1.5px solid var(--sec);background:transparent;color:var(--sec);font-size:16px;font-weight:600;cursor:pointer;">Clear filters</button>
+          <a href="{{ waCustom }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:var(--br);background:var(--btn);color:var(--btnText);border:var(--btnBorder);font-weight:600;font-size:16px;text-decoration:none;" style-hover="background:var(--btnHover);color:var(--btnText);">Plan a custom trip</a>
+        </div>
+      </div>
+    </sc-if>
+  </div>
+  <dc-import name="Footer" hint-size="100%,420px"></dc-import>
+</div>
+
+<dc-import name="WhatsApp Float" style="position:absolute;right:20px;bottom:24px;z-index:60;" hint-size="60px,60px"></dc-import>
+
+<sc-if value="{{ sheet }}" hint-placeholder-val="{{ false }}">
+  <div style="position:absolute;inset:0;z-index:80;display:flex;flex-direction:column;justify-content:flex-end;">
+    <button type="button" onClick="{{ closeSheet }}" aria-label="Close filters" style="position:absolute;inset:0;border:0;background:rgba(0,0,0,.45);cursor:pointer;"></button>
+    <div role="dialog" aria-modal="true" aria-label="Filters" style="position:relative;max-height:86%;display:flex;flex-direction:column;background:var(--surface);border-radius:20px 20px 0 0;box-shadow:0 -20px 40px -20px rgba(0,0,0,.4);">
+      <div style="display:flex;justify-content:center;padding-top:10px;"><span style="width:40px;height:4px;border-radius:4px;background:var(--line2);"></span></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 20px 8px;">
+        <h2 style="margin:0;font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:22px;">Filters</h2>
+        <button type="button" onClick="{{ closeSheet }}" aria-label="Close" style="width:44px;height:44px;border:0;background:transparent;font-size:26px;color:var(--text);cursor:pointer;">×</button>
+      </div>
+      <div style="overflow-y:auto;padding:0 20px 8px;display:flex;flex-direction:column;gap:22px;">
+        <sc-for list="{{ chips }}" as="c" hint-placeholder-count="4">
+          <fieldset style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;">
+            <legend style="font-weight:600;font-size:16px;margin-bottom:10px;">{{ c.name }}</legend>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+              <sc-for list="{{ c.opts }}" as="o" hint-placeholder-count="4">
+                <button type="button" onClick="{{ o.pick }}" aria-pressed="{{ o.sel }}" style="min-height:44px;padding:0 14px;border-radius:var(--br);border:1.5px solid {{ o.border }};background:{{ o.chipBg }};color:{{ o.chipFg }};font-size:15px;font-weight:500;cursor:pointer;">{{ o.l }}</button>
+              </sc-for>
+            </div>
+          </fieldset>
+        </sc-for>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;padding:14px 20px 20px;border-top:1px solid var(--line);">
+        <button type="button" onClick="{{ clearAll }}" style="min-height:48px;padding:0 12px;border:0;background:transparent;color:var(--link);font-size:16px;font-weight:600;text-decoration:underline;text-underline-offset:4px;cursor:pointer;">Clear all</button>
+        <button type="button" onClick="{{ closeSheet }}" style="flex:1;min-height:48px;border-radius:var(--br);background:var(--btn);color:var(--btnText);border:var(--btnBorder);font-size:16px;font-weight:600;cursor:pointer;">{{ showText }}</button>
+      </div>
+    </div>
+  </div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;variant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;A&quot;,&quot;B&quot;],&quot;default&quot;:&quot;A&quot;,&quot;tsType&quot;:&quot;'A'|'B'&quot;},&quot;device&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;desktop&quot;,&quot;mobile&quot;],&quot;default&quot;:&quot;desktop&quot;,&quot;tsType&quot;:&quot;'desktop'|'mobile'&quot;},&quot;frameHeight&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:null,&quot;tsType&quot;:&quot;number&quot;},&quot;sheetOpen&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;},&quot;initialFilters&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;object&quot;}}">
+const svgUrl = s => 'url("data:image/svg+xml,' + encodeURIComponent(s) + '")';
+const WAVE = "<svg xmlns='http://www.w3.org/2000/svg' width='80' height='24'><path d='M0 12 Q20 2 40 12 T80 12' fill='none' stroke='#0E7C86' stroke-width='2.5' stroke-linecap='round'/></svg>";
+const ADIRE = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='24'><path d='M0 1H48M0 23H48' stroke='#B4532A' stroke-width='.8'/><path d='M0 12L12 5L24 12L36 19L48 12' fill='none' stroke='#B4532A' stroke-width='1.2'/><circle cx='24' cy='5' r='1.6' fill='#D9A441'/><circle cx='0' cy='19' r='1.6' fill='#D9A441'/><circle cx='48' cy='19' r='1.6' fill='#D9A441'/><circle cx='12' cy='17' r='1' fill='#1F6B45'/><circle cx='36' cy='7' r='1' fill='#1F6B45'/></svg>";
+const LATTICE = c => `repeating-linear-gradient(45deg, ${c} 0 1px, transparent 1px 24px), repeating-linear-gradient(-45deg, ${c} 0 1px, transparent 1px 24px)`;
+const THEMES = {
+  A: {'--primary':'#0E7C86','--accent':'#FF6B4A','--hi':'#FFC857','--bg':'#F8FAFB','--dark':'#0B2233','--text':'#1E293B','--muted':'#475569','--line':'#E2E8F0','--line2':'#8193A8','--surface':'#FFFFFF','--tint':'#E3F1F2','--tagText':'#0B5960','--headerBg':'#FFFFFF','--sec':'#0E7C86','--secHoverBg':'#E3F1F2','--link':'#0B6A73','--accentLine':'#FF6B4A','--focus':'#0B2233',
+    '--fh':"'Poppins', system-ui, sans-serif",'--fb':"'Inter', system-ui, sans-serif",'--hw':'700','--hw2':'600','--ht':'-0.025em',
+    '--r':'20px','--rs':'14px','--br':'999px','--arch':'0px','--inset':'0px','--tileR':'20px','--galR':'20px','--fieldR':'12px','--fieldBg':'#FFFFFF',
+    '--btn':'#FF6B4A','--btnHover':'#F2542F','--btnPress':'#D9431F','--btnText':'#FFFFFF','--btnBorder':'1px solid transparent',
+    '--onDark':'#FFFFFF','--onDarkMuted':'#B9CAD6','--ph1':'#D4EBEE','--ph2':'#C6E3E7','--phText':'#0B5960','--phd1':'#17506A','--phd2':'#13445B',
+    '--statsBg':'#0E7C86','--statsNum':'#FFFFFF','--statsLabel':'#E3F1F2','--badgeBg':'#FFC857','--badgeText':'#0B2233','--stepBg':'#FFC857','--stepText':'#0B2233','--star':'#E8A317',
+    '--ok':'#0E7C86','--okBg':'#E3F1F2','--b1bg':'#FFC857','--b1fg':'#0B2233','--b2bg':'#FFE2DA','--b2fg':'#A83A1E','--b3bg':'#D4EBEE','--b3fg':'#0B5960',
+    '--lift':'translateY(-6px)','--shadow':'0 1px 2px rgba(11,34,51,.06)','--shadowHover':'0 22px 40px -18px rgba(11,34,51,.35)','--tr':'transform .25s ease, box-shadow .25s ease',
+    '--divider':svgUrl(WAVE),'--pattern':'none','--patternLight':'none'},
+  B: {'--primary':'#B4532A','--accent':'#1F6B45','--hi':'#D9A441','--bg':'#FBF5EC','--dark':'#2B1A12','--text':'#2B1A12','--muted':'#6B5244','--line':'#EADCC8','--line2':'#A88D74','--surface':'#FFFDF8','--tint':'#F3E6D3','--tagText':'#7A3517','--headerBg':'#FBF5EC','--sec':'#1F6B45','--secHoverBg':'#E4EFE8','--link':'#9A4422','--accentLine':'#D9A441','--focus':'#1F6B45',
+    '--fh':"'Fraunces', Georgia, serif",'--fb':"'DM Sans', system-ui, sans-serif",'--hw':'600','--hw2':'600','--ht':'-0.01em',
+    '--r':'12px','--rs':'8px','--br':'8px','--arch':'170px 170px 8px 8px','--inset':'10px','--tileR':'999px 999px 12px 12px','--galR':'12px','--fieldR':'8px','--fieldBg':'#FFFDF8',
+    '--btn':'#B4532A','--btnHover':'#9C4522','--btnPress':'#853A1C','--btnText':'#FFFFFF','--btnBorder':'1px solid #D9A441',
+    '--onDark':'#FBF5EC','--onDarkMuted':'#D8C5AE','--ph1':'#F1DFC7','--ph2':'#EAD4B7','--phText':'#7A3517','--phd1':'#5C2F1B','--phd2':'#502816',
+    '--statsBg':'#2B1A12','--statsNum':'#D9A441','--statsLabel':'#F3E6D3','--badgeBg':'#1F6B45','--badgeText':'#FBF5EC','--stepBg':'#1F6B45','--stepText':'#FBF5EC','--star':'#C8912E',
+    '--ok':'#1F6B45','--okBg':'#E4EFE8','--b1bg':'#F3E6D3','--b1fg':'#7A3517','--b2bg':'#E4EFE8','--b2fg':'#1F6B45','--b3bg':'#F6EAD0','--b3fg':'#7A5714',
+    '--lift':'none','--shadow':'0 1px 2px rgba(43,26,18,.05)','--shadowHover':'0 18px 36px -20px rgba(43,26,18,.45)','--tr':'box-shadow .6s ease',
+    '--divider':svgUrl(ADIRE),'--pattern':LATTICE('rgba(217,164,65,.10)'),'--patternLight':LATTICE('rgba(180,83,42,.06)')}
+};
+const DEVICE = m => ({
+  '--h1':m?'40px':'56px','--h2':m?'30px':'40px','--h3':m?'20px':'24px','--fs':m?'16px':'17px','--fsL':m?'17px':'20px',
+  '--gut':m?'20px':'64px','--secY':m?'64px':'96px','--max':'1312px','--pageHeadY':m?'40px':'72px',
+  '--c2':m?'minmax(0,1fr)':'repeat(2,minmax(0,1fr))','--c3':m?'minmax(0,1fr)':'repeat(3,minmax(0,1fr))','--c4':m?'repeat(2,minmax(0,1fr))':'repeat(4,minmax(0,1fr))','--c6':m?'repeat(2,minmax(0,1fr))':'repeat(6,minmax(0,1fr))',
+  '--split':m?'minmax(0,1fr)':'minmax(0,5fr) minmax(0,7fr)','--dF':m?'none':'flex','--dB':m?'none':'block','--dG':m?'none':'grid','--mF':m?'flex':'none','--mB':m?'block':'none',
+  '--footCols':m?'repeat(2,minmax(0,1fr))':'1.5fr 1fr 1fr 1.4fr','--span':m?'1 / -1':'auto'
+});
+const themeStyle = (v, m, h) => Object.assign({}, THEMES[v] || THEMES.A, DEVICE(m), { position:'relative', height: h ? h + 'px' : '100vh', overflow:'hidden', background:'var(--bg)', color:'var(--text)', fontFamily:'var(--fb)', fontSize:'var(--fs)', lineHeight:1.55, WebkitFontSmoothing:'antialiased' });
+const WA = t => 'https://wa.me/2348000000000?text=' + encodeURIComponent(t);
+const fmt = n => '₦' + n.toLocaleString('en-US');
+
+const PKGS = [
+  { title:'Dubai City Escape', country:'United Arab Emirates', code:'AE', region:'Middle East', types:['City break','Family'], days:5, price:1850000, tags:['Desert safari','Burj Khalifa','Dhow cruise'], a:'Photo · Dubai skyline at dusk', b:'Photo · Nigerian couple at Dubai Marina', featured:true },
+  { title:'Zanzibar Honeymoon', country:'Tanzania', code:'TZ', region:'Africa', types:['Honeymoon','Beach'], days:6, price:2400000, tags:['Stone Town','Beach villa','Sunset cruise'], a:'Photo · Zanzibar white-sand beach', b:'Photo · Newlyweds on a Zanzibar dhow' },
+  { title:'Paris and Amsterdam Explorer', country:'France and Netherlands', code:'FR', region:'Europe', types:['City break','Culture'], days:8, price:4900000, tags:['Eiffel Tower','Canal cruise','Train transfer'], a:'Photo · Paris rooftops, wide', b:'Photo · Friends by the Eiffel Tower' },
+  { title:'Cape Town and Garden Route', country:'South Africa', code:'ZA', region:'Africa', types:['Adventure','Family'], days:7, price:3200000, tags:['Table Mountain','Coastal drive','Wine tasting'], a:'Photo · Table Mountain from the bay', b:'Photo · Family at Table Mountain' },
+  { title:'Bali Island Retreat', country:'Indonesia', code:'ID', region:'Asia', types:['Beach','Honeymoon'], days:7, price:3600000, tags:['Rice terraces','Temple tour','Spa day'], a:'Photo · Bali rice terraces, aerial', b:'Photo · Couple at a Bali temple' },
+  { title:'Istanbul and Cappadocia', country:'Türkiye', code:'TR', region:'Europe', types:['Culture','Adventure'], days:6, price:2750000, tags:['Balloon ride','Bosphorus cruise','Grand Bazaar'], a:'Photo · Cappadocia balloons at sunrise', b:'Photo · Travellers in a Cappadocia balloon' }
+];
+const FILTERS = [
+  { key:'region', name:'Region', opts:['Africa','Middle East','Europe','Asia'], test:(p, o) => p.region === o },
+  { key:'type', name:'Trip type', opts:['City break','Honeymoon','Beach','Adventure','Culture','Family'], test:(p, o) => p.types.includes(o) },
+  { key:'dur', name:'Duration', opts:['Up to 5 days','6 to 7 days','8 days or more'], test:(p, o) => o === 'Up to 5 days' ? p.days <= 5 : o === '6 to 7 days' ? p.days >= 6 && p.days <= 7 : p.days >= 8 },
+  { key:'price', name:'Price', opts:['Under ₦2,500,000','₦2,500,000 to ₦4,000,000','Over ₦4,000,000'], test:(p, o) => o.startsWith('Under') ? p.price < 2500000 : o.startsWith('Over') ? p.price > 4000000 : p.price >= 2500000 && p.price <= 4000000 }
+];
+
+class Component extends DCLogic {
+  state = { q: '', f: { region: '', type: '', dur: '', price: '' }, sort: 'rec', open: null, sheet: false };
+  componentDidMount() {
+    const init = this.props.initialFilters;
+    if (init && typeof init === 'object') this.setState({ f: { ...this.state.f, ...init } });
+    if (this.props.sheetOpen) this.setState({ sheet: true });
+  }
+  pick(key, o) { this.setState(s => ({ f: { ...s.f, [key]: s.f[key] === o ? '' : o }, open: null })); }
+  renderVals() {
+    const v = this.props.variant === 'B' ? 'B' : 'A', m = this.props.device === 'mobile', s = this.state;
+    const q = s.q.trim().toLowerCase();
+    let res = PKGS.filter(p => (!q || [p.title, p.country, ...p.tags, ...p.types].join(' ').toLowerCase().includes(q)) && FILTERS.every(F => !s.f[F.key] || F.test(p, s.f[F.key])));
+    if (s.sort === 'lo') res = [...res].sort((a, b) => a.price - b.price);
+    if (s.sort === 'hi') res = [...res].sort((a, b) => b.price - a.price);
+    if (s.sort === 'dur') res = [...res].sort((a, b) => a.days - b.days);
+    const active = FILTERS.filter(F => s.f[F.key]).length;
+    return {
+      rootStyle: themeStyle(v, m, this.props.frameHeight),
+      q: s.q, setQ: e => this.setState({ q: e.target.value }),
+      sort: s.sort, setSort: e => this.setState({ sort: e.target.value }),
+      chips: FILTERS.map(F => {
+        const val = s.f[F.key], on = !!val, open = s.open === F.key;
+        return {
+          name: F.name, label: on ? val : F.name, open, exp: String(open),
+          bg: on ? 'var(--primary)' : 'var(--surface)', fg: on ? '#FFFFFF' : 'var(--text)', border: on ? 'var(--primary)' : 'var(--line2)',
+          toggle: () => this.setState(x => ({ open: x.open === F.key ? null : F.key })),
+          opts: F.opts.map(o => { const sel = val === o; return { l: o, sel: String(sel), mark: sel ? '✓' : '', bg: sel ? 'var(--tint)' : 'transparent', border: sel ? 'var(--primary)' : 'var(--line2)', chipBg: sel ? 'var(--primary)' : 'transparent', chipFg: sel ? '#FFFFFF' : 'var(--text)', pick: () => this.pick(F.key, o) }; })
+        };
+      }),
+      anyFilter: active > 0 || !!q,
+      filterCountText: active ? ` (${active})` : '',
+      clearAll: () => this.setState({ f: { region: '', type: '', dur: '', price: '' }, q: '', open: null }),
+      countText: res.length === PKGS.length ? `Showing all ${res.length} packages` : `Showing ${res.length} of ${PKGS.length} packages`,
+      showText: res.length === 1 ? 'Show 1 package' : `Show ${res.length} packages`,
+      hasResults: res.length > 0, noResults: res.length === 0,
+      results: res.map(p => ({ ...p, photo: v === 'A' ? p.a : p.b, priceText: fmt(p.price), durText: `${p.days} days · ${p.days - 1} nights`, wa: WA(`Hi Prepping Travel and Tours, I'm interested in the ${p.title} package.`) })),
+      waCustom: WA("Hi Prepping Travel and Tours, I'd like to plan a custom trip. Destination: \nDates: \nTravellers: \nBudget: "),
+      sheet: s.sheet, openSheet: () => this.setState({ sheet: true }), closeSheet: () => this.setState({ sheet: false })
+    };
+  }
+}
+</script>
+</body>
+</html>

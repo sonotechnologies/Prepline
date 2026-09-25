@@ -1,0 +1,285 @@
+@import '../styles/themes.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: calc(var(--header-h) + 16px);
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: var(--fs);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a {
+    color: var(--link);
+  }
+  a:hover {
+    color: var(--primary);
+  }
+  button,
+  select,
+  input,
+  textarea {
+    font: inherit;
+  }
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+  .on-dark :focus-visible {
+    outline-color: var(--hi);
+  }
+  summary {
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    font-weight: var(--hw);
+    letter-spacing: var(--ht);
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+@layer components {
+  .container-site {
+    width: 100%;
+    max-width: var(--max);
+    margin-inline: auto;
+    padding-inline: var(--gut);
+  }
+  .section-y {
+    padding-block: var(--sec-y);
+  }
+  .h1 {
+    font-size: var(--h1);
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+  .h2 {
+    font-size: var(--h2);
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  .h3 {
+    font-size: var(--h3);
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+  .h-semi {
+    font-family: var(--font-heading);
+    font-weight: var(--hw2);
+    letter-spacing: var(--ht);
+  }
+  .h-bold {
+    font-family: var(--font-heading);
+    font-weight: var(--hw);
+    letter-spacing: var(--ht);
+  }
+
+  /* Buttons: primary, secondary, WhatsApp (primary + icon) and text link. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 0 24px;
+    border-radius: var(--br);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
+  .btn-primary {
+    background: var(--btn);
+    color: var(--btn-text);
+    border: 1px solid var(--btn-border);
+  }
+  .btn-primary:hover {
+    background: var(--btn-hover);
+    color: var(--btn-text);
+  }
+  .btn-primary:active {
+    background: var(--btn-press);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--sec);
+    border: 1.5px solid var(--sec);
+    padding: 0 22px;
+  }
+  .btn-secondary:hover,
+  .btn-secondary:active {
+    background: var(--sec-hover-bg);
+    color: var(--sec);
+  }
+  .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    font-weight: 600;
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .text-link:hover {
+    color: var(--primary);
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+  }
+  .card-lift {
+    transition: var(--card-transition);
+  }
+  .card-lift:hover {
+    transform: var(--lift);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .field {
+    height: 48px;
+    width: 100%;
+    border: 1px solid var(--line2);
+    border-radius: var(--field-r);
+    padding: 0 12px;
+    font-size: 16px;
+    color: var(--text);
+    background-color: var(--field-bg);
+  }
+  textarea.field {
+    height: auto;
+    min-height: 120px;
+    padding: 12px;
+    resize: vertical;
+  }
+  .field-label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .tag {
+    padding: 4px 10px;
+    border-radius: var(--br);
+    background: var(--tint);
+    color: var(--tag-text);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .sample-badge {
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #e5e7eb;
+    color: #374151;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12px;
+  }
+
+  .divider {
+    height: 24px;
+    background-image: var(--divider);
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+  .bg-pattern {
+    background-image: var(--pattern);
+  }
+  .bg-pattern-light {
+    background-image: var(--pattern-light);
+  }
+
+  .photo-frame {
+    background: repeating-linear-gradient(135deg, var(--ph1) 0 12px, var(--ph2) 12px 24px);
+  }
+}
+
+@layer utilities {
+  .sr-only-focusable:not(:focus) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Keep the floating WhatsApp button clear of the mobile sticky enquiry bar. */
+@media (max-width: 1023px) {
+  body:has([data-sticky-enquiry-bar]) {
+    /* Bar height (measured by StickyEnquiryBar, 132px fallback) plus a 16px gap. The bar already includes the safe-area inset. */
+    --fab-bottom: calc(var(--sticky-bar-h, 132px) + 16px - env(safe-area-inset-bottom));
+    padding-bottom: var(--sticky-bar-h, 132px);
+  }
+}
+
+/* Native <dialog> bottom sheet for mobile filters. */
+dialog.sheet {
+  margin: auto 0 0 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 86dvh;
+  padding: 0;
+  border: 0;
+  border-radius: 20px 20px 0 0;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 -20px 40px -20px rgba(0, 0, 0, 0.4);
+}
+dialog.sheet::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .card-lift:hover {
+    transform: none;
+  }
+}

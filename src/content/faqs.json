@@ -1,0 +1,26 @@
+[
+  {
+    "q": "Can I book or pay on this website?",
+    "a": "No. The website shows our packages. Every trip is planned with you on WhatsApp, and we share payment details only after you approve your final quote."
+  },
+  {
+    "q": "Are the prices fixed?",
+    "a": "Prices are starting prices per person. Your final quote depends on dates, hotel choice, flight fares and group size, and we send it on WhatsApp."
+  },
+  {
+    "q": "Can you help with my visa?",
+    "a": "Yes. We give you a document checklist, book your appointment where needed and review your application before you submit it."
+  },
+  {
+    "q": "Can you plan a trip to a country that is not listed?",
+    "a": "Yes. We plan trips to any country. Send us your destination, dates and budget and we will build a custom trip."
+  },
+  {
+    "q": "What is usually included in a package?",
+    "a": "Most packages include return flights from Lagos, hotels with breakfast, airport transfers and the tours in the itinerary. Each package page lists what is and is not included."
+  },
+  {
+    "q": "How early should I plan?",
+    "a": "Six to eight weeks ahead is ideal, and longer for Europe, the UK and the US because of visa timelines. Short-notice trips are possible for many destinations."
+  }
+]

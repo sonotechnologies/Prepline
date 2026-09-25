@@ -1,0 +1,50 @@
+{
+  "slug": "paris-and-amsterdam-explorer",
+  "title": "Paris and Amsterdam Explorer",
+  "country": "France and Netherlands",
+  "countryCode": "FR",
+  "city": "Paris and Amsterdam",
+  "region": "Europe",
+  "tripTypes": ["Group", "Family"],
+  "durationDays": 8,
+  "nights": 7,
+  "priceFrom": 4900000,
+  "currency": "NGN",
+  "priceNote": "per person",
+  "dates": ["2027-04-10", "2027-05-22", "2027-07-03"],
+  "dateNotes": { "2027-04-10": "Easter trip", "2027-07-03": "Summer holiday" },
+  "featured": true,
+  "coverImage": "/images/packages/paris-and-amsterdam-explorer/1.webp",
+  "coverAlt": "Paris rooftops with the Eiffel Tower in the distance",
+  "gallery": [
+    { "src": "/images/packages/paris-and-amsterdam-explorer/1.webp", "alt": "Paris rooftops with the Eiffel Tower in the distance" },
+    { "src": "/images/packages/paris-and-amsterdam-explorer/2.webp", "alt": "Seine river cruise boat passing Notre-Dame" },
+    { "src": "/images/packages/paris-and-amsterdam-explorer/3.webp", "alt": "High-speed train at Gare du Nord" },
+    { "src": "/images/packages/paris-and-amsterdam-explorer/4.webp", "alt": "Amsterdam canal houses and bicycles" },
+    { "src": "/images/packages/paris-and-amsterdam-explorer/5.webp", "alt": "Tulip fields near Keukenhof" }
+  ],
+  "highlights": ["Eiffel Tower", "Canal cruise", "Train transfer"],
+  "overview": "Two of Europe's best-loved cities in one trip. Spend four nights in Paris with the Eiffel Tower, the Louvre and a Seine cruise, then take the high-speed train to Amsterdam for three nights of canals, museums and a day in the Dutch countryside. We handle your Schengen visa application from start to finish.",
+  "itinerary": [
+    { "day": 1, "title": "Arrive in Paris", "description": "Transfer from Charles de Gaulle to your hotel. Evening at leisure near the Champs-Élysées.", "meta": "Stay: 4-star hotel, central Paris" },
+    { "day": 2, "title": "Eiffel Tower and Seine cruise", "description": "Guided city tour with Eiffel Tower second-floor tickets, then an evening cruise on the Seine.", "meta": "Meals: breakfast · Stay: 4-star hotel, central Paris" },
+    { "day": 3, "title": "The Louvre and Montmartre", "description": "Timed entry to the Louvre in the morning, afternoon walk around Montmartre and Sacré-Cœur.", "meta": "Meals: breakfast · Stay: 4-star hotel, central Paris" },
+    { "day": 4, "title": "Versailles or Disneyland Paris", "description": "Choose a day at the Palace of Versailles or at Disneyland Paris.", "meta": "Meals: breakfast · Stay: 4-star hotel, central Paris" },
+    { "day": 5, "title": "Train to Amsterdam", "description": "High-speed train from Paris to Amsterdam, then an evening canal cruise.", "meta": "Meals: breakfast · Stay: 4-star hotel, Amsterdam" },
+    { "day": 6, "title": "Museums and the city", "description": "Rijksmuseum entry and a guided walk through the Jordaan and the Nine Streets.", "meta": "Meals: breakfast · Stay: 4-star hotel, Amsterdam" },
+    { "day": 7, "title": "Dutch countryside", "description": "Day trip to Zaanse Schans windmills and the fishing village of Volendam.", "meta": "Meals: breakfast · Stay: 4-star hotel, Amsterdam" },
+    { "day": 8, "title": "Departure", "description": "Transfer to Schiphol for your flight back to Lagos.", "meta": "Meals: breakfast" }
+  ],
+  "included": ["Return economy flights from Lagos", "7 nights in 4-star hotels with breakfast", "Airport transfers", "Paris to Amsterdam train", "Eiffel Tower and Louvre tickets", "Seine and canal cruises", "Zaanse Schans day trip", "Schengen visa application support"],
+  "excluded": ["Visa embassy fees", "Travel insurance (required for the visa)", "Lunches and dinners", "City tourist taxes"],
+  "addOns": [
+    { "title": "Disneyland Paris ticket", "priceFrom": 150000 },
+    { "title": "Keukenhof tulip gardens (spring only)", "priceFrom": 70000 },
+    { "title": "Van Gogh Museum entry", "priceFrom": 45000 }
+  ],
+  "faqs": [
+    { "q": "How early should we apply for the Schengen visa?", "a": "Start at least eight to ten weeks before you travel. We give you a checklist and book your appointment." },
+    { "q": "Can children join?", "a": "Yes. We quote child prices and family rooms on WhatsApp." }
+  ],
+  "quickFacts": { "groupSize": "2 to 20 travellers", "bestSeason": "April to September", "visaRequired": true }
+}

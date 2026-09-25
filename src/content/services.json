@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "holiday-packages",
+    "name": "Holiday packages",
+    "summary": "Ready-made trips with flights, hotels, tours and transfers in one starting price.",
+    "details": [
+      "Packages to Dubai, Zanzibar, Europe, Asia and more",
+      "Flights from Lagos, hotels and airport transfers included",
+      "Guided tours on the days that need them, free time on the rest",
+      "One planner on WhatsApp from quote to homecoming"
+    ]
+  },
+  {
+    "slug": "honeymoons",
+    "name": "Honeymoons",
+    "summary": "Private stays, romantic dinners and quiet islands, planned around the two of you.",
+    "details": [
+      "Beach villas, overwater rooms and boutique hotels",
+      "Private dinners, spa days and couple experiences",
+      "Surprise extras arranged with the hotel",
+      "Anniversary and babymoon trips too"
+    ]
+  },
+  {
+    "slug": "group-and-corporate-tours",
+    "name": "Group and corporate tours",
+    "summary": "Retreats, conferences, church and school trips for 10 to 200 people.",
+    "details": [
+      "Staff retreats, incentive trips and conferences",
+      "Church, pilgrimage and school trips",
+      "Group flights, coaches and room blocks",
+      "A dedicated coordinator and one group chat"
+    ]
+  },
+  {
+    "slug": "visa-assistance",
+    "name": "Visa assistance",
+    "summary": "Document checklists, appointment booking and an application review before you submit.",
+    "details": [
+      "Tailored document checklists",
+      "Appointment booking where needed",
+      "Application and cover letter review",
+      "Guidance for UK, US, Canada, Schengen, UAE and more"
+    ]
+  },
+  {
+    "slug": "flights-and-hotels",
+    "name": "Flights and hotels",
+    "summary": "Just need the basics? We find fares and rooms that fit your budget.",
+    "details": [
+      "Economy, business and group fares",
+      "Hotels, serviced apartments and resorts",
+      "Flexible and refundable options explained",
+      "Changes handled on WhatsApp"
+    ]
+  },
+  {
+    "slug": "travel-insurance",
+    "name": "Travel insurance",
+    "summary": "Medical and trip cover from trusted insurers, sorted before you fly.",
+    "details": [
+      "Schengen-compliant medical cover",
+      "Trip cancellation and baggage cover",
+      "Cover for older travellers and families",
+      "Certificates sent to you on WhatsApp"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "name": "prepping-travel-and-tours",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve out",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "images": "node scripts/generate-placeholders.mjs",
+    "check:copy": "node scripts/check-forbidden-copy.mjs",
+    "prebuild": "npm run check:copy"
+  },
+  "dependencies": {
+    "lucide-react": "^1.48.0",
+    "next": "^15.5.26",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "yet-another-react-lightbox": "^3.32.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.6.1",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.5.26",
+    "postcss": "^8.5.28",
+    "sharp": "^0.35.4",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<header style="background:var(--headerBg);border-bottom:1px solid var(--line);font-family:var(--fb);position:relative;">
+  <div style="max-width:var(--max);margin:0 auto;padding:0 var(--gut);height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+    <a href="#" aria-label="Prepping Travel and Tours, home" style="display:flex;flex-direction:column;justify-content:center;gap:3px;min-height:44px;text-decoration:none;">
+      <span style="font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:24px;line-height:1;color:var(--primary);">Prepping</span>
+      <span style="font-family:var(--fh);font-weight:500;font-size:11px;line-height:1;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;color:var(--text);">Travel and Tours</span>
+    </a>
+    <nav aria-label="Main" style="display:var(--dF);align-items:center;gap:2px;">
+      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
+        <a href="#" style="position:relative;display:flex;align-items:center;min-height:44px;padding:0 14px;font-size:16px;font-weight:500;color:var(--text);text-decoration:none;" style-hover="color:var(--primary);">{{ n.label }}<sc-if value="{{ n.active }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;left:14px;right:14px;bottom:4px;height:3px;border-radius:3px;background:var(--accentLine);"></span></sc-if></a>
+      </sc-for>
+    </nav>
+    <a href="tel:+2348000000000" style="display:var(--dF);flex-direction:column;justify-content:center;min-height:44px;color:var(--text);text-decoration:none;line-height:1.25;">
+      <span style="font-size:13px;color:var(--muted);">Call or WhatsApp</span>
+      <span style="font-size:16px;font-weight:600;white-space:nowrap;">+234 800 000 0000</span>
+    </a>
+    <button type="button" onClick="{{ toggle }}" aria-label="Menu" aria-expanded="{{ expanded }}" style="display:var(--mF);align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line);border-radius:var(--rs);background:var(--surface);color:var(--text);cursor:pointer;padding:0;">
+      <sc-if value="{{ open }}" hint-placeholder-val="{{ false }}">
+        <span style="font-size:24px;line-height:1;">×</span>
+      </sc-if>
+      <sc-if value="{{ closed }}" hint-placeholder-val="{{ true }}">
+        <span style="display:flex;flex-direction:column;gap:5px;width:20px;"><span style="height:2px;background:currentColor;border-radius:2px;"></span><span style="height:2px;background:currentColor;border-radius:2px;"></span><span style="height:2px;background:currentColor;border-radius:2px;"></span></span>
+      </sc-if>
+    </button>
+  </div>
+  <sc-if value="{{ open }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;top:72px;left:0;right:0;background:var(--headerBg);border-bottom:1px solid var(--line);box-shadow:0 24px 32px -24px rgba(0,0,0,.35);padding:8px var(--gut) 24px;display:flex;flex-direction:column;">
+      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
+        <a href="#" onClick="{{ toggle }}" style="display:flex;align-items:center;justify-content:space-between;min-height:52px;border-bottom:1px solid var(--line);font-size:17px;font-weight:500;color:var(--text);text-decoration:none;">{{ n.label }}<span style="color:var(--muted);">→</span></a>
+      </sc-for>
+      <a href="tel:+2348000000000" style="display:flex;align-items:center;min-height:52px;font-size:16px;font-weight:600;color:var(--text);text-decoration:none;">Call +234 800 000 0000</a>
+      <a href="https://wa.me/2348000000000?text=Hi%20Prepping%20Travel%20and%20Tours%2C%20I%27d%20like%20to%20plan%20a%20trip." target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;margin-top:8px;padding:0 24px;border-radius:var(--br);background:var(--btn);color:var(--btnText);border:var(--btnBorder);font-weight:600;font-size:16px;text-decoration:none;">Plan my trip</a>
+    </div>
+  </sc-if>
+</header>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Home&quot;,&quot;Packages&quot;,&quot;Destinations&quot;,&quot;Services&quot;,&quot;About&quot;,&quot;Contact&quot;],&quot;default&quot;:&quot;Home&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { open: false };
+  renderVals() {
+    const active = this.props.active ?? 'Home';
+    const nav = ['Home', 'Packages', 'Destinations', 'Services', 'About', 'Contact'].map(label => ({ label, active: label === active }));
+    return {
+      nav, open: this.state.open, closed: !this.state.open, expanded: String(this.state.open),
+      toggle: () => this.setState(s => ({ open: !s.open }))
+    };
+  }
+}
+</script>
+</body>
+</html>

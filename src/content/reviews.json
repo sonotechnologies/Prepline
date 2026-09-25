@@ -1,0 +1,26 @@
+[
+  {
+    "quote": "Our Dubai trip ran like clockwork. They answered every question on WhatsApp, even at midnight when our flight was delayed.",
+    "name": "Adaeze O.",
+    "initials": "AO",
+    "trip": "Dubai City Escape",
+    "rating": 5,
+    "isSample": true
+  },
+  {
+    "quote": "The Zanzibar villa was better than the photos. Visa, transfers and dinner reservations were all handled for us.",
+    "name": "Tunde and Kemi A.",
+    "initials": "TA",
+    "trip": "Zanzibar Honeymoon",
+    "rating": 5,
+    "isSample": true
+  },
+  {
+    "quote": "We took 24 staff to Cape Town for our retreat. One group chat, one planner and no stress at all.",
+    "name": "Ifeoma N.",
+    "initials": "IN",
+    "trip": "Corporate tour, Cape Town",
+    "rating": 5,
+    "isSample": true
+  }
+]
