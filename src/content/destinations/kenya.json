@@ -1,0 +1,9 @@
+{
+  "name": "Kenya",
+  "short": "Kenya",
+  "countryCode": "KE",
+  "region": "Africa",
+  "popular": false,
+  "image": "/images/destinations/kenya/image.webp",
+  "imageAlt": "Acacia trees on the Maasai Mara"
+}

@@ -1,42 +1,121 @@
 {
-  "slug": "kenya-safari",
   "title": "Kenya Safari",
+  "featured": false,
   "country": "Kenya",
   "countryCode": "KE",
   "city": "Nairobi and Maasai Mara",
   "region": "Africa",
-  "tripTypes": ["Adventure", "Family"],
+  "tripTypes": [
+    "Adventure",
+    "Family"
+  ],
   "durationDays": 5,
   "nights": 4,
   "priceFrom": 2150000,
   "currency": "NGN",
   "priceNote": "per person",
-  "dates": ["2027-07-10", "2027-08-07", "2027-09-04"],
-  "dateNotes": { "2027-08-07": "Great Migration" },
-  "featured": false,
-  "coverImage": "/images/packages/kenya-safari/1.webp",
-  "coverAlt": "Safari vehicle watching elephants in the Maasai Mara",
-  "gallery": [
-    { "src": "/images/packages/kenya-safari/1.webp", "alt": "Safari vehicle watching elephants in the Maasai Mara" },
-    { "src": "/images/packages/kenya-safari/2.webp", "alt": "Wildebeest crossing the Mara River" },
-    { "src": "/images/packages/kenya-safari/3.webp", "alt": "Tented camp at sunset" },
-    { "src": "/images/packages/kenya-safari/4.webp", "alt": "Giraffes at the Giraffe Centre, Nairobi" },
-    { "src": "/images/packages/kenya-safari/5.webp", "alt": "Lion resting in the grass" }
+  "departures": [
+    {
+      "date": "2027-07-10",
+      "note": ""
+    },
+    {
+      "date": "2027-08-07",
+      "note": "Great Migration"
+    },
+    {
+      "date": "2027-09-04",
+      "note": ""
+    }
   ],
-  "highlights": ["Maasai Mara", "Game drives", "Giraffe Centre"],
+  "gallery": [
+    {
+      "image": "/images/packages/kenya-safari/gallery/0/image.webp",
+      "alt": "Safari vehicle watching elephants in the Maasai Mara"
+    },
+    {
+      "image": "/images/packages/kenya-safari/gallery/1/image.webp",
+      "alt": "Wildebeest crossing the Mara River"
+    },
+    {
+      "image": "/images/packages/kenya-safari/gallery/2/image.webp",
+      "alt": "Tented camp at sunset"
+    },
+    {
+      "image": "/images/packages/kenya-safari/gallery/3/image.webp",
+      "alt": "Giraffes at the Giraffe Centre, Nairobi"
+    },
+    {
+      "image": "/images/packages/kenya-safari/gallery/4/image.webp",
+      "alt": "Lion resting in the grass"
+    }
+  ],
+  "highlights": [
+    "Maasai Mara",
+    "Game drives",
+    "Giraffe Centre"
+  ],
   "overview": "A short, big-game safari just a four-hour flight from Lagos. After a night in Nairobi with the Giraffe Centre and the elephant orphanage, you fly to the Maasai Mara for three nights in a tented camp with morning and evening game drives.",
   "itinerary": [
-    { "day": 1, "title": "Arrive in Nairobi", "description": "Airport pick-up, afternoon at the Giraffe Centre and the Sheldrick elephant orphanage.", "meta": "Stay: 4-star hotel, Nairobi" },
-    { "day": 2, "title": "Fly to the Maasai Mara", "description": "Light aircraft flight to the Mara, afternoon game drive.", "meta": "Meals: full board · Stay: tented camp, Maasai Mara" },
-    { "day": 3, "title": "Full-day game drive", "description": "A full day looking for the Big Five, with a picnic lunch in the reserve.", "meta": "Meals: full board · Stay: tented camp, Maasai Mara" },
-    { "day": 4, "title": "Maasai village and sundowner", "description": "Morning game drive, visit to a Maasai village and a sundowner on the plains.", "meta": "Meals: full board · Stay: tented camp, Maasai Mara" },
-    { "day": 5, "title": "Return to Lagos", "description": "Flight back to Nairobi and connection home to Lagos.", "meta": "Meals: breakfast" }
+    {
+      "day": 1,
+      "title": "Arrive in Nairobi",
+      "description": "Airport pick-up, afternoon at the Giraffe Centre and the Sheldrick elephant orphanage.",
+      "meta": "Stay: 4-star hotel, Nairobi"
+    },
+    {
+      "day": 2,
+      "title": "Fly to the Maasai Mara",
+      "description": "Light aircraft flight to the Mara, afternoon game drive.",
+      "meta": "Meals: full board · Stay: tented camp, Maasai Mara"
+    },
+    {
+      "day": 3,
+      "title": "Full-day game drive",
+      "description": "A full day looking for the Big Five, with a picnic lunch in the reserve.",
+      "meta": "Meals: full board · Stay: tented camp, Maasai Mara"
+    },
+    {
+      "day": 4,
+      "title": "Maasai village and sundowner",
+      "description": "Morning game drive, visit to a Maasai village and a sundowner on the plains.",
+      "meta": "Meals: full board · Stay: tented camp, Maasai Mara"
+    },
+    {
+      "day": 5,
+      "title": "Return to Lagos",
+      "description": "Flight back to Nairobi and connection home to Lagos.",
+      "meta": "Meals: breakfast"
+    }
   ],
-  "included": ["Return economy flights from Lagos", "Return light-aircraft flights to the Mara", "1 night in Nairobi, 3 nights in a tented camp", "Full board in the Mara", "Game drives in a 4x4 with a guide", "Park fees", "Kenya eTA support"],
-  "excluded": ["Travel insurance", "Hot-air balloon safari", "Drinks and tips"],
+  "included": [
+    "Return economy flights from Lagos",
+    "Return light-aircraft flights to the Mara",
+    "1 night in Nairobi, 3 nights in a tented camp",
+    "Full board in the Mara",
+    "Game drives in a 4x4 with a guide",
+    "Park fees",
+    "Kenya eTA support"
+  ],
+  "excluded": [
+    "Travel insurance",
+    "Hot-air balloon safari",
+    "Drinks and tips"
+  ],
   "addOns": [
-    { "title": "Hot-air balloon safari", "priceFrom": 650000 },
-    { "title": "Extra night in Diani Beach", "priceFrom": 220000 }
+    {
+      "title": "Hot-air balloon safari",
+      "priceFrom": 650000
+    },
+    {
+      "title": "Extra night in Diani Beach",
+      "priceFrom": 220000
+    }
   ],
-  "quickFacts": { "groupSize": "2 to 12 travellers", "bestSeason": "July to October", "visaRequired": true }
+  "faqs": [],
+  "quickFacts": {
+    "groupSize": "2 to 12 travellers",
+    "bestSeason": "July to October",
+    "visaRequired": true
+  }
 }

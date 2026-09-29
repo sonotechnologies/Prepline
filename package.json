@@ -5,18 +5,22 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve out",
+    "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "images": "node scripts/generate-placeholders.mjs",
     "check:copy": "node scripts/check-forbidden-copy.mjs",
-    "prebuild": "npm run check:copy"
+    "prebuild": "npm run check:copy",
+    "images:pexels": "node scripts/fetch-pexels.mjs"
   },
   "dependencies": {
+    "@keystatic/core": "^0.6.9",
+    "@keystatic/next": "^5.0.5",
     "lucide-react": "^1.48.0",
     "next": "^15.5.26",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
+    "server-only": "^0.0.1",
     "yet-another-react-lightbox": "^3.32.2",
     "zod": "^3.25.76"
   },

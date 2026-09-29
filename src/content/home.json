@@ -1,0 +1,60 @@
+{
+  "heroHeadline": "The world is waiting. Where to next?",
+  "heroSubline": "Holidays, honeymoons, group tours and visas for 60+ countries. Pick a trip, chat with us on WhatsApp, and we handle flights, hotels and visas.",
+  "heroSlides": [
+    {
+      "image": "/images/home/heroSlides/0/image.webp",
+      "alt": "Santorini cliffs at sunset"
+    },
+    {
+      "image": "/images/home/heroSlides/1/image.webp",
+      "alt": "Dubai skyline"
+    },
+    {
+      "image": "/images/home/heroSlides/2/image.webp",
+      "alt": "Bali rice terraces from above"
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/images/home/gallery/0/image.webp",
+      "alt": "Client trip photo in Dubai",
+      "shape": "3/4"
+    },
+    {
+      "image": "/images/home/gallery/1/image.webp",
+      "alt": "Client trip photo in Zanzibar",
+      "shape": "1/1"
+    },
+    {
+      "image": "/images/home/gallery/2/image.webp",
+      "alt": "Client trip photo in Paris",
+      "shape": "4/5"
+    },
+    {
+      "image": "/images/home/gallery/3/image.webp",
+      "alt": "Client trip photo in Cape Town",
+      "shape": "4/3"
+    },
+    {
+      "image": "/images/home/gallery/4/image.webp",
+      "alt": "Client trip photo in Bali",
+      "shape": "1/1"
+    },
+    {
+      "image": "/images/home/gallery/5/image.webp",
+      "alt": "Client trip photo in Istanbul",
+      "shape": "3/4"
+    },
+    {
+      "image": "/images/home/gallery/6/image.webp",
+      "alt": "Client trip photo in London",
+      "shape": "4/3"
+    },
+    {
+      "image": "/images/home/gallery/7/image.webp",
+      "alt": "Client trip photo in Nairobi",
+      "shape": "4/5"
+    }
+  ]
+}

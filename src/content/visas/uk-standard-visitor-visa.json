@@ -1,0 +1,78 @@
+{
+  "title": "UK Standard Visitor Visa",
+  "featured": true,
+  "country": "United Kingdom",
+  "countryCode": "GB",
+  "region": "Europe",
+  "purposes": [
+    "Tourism",
+    "Business",
+    "Visiting family"
+  ],
+  "priceFrom": 150000,
+  "currency": "NGN",
+  "priceNote": "per applicant",
+  "feeNote": "UK visa fee and any priority service are paid separately to the UK government.",
+  "processingTime": "About 3 weeks after your biometrics appointment",
+  "validity": "Usually 6 months; longer visas are possible",
+  "stay": "Up to 6 months per visit",
+  "entries": "Multiple",
+  "appointment": "Biometrics at a visa application centre in Lagos or Abuja",
+  "image": "/images/visas/uk-standard-visitor-visa/image.webp",
+  "imageAlt": "Tower Bridge and the River Thames in London",
+  "summary": "For holidays, business trips and family visits to the UK. We prepare your form, documents and cover letter, and book your biometrics.",
+  "overview": "The Standard Visitor visa lets you visit the UK for tourism, to see family and friends, or for short business trips. Most refusals come from missing or weak supporting documents, so we build your application around clear evidence of your job, finances and ties to Nigeria, and check everything before you submit.",
+  "requirements": [
+    "Valid international passport with at least one blank page",
+    "Bank statements for the last 6 months",
+    "Letter from your employer or business registration documents",
+    "Evidence of ties to Nigeria, such as property, family or studies",
+    "Travel plan and accommodation details",
+    "Invitation letter, if you are visiting family or friends"
+  ],
+  "steps": [
+    {
+      "title": "Free assessment on WhatsApp",
+      "description": "Tell us your purpose, travel dates and situation. We tell you honestly how strong your case looks."
+    },
+    {
+      "title": "Document checklist",
+      "description": "We send a checklist tailored to you and review each document as you gather them."
+    },
+    {
+      "title": "Application and cover letter",
+      "description": "We complete the online form and write a clear cover letter that links your evidence together."
+    },
+    {
+      "title": "Biometrics appointment",
+      "description": "We book your visa centre appointment and tell you exactly what to bring."
+    },
+    {
+      "title": "Decision and next steps",
+      "description": "We track your application and help you plan flights and hotels once the visa is issued."
+    }
+  ],
+  "included": [
+    "Eligibility assessment",
+    "Tailored document checklist",
+    "Online application form",
+    "Cover letter",
+    "Appointment booking",
+    "Document review before submission"
+  ],
+  "excluded": [
+    "UK government visa fee",
+    "Priority or super-priority service fees",
+    "Flights and hotels (we can quote separately)"
+  ],
+  "faqs": [
+    {
+      "q": "Can you guarantee my visa?",
+      "a": "No agency can guarantee a visa; the decision belongs to UK Visas and Immigration. We make sure your application is complete, consistent and well evidenced."
+    },
+    {
+      "q": "Can I apply if I was refused before?",
+      "a": "Yes. Send us the refusal letter on WhatsApp and we will explain what needs to change before you apply again."
+    }
+  ]
+}

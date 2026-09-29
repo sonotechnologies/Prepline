@@ -1,0 +1,74 @@
+{
+  "title": "Schengen Short-Stay Visa",
+  "featured": true,
+  "country": "Schengen Area",
+  "countryCode": "EU",
+  "region": "Europe",
+  "purposes": [
+    "Tourism",
+    "Business",
+    "Visiting family"
+  ],
+  "priceFrom": 150000,
+  "currency": "NGN",
+  "priceNote": "per applicant",
+  "feeNote": "The Schengen visa fee and visa centre service charge are paid separately.",
+  "processingTime": "About 15 days after your appointment; allow longer in peak season",
+  "validity": "Matches your trip dates, sometimes longer",
+  "stay": "Up to 90 days in any 180-day period",
+  "entries": "Single or multiple",
+  "appointment": "Appointment at the visa centre of your main destination country",
+  "image": "/images/visas/schengen-short-stay-visa/image.webp",
+  "imageAlt": "Eiffel Tower seen from a Paris street",
+  "summary": "One visa for France, Italy, Spain, Germany, the Netherlands and the rest of the Schengen Area. We handle the embassy choice, forms and travel insurance.",
+  "overview": "A Schengen visa lets you travel across the 29 Schengen countries on one visa. You apply through the country where you will spend the most time, with a day-by-day plan, hotel bookings and travel insurance. We put all of this together so your application is consistent from start to finish.",
+  "requirements": [
+    "Valid international passport issued in the last 10 years",
+    "Bank statements for the last 6 months",
+    "Employment letter with approved leave, or business documents",
+    "Flight reservation and hotel bookings",
+    "Travel insurance with at least €30,000 medical cover",
+    "Day-by-day travel plan"
+  ],
+  "steps": [
+    {
+      "title": "Free assessment on WhatsApp",
+      "description": "We confirm which embassy you should apply to and how early to start."
+    },
+    {
+      "title": "Travel plan and bookings",
+      "description": "We prepare your itinerary, hotel and flight reservations and travel insurance."
+    },
+    {
+      "title": "Application form",
+      "description": "We complete the form and check every document against the embassy checklist."
+    },
+    {
+      "title": "Appointment",
+      "description": "We book your visa centre appointment."
+    },
+    {
+      "title": "Decision",
+      "description": "We track your application and adjust your trip plans if needed."
+    }
+  ],
+  "included": [
+    "Embassy choice and eligibility check",
+    "Travel plan and reservations for the application",
+    "Travel insurance arrangement",
+    "Application form",
+    "Appointment booking",
+    "Document review"
+  ],
+  "excluded": [
+    "Schengen visa fee",
+    "Visa centre service charge",
+    "Travel insurance premium"
+  ],
+  "faqs": [
+    {
+      "q": "Which country should I apply to?",
+      "a": "The country where you will spend the most nights. If the time is equal, the country you enter first. We confirm this with you."
+    }
+  ]
+}

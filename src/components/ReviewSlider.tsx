@@ -39,11 +39,17 @@ export function ReviewSlider({ reviews }: { reviews: Review[] }) {
             What travellers say
           </h2>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-            <span className="h-bold text-[28px] leading-none">{rating}</span>
-            <Stars rating={5} size={20} />
-            <span className="text-muted">
-              {count} {source} reviews
-            </span>
+            {rating && (
+              <>
+                <span className="h-bold text-[28px] leading-none">{rating}</span>
+                <Stars rating={Number(rating) || 5} size={20} />
+              </>
+            )}
+            {count > 0 && (
+              <span className="text-muted">
+                {count.toLocaleString('en-US')} {source} reviews
+              </span>
+            )}
             {isSample && <span className="sample-badge">Sample</span>}
           </div>
         </div>
@@ -67,7 +73,7 @@ export function ReviewSlider({ reviews }: { reviews: Review[] }) {
             <figure className="card m-0 flex h-full flex-col gap-4 p-7">
               <div className="flex items-center justify-between gap-3">
                 <Stars rating={r.rating} />
-                {r.isSample && <span className="sample-badge">Sample</span>}
+                {isSample && <span className="sample-badge">Sample</span>}
               </div>
               <blockquote className="m-0 text-lead leading-normal text-pretty">{r.quote}</blockquote>
               <figcaption className="mt-auto flex items-center gap-3">
@@ -77,7 +83,7 @@ export function ReviewSlider({ reviews }: { reviews: Review[] }) {
                 <span className="flex flex-col">
                   <strong className="font-semibold">{r.name}</strong>
                   <span className="text-sm text-muted">
-                    {r.trip} · {source} review
+                    {[r.trip, `${source} review`].filter(Boolean).join(' · ')}
                   </span>
                 </span>
               </figcaption>

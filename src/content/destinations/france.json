@@ -1,0 +1,9 @@
+{
+  "name": "France",
+  "short": "France",
+  "countryCode": "FR",
+  "region": "Europe",
+  "popular": true,
+  "image": "/images/destinations/france/image.webp",
+  "imageAlt": "Paris street with café tables"
+}

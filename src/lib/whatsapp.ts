@@ -1,6 +1,6 @@
 import { site } from '@/content/site';
 import { formatDate, formatPrice } from './format';
-import type { Pkg } from './schema';
+import type { Pkg, Visa } from './schema';
 
 export const waLink = (message: string) =>
   `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -24,6 +24,10 @@ export const messages = {
     `Hi, I'm interested in the ${p.title} (${p.durationDays} days), from ${formatPrice(p)}.` +
     (date ? `\nPreferred date: ${formatDate(date)}.` : '') +
     `\n${url}`,
+  visa: (v: Pick<Visa, 'title' | 'priceFrom' | 'currency'>, url: string) =>
+    `Hi, I'd like help with a ${v.title} application (from ${formatPrice(v)}).\n${url}`,
+  visaGeneral: (country?: string) =>
+    country ? `Hi, I need help with a visa for ${country}.` : `Hi, I need help with a visa application.`,
   destination: (country: string) => `Hi, I'd like to know about trips to ${country}.`,
   service: (name: string) => `Hi, I need help with ${name.toLowerCase()}.`,
   tripFinder: (f: TripFinder) => {
@@ -46,4 +50,7 @@ export const messages = {
 };
 
 /** Absolute URL for a package page, used inside WhatsApp messages. */
-export const packageUrl = (slug: string) => `${site.url.replace(/\/$/, '')}/packages/${slug}/`;
+export const packageUrl = (slug: string) => `${site.url.replace(/\/$/, '')}/packages/${slug}`;
+
+/** Absolute URL for a visa page, used inside WhatsApp messages. */
+export const visaUrl = (slug: string) => `${site.url.replace(/\/$/, '')}/visas/${slug}`;

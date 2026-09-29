@@ -1,0 +1,9 @@
+{
+  "name": "United States",
+  "short": "the USA",
+  "countryCode": "US",
+  "region": "Americas",
+  "popular": false,
+  "image": "/images/destinations/united-states/image.webp",
+  "imageAlt": "New York skyline"
+}

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Service } from '@/lib/schema';
 import { messages, waLink } from '@/lib/whatsapp';
 
@@ -27,16 +28,23 @@ export function ServiceCard({ service, index, showDetails = false }: { service: 
           ))}
         </ul>
       )}
-      <a
-        href={waLink(messages.service(service.name))}
-        target="_blank"
-        rel="noopener"
-        data-wa-label={`service:${service.slug}`}
-        className="text-link mt-auto"
-        aria-label={`Enquire on WhatsApp about ${service.name.toLowerCase()}`}
-      >
-        Enquire on WhatsApp
-      </a>
+      <div className="mt-auto flex flex-wrap items-center gap-x-5">
+        {service.link && (
+          <Link href={service.link} className="text-link">
+            See details<span className="sr-only"> about {service.name.toLowerCase()}</span> →
+          </Link>
+        )}
+        <a
+          href={waLink(messages.service(service.name))}
+          target="_blank"
+          rel="noopener"
+          data-wa-label={`service:${service.slug}`}
+          className="text-link"
+          aria-label={`Enquire on WhatsApp about ${service.name.toLowerCase()}`}
+        >
+          Enquire on WhatsApp
+        </a>
+      </div>
     </div>
   );
 }

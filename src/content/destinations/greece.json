@@ -1,0 +1,9 @@
+{
+  "name": "Greece",
+  "short": "Greece",
+  "countryCode": "GR",
+  "region": "Europe",
+  "popular": false,
+  "image": "/images/destinations/greece/image.webp",
+  "imageAlt": "White houses in Santorini"
+}

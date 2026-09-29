@@ -1,0 +1,9 @@
+{
+  "name": "Morocco",
+  "short": "Morocco",
+  "countryCode": "MA",
+  "region": "Africa",
+  "popular": false,
+  "image": "/images/destinations/morocco/image.webp",
+  "imageAlt": "Blue streets of Chefchaouen"
+}

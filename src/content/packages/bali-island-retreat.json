@@ -1,43 +1,134 @@
 {
-  "slug": "bali-island-retreat",
   "title": "Bali Island Retreat",
+  "featured": true,
   "country": "Indonesia",
   "countryCode": "ID",
   "city": "Bali",
   "region": "Asia",
-  "tripTypes": ["Honeymoon", "Luxury"],
+  "tripTypes": [
+    "Honeymoon",
+    "Luxury"
+  ],
   "durationDays": 7,
   "nights": 6,
   "priceFrom": 3600000,
   "currency": "NGN",
   "priceNote": "per person",
-  "dates": ["2027-05-08", "2027-06-19", "2027-08-14"],
-  "featured": true,
-  "coverImage": "/images/packages/bali-island-retreat/1.webp",
-  "coverAlt": "Aerial view of green rice terraces in Bali",
-  "gallery": [
-    { "src": "/images/packages/bali-island-retreat/1.webp", "alt": "Aerial view of green rice terraces in Bali" },
-    { "src": "/images/packages/bali-island-retreat/2.webp", "alt": "Temple gate at Lempuyang" },
-    { "src": "/images/packages/bali-island-retreat/3.webp", "alt": "Private pool villa in Ubud" },
-    { "src": "/images/packages/bali-island-retreat/4.webp", "alt": "Sunset over Uluwatu cliffs" },
-    { "src": "/images/packages/bali-island-retreat/5.webp", "alt": "Balinese spa treatment room" }
+  "departures": [
+    {
+      "date": "2027-05-08",
+      "note": ""
+    },
+    {
+      "date": "2027-06-19",
+      "note": ""
+    },
+    {
+      "date": "2027-08-14",
+      "note": ""
+    }
   ],
-  "highlights": ["Rice terraces", "Temple tour", "Spa day"],
+  "gallery": [
+    {
+      "image": "/images/packages/bali-island-retreat/gallery/0/image.webp",
+      "alt": "Aerial view of green rice terraces in Bali"
+    },
+    {
+      "image": "/images/packages/bali-island-retreat/gallery/1/image.webp",
+      "alt": "Temple gate at Lempuyang"
+    },
+    {
+      "image": "/images/packages/bali-island-retreat/gallery/2/image.webp",
+      "alt": "Private pool villa in Ubud"
+    },
+    {
+      "image": "/images/packages/bali-island-retreat/gallery/3/image.webp",
+      "alt": "Sunset over Uluwatu cliffs"
+    },
+    {
+      "image": "/images/packages/bali-island-retreat/gallery/4/image.webp",
+      "alt": "Balinese spa treatment room"
+    }
+  ],
+  "highlights": [
+    "Rice terraces",
+    "Temple tour",
+    "Spa day"
+  ],
   "overview": "Jungle, temples and ocean cliffs at an easy pace. Three nights in a pool villa in Ubud bring rice terraces, waterfalls and a spa day, then three nights by the beach in Seminyak end with sunset at Uluwatu temple.",
   "itinerary": [
-    { "day": 1, "title": "Arrive in Bali", "description": "Airport pick-up and transfer to your pool villa in Ubud.", "meta": "Stay: pool villa, Ubud" },
-    { "day": 2, "title": "Rice terraces and waterfalls", "description": "Tegallalang rice terraces, a jungle swing and Tegenungan waterfall.", "meta": "Meals: breakfast · Stay: pool villa, Ubud" },
-    { "day": 3, "title": "Spa day", "description": "Morning at leisure, afternoon Balinese massage and flower bath.", "meta": "Meals: breakfast · Stay: pool villa, Ubud" },
-    { "day": 4, "title": "Temple tour to the coast", "description": "Tirta Empul water temple and Tanah Lot on the way to Seminyak.", "meta": "Meals: breakfast · Stay: beach hotel, Seminyak" },
-    { "day": 5, "title": "Beach day", "description": "Free day for the beach, cafés and shopping.", "meta": "Meals: breakfast · Stay: beach hotel, Seminyak" },
-    { "day": 6, "title": "Uluwatu sunset", "description": "Afternoon at Uluwatu temple with the Kecak fire dance, then seafood dinner at Jimbaran Bay.", "meta": "Meals: breakfast, dinner · Stay: beach hotel, Seminyak" },
-    { "day": 7, "title": "Departure", "description": "Transfer to Denpasar airport for your flight back to Lagos.", "meta": "Meals: breakfast" }
+    {
+      "day": 1,
+      "title": "Arrive in Bali",
+      "description": "Airport pick-up and transfer to your pool villa in Ubud.",
+      "meta": "Stay: pool villa, Ubud"
+    },
+    {
+      "day": 2,
+      "title": "Rice terraces and waterfalls",
+      "description": "Tegallalang rice terraces, a jungle swing and Tegenungan waterfall.",
+      "meta": "Meals: breakfast · Stay: pool villa, Ubud"
+    },
+    {
+      "day": 3,
+      "title": "Spa day",
+      "description": "Morning at leisure, afternoon Balinese massage and flower bath.",
+      "meta": "Meals: breakfast · Stay: pool villa, Ubud"
+    },
+    {
+      "day": 4,
+      "title": "Temple tour to the coast",
+      "description": "Tirta Empul water temple and Tanah Lot on the way to Seminyak.",
+      "meta": "Meals: breakfast · Stay: beach hotel, Seminyak"
+    },
+    {
+      "day": 5,
+      "title": "Beach day",
+      "description": "Free day for the beach, cafés and shopping.",
+      "meta": "Meals: breakfast · Stay: beach hotel, Seminyak"
+    },
+    {
+      "day": 6,
+      "title": "Uluwatu sunset",
+      "description": "Afternoon at Uluwatu temple with the Kecak fire dance, then seafood dinner at Jimbaran Bay.",
+      "meta": "Meals: breakfast, dinner · Stay: beach hotel, Seminyak"
+    },
+    {
+      "day": 7,
+      "title": "Departure",
+      "description": "Transfer to Denpasar airport for your flight back to Lagos.",
+      "meta": "Meals: breakfast"
+    }
   ],
-  "included": ["Return economy flights from Lagos", "3 nights in an Ubud pool villa", "3 nights in a Seminyak beach hotel", "Daily breakfast", "Private driver on tour days", "Spa treatment", "Temple entrance fees"],
-  "excluded": ["Travel insurance", "Bali tourist levy", "Most lunches and dinners", "Tips"],
+  "included": [
+    "Return economy flights from Lagos",
+    "3 nights in an Ubud pool villa",
+    "3 nights in a Seminyak beach hotel",
+    "Daily breakfast",
+    "Private driver on tour days",
+    "Spa treatment",
+    "Temple entrance fees"
+  ],
+  "excluded": [
+    "Travel insurance",
+    "Bali tourist levy",
+    "Most lunches and dinners",
+    "Tips"
+  ],
   "addOns": [
-    { "title": "Nusa Penida day trip", "priceFrom": 95000 },
-    { "title": "Mount Batur sunrise trek", "priceFrom": 75000 }
+    {
+      "title": "Nusa Penida day trip",
+      "priceFrom": 95000
+    },
+    {
+      "title": "Mount Batur sunrise trek",
+      "priceFrom": 75000
+    }
   ],
-  "quickFacts": { "groupSize": "2 to 12 travellers", "bestSeason": "April to October", "visaRequired": true }
+  "faqs": [],
+  "quickFacts": {
+    "groupSize": "2 to 12 travellers",
+    "bestSeason": "April to October",
+    "visaRequired": true
+  }
 }

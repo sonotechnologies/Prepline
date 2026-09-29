@@ -1,0 +1,9 @@
+{
+  "name": "Brazil",
+  "short": "Brazil",
+  "countryCode": "BR",
+  "region": "Americas",
+  "popular": false,
+  "image": "/images/destinations/brazil/image.webp",
+  "imageAlt": "Rio de Janeiro from Sugarloaf"
+}

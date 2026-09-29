@@ -1,0 +1,59 @@
+{
+  "title": "Dubai (UAE) Tourist Visa",
+  "featured": true,
+  "country": "United Arab Emirates",
+  "countryCode": "AE",
+  "region": "Middle East",
+  "purposes": [
+    "Tourism",
+    "Visiting family"
+  ],
+  "priceFrom": 180000,
+  "currency": "NGN",
+  "priceNote": "per applicant",
+  "feeNote": "Includes the UAE visa fee for standard applications.",
+  "processingTime": "Usually 3 to 5 working days",
+  "validity": "30 or 60 days from issue",
+  "stay": "30 or 60 days",
+  "entries": "Single or multiple",
+  "appointment": "No appointment; applied for online",
+  "image": "/images/visas/dubai-uae-tourist-visa/image.webp",
+  "imageAlt": "Dubai Marina skyline at night",
+  "summary": "A fast, online e-visa for Dubai and the rest of the UAE. Send your documents on WhatsApp and we do the rest.",
+  "overview": "The UAE tourist visa is issued electronically, so there is no embassy appointment. You send us your passport data page, photograph and supporting documents on WhatsApp, and we submit your application and send you the visa by email once it is issued.",
+  "requirements": [
+    "Passport data page (valid for at least 6 months)",
+    "Passport photograph with a white background",
+    "Bank statement, if requested",
+    "Confirmed return flight, if requested"
+  ],
+  "steps": [
+    {
+      "title": "Send your documents",
+      "description": "Share clear copies of your passport and photograph on WhatsApp."
+    },
+    {
+      "title": "Application",
+      "description": "We submit your e-visa application."
+    },
+    {
+      "title": "Visa issued",
+      "description": "We send your visa by email and WhatsApp, usually within a working week."
+    }
+  ],
+  "included": [
+    "Application submission",
+    "UAE visa fee (standard applications)",
+    "Document check"
+  ],
+  "excluded": [
+    "Travel insurance",
+    "Flights and hotels (see our Dubai packages)"
+  ],
+  "faqs": [
+    {
+      "q": "Do I get the visa with a Dubai package?",
+      "a": "Yes. Our Dubai packages already include visa processing, so you only need this service if you are booking flights and hotels yourself."
+    }
+  ]
+}

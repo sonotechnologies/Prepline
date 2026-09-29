@@ -1,0 +1,9 @@
+{
+  "name": "Egypt",
+  "short": "Egypt",
+  "countryCode": "EG",
+  "region": "Africa",
+  "popular": false,
+  "image": "/images/destinations/egypt/image.webp",
+  "imageAlt": "Pyramids of Giza"
+}

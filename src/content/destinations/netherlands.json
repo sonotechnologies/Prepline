@@ -1,0 +1,9 @@
+{
+  "name": "Netherlands",
+  "short": "the Netherlands",
+  "countryCode": "NL",
+  "region": "Europe",
+  "popular": false,
+  "image": "/images/destinations/netherlands/image.webp",
+  "imageAlt": "Amsterdam canal houses"
+}

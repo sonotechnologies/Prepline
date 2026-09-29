@@ -170,7 +170,7 @@ function Explorer({
             <div className="on-dark flex min-h-[360px] flex-col justify-end gap-3.5 rounded-card bg-dark bg-pattern p-8 text-on-dark">
               <h2 className="h3 text-on-dark">Can&apos;t find your destination?</h2>
               <p className="text-on-dark-muted text-pretty">We plan trips to any country. Tell us where, when and your budget.</p>
-              <Link href="/custom-trip/" className="btn btn-primary w-full">
+              <Link href="/custom-trip" className="btn btn-primary w-full">
                 Plan a custom trip
               </Link>
             </div>
