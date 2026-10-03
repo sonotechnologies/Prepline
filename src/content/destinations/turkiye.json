@@ -1,0 +1,9 @@
+{
+  "name": "Türkiye",
+  "short": "Türkiye",
+  "countryCode": "TR",
+  "region": "Europe",
+  "popular": true,
+  "image": "/images/destinations/turkiye/image.webp",
+  "imageAlt": "Istanbul skyline over the Bosphorus"
+}

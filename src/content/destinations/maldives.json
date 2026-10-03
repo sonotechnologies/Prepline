@@ -1,0 +1,9 @@
+{
+  "name": "Maldives",
+  "short": "the Maldives",
+  "countryCode": "MV",
+  "region": "Asia",
+  "popular": false,
+  "image": "/images/destinations/maldives/image.webp",
+  "imageAlt": "Overwater villas in the Maldives"
+}

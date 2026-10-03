@@ -1,13 +1,10 @@
 import type { Metadata, Viewport } from 'next';
 import { DM_Sans, Fraunces, Inter, Poppins } from 'next/font/google';
-import { Analytics } from '@/components/Analytics';
-import { Footer } from '@/components/Footer';
-import { Header } from '@/components/Header';
-import { JsonLd } from '@/components/JsonLd';
-import { WhatsAppFab } from '@/components/WhatsAppFab';
 import { site } from '@/content/site';
-import { absoluteUrl, travelAgencyJsonLd } from '@/lib/seo';
-import './globals.css';
+import { absoluteUrl } from '@/lib/seo';
+
+// Root layout: fonts and theme only. Public pages add the header and footer in (site)/layout.tsx;
+// the admin at /keystatic has its own layout.
 
 // Variant A fonts are preloaded. Variant B fonts only download when data-theme="b" uses them.
 const poppins = Poppins({ subsets: ['latin'], weight: ['500', '600', '700'], variable: '--font-poppins', display: 'swap' });
@@ -17,7 +14,7 @@ const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans', display
 
 export const metadata: Metadata = {
   metadataBase: new URL(absoluteUrl('/')),
-  title: { default: `${site.name} | Holidays, honeymoons and group tours from Lagos`, template: `%s | ${site.name}` },
+  title: { default: `${site.name} | Holidays, group tours and visas from Lagos`, template: `%s | ${site.name}` },
   description: site.description,
   applicationName: site.name,
   formatDetection: { telephone: false },
@@ -45,16 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body>
-        <Header />
-        <main id="main" tabIndex={-1} className="outline-none">
-          {children}
-        </main>
-        <Footer />
-        <WhatsAppFab />
-        <Analytics />
-        <JsonLd data={travelAgencyJsonLd()} />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

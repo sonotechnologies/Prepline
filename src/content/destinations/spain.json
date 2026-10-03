@@ -1,0 +1,9 @@
+{
+  "name": "Spain",
+  "short": "Spain",
+  "countryCode": "ES",
+  "region": "Europe",
+  "popular": false,
+  "image": "/images/destinations/spain/image.webp",
+  "imageAlt": "Sagrada Família in Barcelona"
+}

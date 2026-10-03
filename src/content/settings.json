@@ -1,0 +1,61 @@
+{
+  "whatsappNumber": "2348000000000",
+  "phoneDisplay": "+234 800 000 0000",
+  "phoneTel": "+2348000000000",
+  "email": "hello@preppingtravel.ng",
+  "street": "Office address, Lekki Phase 1",
+  "city": "Lagos",
+  "country": "Nigeria",
+  "mapQuery": "Lekki Phase 1, Lagos, Nigeria",
+  "officeHours": "Mon to Sat, 9am to 6pm WAT",
+  "whatsappHours": "WhatsApp replies 7 days a week",
+  "tagline": "Trips to any country, planned with you on WhatsApp from our office in Lagos.",
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/"
+    },
+    {
+      "label": "TikTok",
+      "href": "https://www.tiktok.com/"
+    },
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/"
+    }
+  ],
+  "stats": [
+    {
+      "value": 10,
+      "suffix": "+",
+      "label": "Years planning trips"
+    },
+    {
+      "value": 5000,
+      "suffix": "+",
+      "label": "Happy travellers"
+    },
+    {
+      "value": 60,
+      "suffix": "+",
+      "label": "Countries"
+    },
+    {
+      "value": 98,
+      "suffix": "%",
+      "label": "Client satisfaction"
+    }
+  ],
+  "accreditations": [
+    "IATA",
+    "NANTA",
+    "NCAA"
+  ],
+  "rating": "4.9",
+  "reviewCount": 312,
+  "reviewSource": "Google",
+  "reviewsAreSamples": true,
+  "foundedYear": 2016,
+  "ga4Id": "",
+  "metaPixelId": ""
+}

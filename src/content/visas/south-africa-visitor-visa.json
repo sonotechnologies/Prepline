@@ -1,0 +1,61 @@
+{
+  "title": "South Africa Visitor Visa",
+  "featured": false,
+  "country": "South Africa",
+  "countryCode": "ZA",
+  "region": "Africa",
+  "purposes": [
+    "Tourism",
+    "Business",
+    "Visiting family"
+  ],
+  "priceFrom": 120000,
+  "currency": "NGN",
+  "priceNote": "per applicant",
+  "feeNote": "South African visa and visa centre fees are paid separately.",
+  "processingTime": "Usually a few weeks after submission",
+  "validity": "Matches your trip",
+  "stay": "Up to 90 days",
+  "entries": "Single or multiple",
+  "appointment": "Submission at the VFS centre in Lagos or Abuja",
+  "image": "/images/visas/south-africa-visitor-visa/image.webp",
+  "imageAlt": "Table Mountain above Cape Town",
+  "summary": "For holidays, conferences and family visits to South Africa, including our Cape Town packages.",
+  "overview": "South Africa requires a visitor visa for Nigerian passport holders. We prepare your application, supporting documents and bookings so you can submit everything in one visit to the visa centre.",
+  "requirements": [
+    "Valid international passport with two blank pages",
+    "Bank statements for the last 3 months",
+    "Employment letter or business documents",
+    "Flight and accommodation bookings",
+    "Yellow fever vaccination certificate"
+  ],
+  "steps": [
+    {
+      "title": "Free assessment on WhatsApp",
+      "description": "We check your documents and dates."
+    },
+    {
+      "title": "Application pack",
+      "description": "We prepare the form, cover letter and bookings."
+    },
+    {
+      "title": "Submission",
+      "description": "We book your visa centre appointment."
+    },
+    {
+      "title": "Decision",
+      "description": "We track the outcome and help you finalise your trip."
+    }
+  ],
+  "included": [
+    "Document checklist and review",
+    "Application form and cover letter",
+    "Appointment booking"
+  ],
+  "excluded": [
+    "Government visa fee",
+    "Visa centre charges",
+    "Flights and hotels (see our Cape Town package)"
+  ],
+  "faqs": []
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Malaysia",
+  "short": "Malaysia",
+  "countryCode": "MY",
+  "region": "Asia",
+  "popular": false,
+  "image": "/images/destinations/malaysia/image.webp",
+  "imageAlt": "Petronas Towers in Kuala Lumpur"
+}

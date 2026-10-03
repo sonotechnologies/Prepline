@@ -1,0 +1,9 @@
+{
+  "name": "Italy",
+  "short": "Italy",
+  "countryCode": "IT",
+  "region": "Europe",
+  "popular": false,
+  "image": "/images/destinations/italy/image.webp",
+  "imageAlt": "Colosseum in Rome"
+}

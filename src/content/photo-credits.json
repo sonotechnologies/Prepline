@@ -1,0 +1,583 @@
+{
+  "/images/about/image.webp": {
+    "id": 8837598,
+    "photographer": "ANTONI SHKRABA production",
+    "photographerUrl": "https://www.pexels.com/@anthonyshkraba-production",
+    "pexelsUrl": "https://www.pexels.com/photo/people-working-together-at-office-table-8837598/",
+    "query": "travel agency team office"
+  },
+  "/images/destinations/australia/image.webp": {
+    "id": 5899529,
+    "photographer": "Ethan Tien",
+    "photographerUrl": "https://www.pexels.com/@ethan-tien-3568451",
+    "pexelsUrl": "https://www.pexels.com/photo/roof-of-a-modern-buildings-5899529/",
+    "query": "Sydney Opera House"
+  },
+  "/images/destinations/brazil/image.webp": {
+    "id": 27914780,
+    "photographer": "Claiton  Conto",
+    "photographerUrl": "https://www.pexels.com/@claiton",
+    "pexelsUrl": "https://www.pexels.com/photo/the-statue-of-christ-is-shown-in-rio-27914780/",
+    "query": "Rio de Janeiro Christ the Redeemer"
+  },
+  "/images/destinations/canada/image.webp": {
+    "id": 29192621,
+    "photographer": "Max Vyolsen",
+    "photographerUrl": "https://www.pexels.com/@maxvyolsen",
+    "pexelsUrl": "https://www.pexels.com/photo/scenic-lake-louise-in-banff-national-park-29192621/",
+    "query": "Lake Louise in the Rockies"
+  },
+  "/images/destinations/egypt/image.webp": {
+    "id": 37269382,
+    "photographer": "slow.trips",
+    "photographerUrl": "https://www.pexels.com/@slow-trips-2161176252",
+    "pexelsUrl": "https://www.pexels.com/photo/tourist-at-the-pyramids-of-giza-under-blue-sky-37269382/",
+    "query": "Pyramids of Giza"
+  },
+  "/images/destinations/france/image.webp": {
+    "id": 34393291,
+    "photographer": "Lara",
+    "photographerUrl": "https://www.pexels.com/@larissafarber",
+    "pexelsUrl": "https://www.pexels.com/photo/quaint-parisian-cafe-street-view-in-summer-34393291/",
+    "query": "Paris street with café tables"
+  },
+  "/images/destinations/ghana/image.webp": {
+    "id": 34725454,
+    "photographer": "AbuBakarr Kabia",
+    "photographerUrl": "https://www.pexels.com/@abubakarr-kabia-801533969",
+    "pexelsUrl": "https://www.pexels.com/photo/historical-coastal-view-from-cape-coast-castle-34725454/",
+    "query": "Cape Coast Castle by the sea"
+  },
+  "/images/destinations/greece/image.webp": {
+    "id": 10611225,
+    "photographer": "alleksana",
+    "photographerUrl": "https://www.pexels.com/@alleksana",
+    "pexelsUrl": "https://www.pexels.com/photo/white-concrete-buildings-near-the-sea-10611225/",
+    "query": "White houses in Santorini"
+  },
+  "/images/destinations/indonesia/image.webp": {
+    "id": 38868370,
+    "photographer": "Lara Hart",
+    "photographerUrl": "https://www.pexels.com/@lara-hart-2149371048",
+    "pexelsUrl": "https://www.pexels.com/photo/scenic-ubud-rice-terraces-in-bali-indonesia-38868370/",
+    "query": "Jungle and rice fields in Ubud"
+  },
+  "/images/destinations/italy/image.webp": {
+    "id": 36396954,
+    "photographer": "Joan Costa",
+    "photographerUrl": "https://www.pexels.com/@jcosta",
+    "pexelsUrl": "https://www.pexels.com/photo/majestic-view-of-the-colosseum-interior-rome-36396954/",
+    "query": "Colosseum in Rome"
+  },
+  "/images/destinations/kenya/image.webp": {
+    "id": 11235470,
+    "photographer": "jamies.x. co",
+    "photographerUrl": "https://www.pexels.com/@jamies-x-co",
+    "pexelsUrl": "https://www.pexels.com/photo/trees-under-blue-sky-11235470/",
+    "query": "Acacia trees on the Maasai Mara"
+  },
+  "/images/destinations/malaysia/image.webp": {
+    "id": 20415688,
+    "photographer": "Liz Yang",
+    "photographerUrl": "https://www.pexels.com/@liz-yang-1047848040",
+    "pexelsUrl": "https://www.pexels.com/photo/petronas-twin-towers-in-kuala-lumpur-20415688/",
+    "query": "Petronas Towers in Kuala Lumpur"
+  },
+  "/images/destinations/maldives/image.webp": {
+    "id": 27099923,
+    "photographer": "Asad Photo Maldives",
+    "photographerUrl": "https://www.pexels.com/@asadphoto",
+    "pexelsUrl": "https://www.pexels.com/photo/an-aerial-view-of-a-small-island-with-a-small-house-on-it-27099923/",
+    "query": "Overwater villas in the Maldives"
+  },
+  "/images/destinations/mauritius/image.webp": {
+    "id": 18069585,
+    "photographer": "Michał Sołowiej",
+    "photographerUrl": "https://www.pexels.com/@michal-solowiej-701397343",
+    "pexelsUrl": "https://www.pexels.com/photo/a-palm-tree-on-a-beach-and-a-boat-moored-on-the-shore-in-distance-18069585/",
+    "query": "Lagoon and palm trees in Mauritius"
+  },
+  "/images/destinations/morocco/image.webp": {
+    "id": 38738885,
+    "photographer": "Jazz Kaundal",
+    "photographerUrl": "https://www.pexels.com/@jazz-kaundal-615171890",
+    "pexelsUrl": "https://www.pexels.com/photo/charming-blue-street-in-chefchaouen-morocco-38738885/",
+    "query": "Blue streets of Chefchaouen"
+  },
+  "/images/destinations/netherlands/image.webp": {
+    "id": 38354520,
+    "photographer": "Catarina Duarte",
+    "photographerUrl": "https://www.pexels.com/@cateduart",
+    "pexelsUrl": "https://www.pexels.com/photo/classic-amsterdam-canal-house-facade-38354520/",
+    "query": "Amsterdam canal houses"
+  },
+  "/images/destinations/qatar/image.webp": {
+    "id": 36246789,
+    "photographer": "Travel with  Lenses",
+    "photographerUrl": "https://www.pexels.com/@travel-with-lenses-734723610",
+    "pexelsUrl": "https://www.pexels.com/photo/stunning-night-skyline-of-doha-qatar-36246789/",
+    "query": "Doha skyline from the Corniche"
+  },
+  "/images/destinations/saudi-arabia/image.webp": {
+    "id": 35000011,
+    "photographer": "Suvarice",
+    "photographerUrl": "https://www.pexels.com/@suvarice-261061534",
+    "pexelsUrl": "https://www.pexels.com/photo/kaaba-at-mecca-with-pilgrims-during-daytime-35000011/",
+    "query": "Masjid al-Haram in Makkah"
+  },
+  "/images/destinations/south-africa/image.webp": {
+    "id": 34168792,
+    "photographer": "Zhang Thomas",
+    "photographerUrl": "https://www.pexels.com/@zhang-thomas-710712620",
+    "pexelsUrl": "https://www.pexels.com/photo/dramatic-cliffs-and-ocean-waves-in-south-africa-34168792/",
+    "query": "Cliffs at Cape Point"
+  },
+  "/images/destinations/spain/image.webp": {
+    "id": 34028322,
+    "photographer": "Fran  Zaina",
+    "photographerUrl": "https://www.pexels.com/@fran",
+    "pexelsUrl": "https://www.pexels.com/photo/interior-view-of-sagrada-familia-in-barcelona-34028322/",
+    "query": "Sagrada Família in Barcelona"
+  },
+  "/images/destinations/tanzania/image.webp": {
+    "id": 19394617,
+    "photographer": "Qarim Zam",
+    "photographerUrl": "https://www.pexels.com/@qarim-zam-814182490",
+    "pexelsUrl": "https://www.pexels.com/photo/wooden-boats-on-the-island-and-boys-bathing-in-the-ocean-19394617/",
+    "query": "Zanzibar coastline with dhows"
+  },
+  "/images/destinations/thailand/image.webp": {
+    "id": 29126673,
+    "photographer": "Muhsin A",
+    "photographerUrl": "https://www.pexels.com/@muhsin-a-701280",
+    "pexelsUrl": "https://www.pexels.com/photo/serene-beach-with-longtail-boats-in-krabi-thailand-29126673/",
+    "query": "Longtail boats in Krabi"
+  },
+  "/images/destinations/turkiye/image.webp": {
+    "id": 38753065,
+    "photographer": "Erdem Akil",
+    "photographerUrl": "https://www.pexels.com/@erdem-akil-2158614863",
+    "pexelsUrl": "https://www.pexels.com/photo/golden-sunset-over-istanbul-with-boat-silhouette-38753065/",
+    "query": "Istanbul skyline over the Bosphorus"
+  },
+  "/images/destinations/united-arab-emirates/image.webp": {
+    "id": 35698342,
+    "photographer": "Akbar  Tarakai",
+    "photographerUrl": "https://www.pexels.com/@akbar-tarakai-2148031714",
+    "pexelsUrl": "https://www.pexels.com/photo/dubai-marina-tower-at-night-with-boats-35698342/",
+    "query": "Dubai Marina towers at night"
+  },
+  "/images/destinations/united-kingdom/image.webp": {
+    "id": 19262645,
+    "photographer": "Antoine Maurin",
+    "photographerUrl": "https://www.pexels.com/@antoine-maurin-264851287",
+    "pexelsUrl": "https://www.pexels.com/photo/tower-bridge-in-london-19262645/",
+    "query": "London Tower Bridge"
+  },
+  "/images/destinations/united-states/image.webp": {
+    "id": 28279109,
+    "photographer": "Chengxiang LIAO",
+    "photographerUrl": "https://www.pexels.com/@chengxiang-liao-1784036448",
+    "pexelsUrl": "https://www.pexels.com/photo/new-york-city-28279109/",
+    "query": "New York skyline"
+  },
+  "/images/home/heroSlides/0/image.webp": {
+    "id": 14266610,
+    "photographer": "Ushindi Namegabe",
+    "photographerUrl": "https://www.pexels.com/@ushindinamegabe",
+    "pexelsUrl": "https://www.pexels.com/photo/aerial-view-of-santorini-on-cliff-above-sea-14266610/",
+    "query": "Santorini sunset cliffs"
+  },
+  "/images/home/heroSlides/1/image.webp": {
+    "id": 837908,
+    "photographer": "NYWREX FLORES",
+    "photographerUrl": "https://www.pexels.com/@nywrex-flores-183943",
+    "pexelsUrl": "https://www.pexels.com/photo/city-light-photography-837908/",
+    "query": "Dubai skyline wide"
+  },
+  "/images/home/heroSlides/2/image.webp": {
+    "id": 35428411,
+    "photographer": "Tom Fisk",
+    "photographerUrl": "https://www.pexels.com/@tomfisk",
+    "pexelsUrl": "https://www.pexels.com/photo/lush-green-rice-terraces-in-bali-indonesia-35428411/",
+    "query": "Bali rice terraces aerial"
+  },
+  "/images/home/gallery/0/image.webp": {
+    "id": 14792124,
+    "photographer": "Critical Smith",
+    "photographerUrl": "https://www.pexels.com/@criticalimagery",
+    "pexelsUrl": "https://www.pexels.com/photo/a-woman-sitting-on-a-beach-14792124/",
+    "query": "african woman tourist Dubai"
+  },
+  "/images/home/gallery/1/image.webp": {
+    "id": 17131240,
+    "photographer": "Dalia Al-Refai",
+    "photographerUrl": "https://www.pexels.com/@dalia-al-refai-235376732",
+    "pexelsUrl": "https://www.pexels.com/photo/couple-with-hats-against-sunset-over-sea-17131240/",
+    "query": "black couple beach Zanzibar"
+  },
+  "/images/home/gallery/2/image.webp": {
+    "id": 20609524,
+    "photographer": "cami",
+    "photographerUrl": "https://www.pexels.com/@casnafu",
+    "pexelsUrl": "https://www.pexels.com/photo/portrait-of-woman-with-eiffel-tower-in-paris-20609524/",
+    "query": "black woman Eiffel Tower"
+  },
+  "/images/home/gallery/3/image.webp": {
+    "id": 34174399,
+    "photographer": "Israel Luvhimbi",
+    "photographerUrl": "https://www.pexels.com/@iluvhimbi",
+    "pexelsUrl": "https://www.pexels.com/photo/families-enjoying-a-day-at-blouberg-beach-cape-town-34174399/",
+    "query": "family Table Mountain Cape Town"
+  },
+  "/images/home/gallery/4/image.webp": {
+    "id": 20447450,
+    "photographer": "Suta Rahady",
+    "photographerUrl": "https://www.pexels.com/@suta-rahady-1054680396",
+    "pexelsUrl": "https://www.pexels.com/photo/man-woman-and-boy-kneeling-sitting-and-praying-20447450/",
+    "query": "black couple Bali temple"
+  },
+  "/images/home/gallery/5/image.webp": {
+    "id": 20073581,
+    "photographer": "Yasemin Aydoğdu",
+    "photographerUrl": "https://www.pexels.com/@yasemin-aydogdu-356973792",
+    "pexelsUrl": "https://www.pexels.com/photo/man-photographing-istanbul-from-a-ferry-20073581/",
+    "query": "tourist Istanbul Galata"
+  },
+  "/images/home/gallery/6/image.webp": {
+    "id": 17211707,
+    "photographer": "Lina Kivaka",
+    "photographerUrl": "https://www.pexels.com/@lina",
+    "pexelsUrl": "https://www.pexels.com/photo/young-man-in-a-gray-t-shirt-and-hat-17211707/",
+    "query": "black man London tourist"
+  },
+  "/images/home/gallery/7/image.webp": {
+    "id": 31412564,
+    "photographer": "muiruri dayo",
+    "photographerUrl": "https://www.pexels.com/@muiruri-dayo-1772736833",
+    "pexelsUrl": "https://www.pexels.com/photo/aerial-view-of-nairobi-park-with-reflective-lake-31412564/",
+    "query": "Nairobi city tourist"
+  },
+  "/images/packages/bali-island-retreat/gallery/0/image.webp": {
+    "id": 36810327,
+    "photographer": "Tom Fisk",
+    "photographerUrl": "https://www.pexels.com/@tomfisk",
+    "pexelsUrl": "https://www.pexels.com/photo/stunning-aerial-view-of-bali-s-terraced-rice-fields-36810327/",
+    "query": "Aerial view of green rice terraces in Bali"
+  },
+  "/images/packages/bali-island-retreat/gallery/1/image.webp": {
+    "id": 14475016,
+    "photographer": "Rizk Nas",
+    "photographerUrl": "https://www.pexels.com/@rizk-nas-1463375",
+    "pexelsUrl": "https://www.pexels.com/photo/view-of-a-hindu-temple-14475016/",
+    "query": "Temple gate at Lempuyang"
+  },
+  "/images/packages/bali-island-retreat/gallery/2/image.webp": {
+    "id": 36418268,
+    "photographer": "Mark Direen",
+    "photographerUrl": "https://www.pexels.com/@mark-direen-622749",
+    "pexelsUrl": "https://www.pexels.com/photo/tropical-villa-pool-in-lush-bali-garden-36418268/",
+    "query": "luxury private pool villa Bali"
+  },
+  "/images/packages/bali-island-retreat/gallery/3/image.webp": {
+    "id": 36593817,
+    "photographer": "Tom Fisk",
+    "photographerUrl": "https://www.pexels.com/@tomfisk",
+    "pexelsUrl": "https://www.pexels.com/photo/stunning-coastal-cliffs-at-uluwatu-bali-during-sunset-36593817/",
+    "query": "Sunset over Uluwatu cliffs"
+  },
+  "/images/packages/bali-island-retreat/gallery/4/image.webp": {
+    "id": 9146381,
+    "photographer": "Ron Lach",
+    "photographerUrl": "https://www.pexels.com/@ron-lach",
+    "pexelsUrl": "https://www.pexels.com/photo/person-getting-a-massage-9146381/",
+    "query": "Balinese spa treatment room"
+  },
+  "/images/packages/cape-town-and-garden-route/gallery/0/image.webp": {
+    "id": 27421678,
+    "photographer": "GJP Zoom",
+    "photographerUrl": "https://www.pexels.com/@gjpzoom",
+    "pexelsUrl": "https://www.pexels.com/photo/capetown-blue-27421678/",
+    "query": "Table Mountain seen from across the bay"
+  },
+  "/images/packages/cape-town-and-garden-route/gallery/1/image.webp": {
+    "id": 37690723,
+    "photographer": "Gu Bra",
+    "photographerUrl": "https://www.pexels.com/@gu-bra-11680150",
+    "pexelsUrl": "https://www.pexels.com/photo/african-penguin-on-sandy-beach-in-sunlight-37690723/",
+    "query": "Penguins at Boulders Beach"
+  },
+  "/images/packages/cape-town-and-garden-route/gallery/2/image.webp": {
+    "id": 35221353,
+    "photographer": "Konke  Kubheka",
+    "photographerUrl": "https://www.pexels.com/@konke-kubheka-2156208641",
+    "pexelsUrl": "https://www.pexels.com/photo/vibrant-vineyard-landscape-with-mountain-views-35221353/",
+    "query": "Vineyards in Stellenbosch"
+  },
+  "/images/packages/cape-town-and-garden-route/gallery/3/image.webp": {
+    "id": 3886672,
+    "photographer": "Magda Ehlers",
+    "photographerUrl": "https://www.pexels.com/@magda-ehlers-pexels",
+    "pexelsUrl": "https://www.pexels.com/photo/a-car-driving-on-the-road-3886672/",
+    "query": "Coastal road on the Garden Route"
+  },
+  "/images/packages/cape-town-and-garden-route/gallery/4/image.webp": {
+    "id": 12720285,
+    "photographer": "Kyle Lusted",
+    "photographerUrl": "https://www.pexels.com/@klusted24",
+    "pexelsUrl": "https://www.pexels.com/photo/rock-mountain-under-blue-sky-12720285/",
+    "query": "Cape Point lighthouse cliffs ocean"
+  },
+  "/images/packages/dubai-city-escape/gallery/0/image.webp": {
+    "id": 33687833,
+    "photographer": "Lloyd Alozie",
+    "photographerUrl": "https://www.pexels.com/@iamllwyd",
+    "pexelsUrl": "https://www.pexels.com/photo/stunning-aerial-view-of-dubai-skyline-at-dusk-33687833/",
+    "query": "Burj Khalifa and Downtown Dubai at dusk"
+  },
+  "/images/packages/dubai-city-escape/gallery/1/image.webp": {
+    "id": 16909063,
+    "photographer": "光曦 刘",
+    "photographerUrl": "https://www.pexels.com/@liuguangxi",
+    "pexelsUrl": "https://www.pexels.com/photo/aerial-view-of-an-off-road-car-on-the-desert-16909063/",
+    "query": "4x4 driving over red dunes on a desert safari"
+  },
+  "/images/packages/dubai-city-escape/gallery/2/image.webp": {
+    "id": 27522502,
+    "photographer": "Kate Trysh",
+    "photographerUrl": "https://www.pexels.com/@katetrysh",
+    "pexelsUrl": "https://www.pexels.com/photo/waterfront-harbor-skyline-with-traditional-drifting-fishing-boat-on-the-sea-27522502/",
+    "query": "Traditional dhow cruising Dubai Creek at night"
+  },
+  "/images/packages/dubai-city-escape/gallery/3/image.webp": {
+    "id": 33451132,
+    "photographer": "Sergio Benitez",
+    "photographerUrl": "https://www.pexels.com/@freaxs",
+    "pexelsUrl": "https://www.pexels.com/photo/elegant-domes-of-sheikh-zayed-grand-mosque-abu-dhabi-33451132/",
+    "query": "White domes of Sheikh Zayed Grand Mosque, Abu Dhabi"
+  },
+  "/images/packages/dubai-city-escape/gallery/4/image.webp": {
+    "id": 28350360,
+    "photographer": "Denys Gromov",
+    "photographerUrl": "https://www.pexels.com/@jdgromov",
+    "pexelsUrl": "https://www.pexels.com/photo/dubai-marina-dubai-uae-28350360/",
+    "query": "Dubai Marina skyline over the water"
+  },
+  "/images/packages/istanbul-and-cappadocia/gallery/0/image.webp": {
+    "id": 8321300,
+    "photographer": "Mikhail Nilov",
+    "photographerUrl": "https://www.pexels.com/@mikhail-nilov",
+    "pexelsUrl": "https://www.pexels.com/photo/hot-air-balloons-flying-over-cappadocia-rock-formations-8321300/",
+    "query": "Hot-air balloons over Cappadocia at sunrise"
+  },
+  "/images/packages/istanbul-and-cappadocia/gallery/1/image.webp": {
+    "id": 34432861,
+    "photographer": "K",
+    "photographerUrl": "https://www.pexels.com/@kelly",
+    "pexelsUrl": "https://www.pexels.com/photo/aerial-night-view-of-istanbul-cityscape-34432861/",
+    "query": "Blue Mosque and Hagia Sophia, Istanbul"
+  },
+  "/images/packages/istanbul-and-cappadocia/gallery/2/image.webp": {
+    "id": 33091382,
+    "photographer": "betül  aymergen",
+    "photographerUrl": "https://www.pexels.com/@betul-aymergen-149060776",
+    "pexelsUrl": "https://www.pexels.com/photo/ferry-navigating-bosphorus-in-istanbul-cityscape-33091382/",
+    "query": "Ferry on the Bosphorus"
+  },
+  "/images/packages/istanbul-and-cappadocia/gallery/3/image.webp": {
+    "id": 35729493,
+    "photographer": "Deniz Karbaş",
+    "photographerUrl": "https://www.pexels.com/@deniz-karbas-721197515",
+    "pexelsUrl": "https://www.pexels.com/photo/vibrant-turkish-mosaic-lamps-in-istanbul-bazaar-35729493/",
+    "query": "Lamps in the Grand Bazaar"
+  },
+  "/images/packages/istanbul-and-cappadocia/gallery/4/image.webp": {
+    "id": 10024025,
+    "photographer": "Maksim Romashkin",
+    "photographerUrl": "https://www.pexels.com/@maksim-romashkin",
+    "pexelsUrl": "https://www.pexels.com/photo/city-houses-on-hills-10024025/",
+    "query": "Cave hotel terrace in Göreme"
+  },
+  "/images/packages/kenya-safari/gallery/0/image.webp": {
+    "id": 35634915,
+    "photographer": "Ethan Ngure",
+    "photographerUrl": "https://www.pexels.com/@mayuri",
+    "pexelsUrl": "https://www.pexels.com/photo/elephants-in-maasai-mara-with-safari-tourists-35634915/",
+    "query": "Safari vehicle watching elephants in the Maasai Mara"
+  },
+  "/images/packages/kenya-safari/gallery/1/image.webp": {
+    "id": 5369453,
+    "photographer": "Bushland Adventure Travel",
+    "photographerUrl": "https://www.pexels.com/@bushland-adventure-travel-2341850",
+    "pexelsUrl": "https://www.pexels.com/photo/animals-on-the-water-5369453/",
+    "query": "Wildebeest crossing the Mara River"
+  },
+  "/images/packages/kenya-safari/gallery/2/image.webp": {
+    "id": 18611231,
+    "photographer": "Reto Wiezel",
+    "photographerUrl": "https://www.pexels.com/@reto-wiezel-3245195",
+    "pexelsUrl": "https://www.pexels.com/photo/bungalows-in-a-desert-resort-18611231/",
+    "query": "luxury safari tent camp Africa"
+  },
+  "/images/packages/kenya-safari/gallery/3/image.webp": {
+    "id": 13751012,
+    "photographer": "imsogabriel Stock",
+    "photographerUrl": "https://www.pexels.com/@imsogabriel",
+    "pexelsUrl": "https://www.pexels.com/photo/close-up-shot-of-a-giraffe-13751012/",
+    "query": "Giraffes at the Giraffe Centre, Nairobi"
+  },
+  "/images/packages/kenya-safari/gallery/4/image.webp": {
+    "id": 32196368,
+    "photographer": "Jay Brand",
+    "photographerUrl": "https://www.pexels.com/@jay-brand-1763356224",
+    "pexelsUrl": "https://www.pexels.com/photo/majestic-lion-resting-in-green-forest-32196368/",
+    "query": "Lion resting in the grass"
+  },
+  "/images/packages/paris-and-amsterdam-explorer/gallery/0/image.webp": {
+    "id": 31482953,
+    "photographer": "Denisa Lesniaková",
+    "photographerUrl": "https://www.pexels.com/@denisa-lesniakova-430168073",
+    "pexelsUrl": "https://www.pexels.com/photo/scenic-winter-view-of-paris-with-eiffel-tower-31482953/",
+    "query": "Paris rooftops with the Eiffel Tower in the distance"
+  },
+  "/images/packages/paris-and-amsterdam-explorer/gallery/1/image.webp": {
+    "id": 15229075,
+    "photographer": "Mehmet Turgut  Kirkgoz",
+    "photographerUrl": "https://www.pexels.com/@tkirkgoz",
+    "pexelsUrl": "https://www.pexels.com/photo/barge-sailing-on-seine-in-paris-15229075/",
+    "query": "Seine river cruise boat passing Notre-Dame"
+  },
+  "/images/packages/paris-and-amsterdam-explorer/gallery/2/image.webp": {
+    "id": 30817482,
+    "photographer": "Dominik Gryzbon",
+    "photographerUrl": "https://www.pexels.com/@gryziu",
+    "pexelsUrl": "https://www.pexels.com/photo/gare-du-nord-train-station-at-night-paris-30817482/",
+    "query": "High-speed train at Gare du Nord"
+  },
+  "/images/packages/paris-and-amsterdam-explorer/gallery/3/image.webp": {
+    "id": 34757846,
+    "photographer": "Hans",
+    "photographerUrl": "https://www.pexels.com/@hans-1741882",
+    "pexelsUrl": "https://www.pexels.com/photo/charming-amsterdam-canal-scene-with-bicycles-34757846/",
+    "query": "Amsterdam canal houses and bicycles"
+  },
+  "/images/packages/paris-and-amsterdam-explorer/gallery/4/image.webp": {
+    "id": 37198226,
+    "photographer": "Yves B.",
+    "photographerUrl": "https://www.pexels.com/@yves-b-893027791",
+    "pexelsUrl": "https://www.pexels.com/photo/vibrant-tulip-fields-in-lisse-netherlands-37198226/",
+    "query": "Tulip fields near Keukenhof"
+  },
+  "/images/packages/umrah-package/gallery/0/image.webp": {
+    "id": 35332388,
+    "photographer": "Earth Photart",
+    "photographerUrl": "https://www.pexels.com/@earth-photart-2149767641",
+    "pexelsUrl": "https://www.pexels.com/photo/aerial-view-of-al-masjid-al-aram-in-mecca-35332388/",
+    "query": "Masjid al-Haram in Makkah at dusk"
+  },
+  "/images/packages/umrah-package/gallery/1/image.webp": {
+    "id": 11259857,
+    "photographer": "Yasir Gürbüz",
+    "photographerUrl": "https://www.pexels.com/@yasirgurbuz",
+    "pexelsUrl": "https://www.pexels.com/photo/photo-of-a-minaret-11259857/",
+    "query": "Masjid an-Nabawi Medina green dome"
+  },
+  "/images/packages/umrah-package/gallery/2/image.webp": {
+    "id": 35332385,
+    "photographer": "Earth Photart",
+    "photographerUrl": "https://www.pexels.com/@earth-photart-2149767641",
+    "pexelsUrl": "https://www.pexels.com/photo/aerial-view-of-masjid-al-haram-in-mecca-saudi-arabia-35332385/",
+    "query": "Hotel room overlooking the Haram"
+  },
+  "/images/packages/umrah-package/gallery/3/image.webp": {
+    "id": 30637793,
+    "photographer": "Şevval Pirinççi",
+    "photographerUrl": "https://www.pexels.com/@sevval-pirincci-997526",
+    "pexelsUrl": "https://www.pexels.com/photo/pilgrims-in-ihram-at-mecca-street-scene-30637793/",
+    "query": "pilgrims ihram Mecca"
+  },
+  "/images/packages/umrah-package/gallery/4/image.webp": {
+    "id": 3926213,
+    "photographer": "RIZWAN  SHAIKH",
+    "photographerUrl": "https://www.pexels.com/@rizwan-shaikh-2238104",
+    "pexelsUrl": "https://www.pexels.com/photo/cars-parked-near-quba-mosque-3926213/",
+    "query": "Quba Mosque, Madinah"
+  },
+  "/images/packages/zanzibar-honeymoon/gallery/0/image.webp": {
+    "id": 34777333,
+    "photographer": "Ros NL",
+    "photographerUrl": "https://www.pexels.com/@rosdel",
+    "pexelsUrl": "https://www.pexels.com/photo/turquoise-waters-of-zanzibar-beach-34777333/",
+    "query": "White-sand beach and turquoise water in Zanzibar"
+  },
+  "/images/packages/zanzibar-honeymoon/gallery/1/image.webp": {
+    "id": 19129403,
+    "photographer": "Mimi",
+    "photographerUrl": "https://www.pexels.com/@mimi-3458731",
+    "pexelsUrl": "https://www.pexels.com/photo/damaged-wall-and-locked-wooden-door-19129403/",
+    "query": "Stone Town Zanzibar carved door"
+  },
+  "/images/packages/zanzibar-honeymoon/gallery/2/image.webp": {
+    "id": 9845438,
+    "photographer": "Asad Photo Maldives",
+    "photographerUrl": "https://www.pexels.com/@asadphoto",
+    "pexelsUrl": "https://www.pexels.com/photo/beach-under-blue-sky-9845438/",
+    "query": "beach villa plunge pool tropical"
+  },
+  "/images/packages/zanzibar-honeymoon/gallery/3/image.webp": {
+    "id": 5859000,
+    "photographer": "Taryn Elliott",
+    "photographerUrl": "https://www.pexels.com/@taryn-elliott",
+    "pexelsUrl": "https://www.pexels.com/photo/two-men-on-a-fishing-boat-5859000/",
+    "query": "Dhow sailing at sunset off Nungwi"
+  },
+  "/images/packages/zanzibar-honeymoon/gallery/4/image.webp": {
+    "id": 8995777,
+    "photographer": "PNW Production",
+    "photographerUrl": "https://www.pexels.com/@pnw-prod",
+    "pexelsUrl": "https://www.pexels.com/photo/a-close-up-shot-of-a-woman-holding-a-white-lamp-8995777/",
+    "query": "romantic candlelit dinner on the beach"
+  },
+  "/images/visas/canada-visitor-visa/image.webp": {
+    "id": 17709342,
+    "photographer": "Ryan Beirne",
+    "photographerUrl": "https://www.pexels.com/@peepsbeirne",
+    "pexelsUrl": "https://www.pexels.com/photo/lake-louise-brush-17709342/",
+    "query": "Lake Louise and the Rocky Mountains"
+  },
+  "/images/visas/dubai-uae-tourist-visa/image.webp": {
+    "id": 30554306,
+    "photographer": "AJ  Ahamad",
+    "photographerUrl": "https://www.pexels.com/@aj-ahamad-767001191",
+    "pexelsUrl": "https://www.pexels.com/photo/vibrant-dubai-marina-skyline-at-night-30554306/",
+    "query": "Dubai Marina skyline at night"
+  },
+  "/images/visas/schengen-short-stay-visa/image.webp": {
+    "id": 17501700,
+    "photographer": "Darya Sannikova",
+    "photographerUrl": "https://www.pexels.com/@myatezhny39",
+    "pexelsUrl": "https://www.pexels.com/photo/traffic-on-a-street-in-paris-17501700/",
+    "query": "Paris street Eiffel Tower"
+  },
+  "/images/visas/south-africa-visitor-visa/image.webp": {
+    "id": 6930735,
+    "photographer": "Tomas Wells",
+    "photographerUrl": "https://www.pexels.com/@tomas-wells-30354857",
+    "pexelsUrl": "https://www.pexels.com/photo/brown-mountain-under-white-clouds-6930735/",
+    "query": "Table Mountain above Cape Town"
+  },
+  "/images/visas/uk-standard-visitor-visa/image.webp": {
+    "id": 11001427,
+    "photographer": "Ollie Craig",
+    "photographerUrl": "https://www.pexels.com/@olliecraig1",
+    "pexelsUrl": "https://www.pexels.com/photo/bridge-over-river-11001427/",
+    "query": "Tower Bridge and the River Thames in London"
+  },
+  "/images/visas/us-b1-b2-visitor-visa/image.webp": {
+    "id": 941459,
+    "photographer": "Henrik Pfitzenmaier",
+    "photographerUrl": "https://www.pexels.com/@hammyx",
+    "pexelsUrl": "https://www.pexels.com/photo/aerial-photography-of-buildings-during-nighttime-941459/",
+    "query": "New York skyline at dusk"
+  }
+}

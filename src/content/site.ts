@@ -1,63 +1,48 @@
 /**
- * Every business detail lives here. Components read from this file only,
- * so changing a value (for example whatsappNumber) updates the whole site.
+ * Business details for the whole site. The values live in settings.json, which the client edits in
+ * the admin (Business details). Components read from `site` only, so changing a value there, for
+ * example the WhatsApp number, updates every page on the next deploy.
+ *
+ * This file is also imported by client components, so it does not pull in Zod; settings.json is
+ * validated at build time in src/lib/content.ts.
  */
+import settings from './settings.json';
+
+const s = settings as typeof settings & { ga4Id?: string; metaPixelId?: string; foundedYear?: number | null };
+const clean = (v: string | null | undefined) => (v && v.trim() ? v.trim() : '');
+
 export const site = {
   name: 'Prepping Travel and Tours',
   shortName: 'Prepping',
-  tagline: 'Trips to any country, planned with you on WhatsApp from our office in Lagos.',
+  tagline: clean(s.tagline) || 'Trips to any country, planned with you on WhatsApp from our office in Lagos.',
   description:
-    'Prepping Travel and Tours is a Lagos travel agency planning holidays, honeymoons, group tours and visas to 60+ countries. Pick a trip and chat with us on WhatsApp.',
+    'Prepping Travel and Tours is a Lagos travel agency planning holidays, honeymoons, group tours and visa applications for 60+ countries. Pick a trip and chat with us on WhatsApp.',
 
   // Public URL of the live site, used for canonical links, the sitemap and WhatsApp package links.
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.preppingtravel.ng',
 
-  // International format, digits only, no "+" (used in https://wa.me/<number>).
-  whatsappNumber: '2348000000000',
-  phone: {
-    display: '+234 800 000 0000',
-    tel: '+2348000000000'
-  },
-  email: 'hello@preppingtravel.ng',
+  whatsappNumber: s.whatsappNumber,
+  phone: { display: s.phoneDisplay, tel: s.phoneTel },
+  email: s.email,
   address: {
-    street: 'Office address, Lekki Phase 1',
-    city: 'Lagos',
-    country: 'Nigeria',
+    street: s.street,
+    city: s.city,
+    country: s.country,
     countryCode: 'NG',
-    // Text used for the Google Maps embed on the Contact page.
-    mapQuery: 'Lekki Phase 1, Lagos, Nigeria'
+    mapQuery: clean(s.mapQuery) || `${s.street}, ${s.city}, ${s.country}`
   },
-  hours: {
-    office: 'Mon to Sat, 9am to 6pm WAT',
-    whatsapp: 'WhatsApp replies 7 days a week'
-  },
-  socials: [
-    { label: 'Instagram', href: 'https://www.instagram.com/' },
-    { label: 'TikTok', href: 'https://www.tiktok.com/' },
-    { label: 'Facebook', href: 'https://www.facebook.com/' }
-  ],
-  stats: [
-    { value: 10, suffix: '+', label: 'Years planning trips' },
-    { value: 5000, suffix: '+', label: 'Happy travellers' },
-    { value: 60, suffix: '+', label: 'Countries' },
-    { value: 98, suffix: '%', label: 'Client satisfaction' }
-  ],
-  // Placeholder accreditation logos. Replace with real logo files when available.
-  accreditations: ['IATA', 'NANTA', 'NCAA'],
+  hours: { office: clean(s.officeHours), whatsapp: clean(s.whatsappHours) },
+  socials: s.socials,
+  stats: s.stats.map((x) => ({ value: x.value, suffix: x.suffix ?? '', label: x.label })),
+  accreditations: s.accreditations,
   reviewSummary: {
-    rating: 4.9,
-    count: 312,
-    source: 'Google',
-    // Remove this flag once the reviews are real.
-    isSample: true
+    rating: clean(s.rating),
+    count: s.reviewCount ?? 0,
+    source: clean(s.reviewSource) || 'Google',
+    isSample: s.reviewsAreSamples
   },
-  foundedYear: 2016,
-
-  // Optional analytics. Leave empty to load nothing.
-  analytics: {
-    ga4Id: '',
-    metaPixelId: ''
-  }
-} as const;
+  foundedYear: s.foundedYear ?? undefined,
+  analytics: { ga4Id: clean(s.ga4Id), metaPixelId: clean(s.metaPixelId) }
+};
 
 export type Site = typeof site;

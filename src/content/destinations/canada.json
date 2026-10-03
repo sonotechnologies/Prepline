@@ -1,0 +1,9 @@
+{
+  "name": "Canada",
+  "short": "Canada",
+  "countryCode": "CA",
+  "region": "Americas",
+  "popular": false,
+  "image": "/images/destinations/canada/image.webp",
+  "imageAlt": "Lake Louise in the Rockies"
+}

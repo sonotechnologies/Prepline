@@ -1,0 +1,72 @@
+{
+  "title": "US B1/B2 Visitor Visa",
+  "featured": true,
+  "country": "United States",
+  "countryCode": "US",
+  "region": "Americas",
+  "purposes": [
+    "Tourism",
+    "Business",
+    "Visiting family"
+  ],
+  "priceFrom": 120000,
+  "currency": "NGN",
+  "priceNote": "per applicant",
+  "feeNote": "The US visa application (MRV) fee is paid separately.",
+  "processingTime": "Depends on interview wait times at the US embassy or consulate",
+  "validity": "Set by the US embassy",
+  "stay": "Decided at the port of entry",
+  "entries": "Usually multiple",
+  "appointment": "Interview at the US Consulate in Lagos or the Embassy in Abuja",
+  "image": "/images/visas/us-b1-b2-visitor-visa/image.webp",
+  "imageAlt": "New York skyline at dusk",
+  "summary": "For tourism, family visits and business meetings in the US. We complete your DS-160, book your interview and prepare you for it.",
+  "overview": "The B1/B2 visa covers business and tourist visits to the United States. The interview is the key step, so beyond the DS-160 form and appointment booking we run a practice interview with you so you can explain your trip clearly and confidently.",
+  "requirements": [
+    "Valid international passport",
+    "DS-160 confirmation page",
+    "Visa fee payment receipt",
+    "Passport photograph to US specifications",
+    "Proof of employment, business or studies",
+    "Bank statements and evidence of ties to Nigeria"
+  ],
+  "steps": [
+    {
+      "title": "Free assessment on WhatsApp",
+      "description": "We look at your purpose of travel and history and advise on your chances."
+    },
+    {
+      "title": "DS-160 form",
+      "description": "We complete the DS-160 with you and check every answer for consistency."
+    },
+    {
+      "title": "Fee payment and appointment",
+      "description": "We guide you through the fee payment and book the earliest interview slot available."
+    },
+    {
+      "title": "Interview preparation",
+      "description": "A practice session covering the questions officers commonly ask."
+    },
+    {
+      "title": "After the interview",
+      "description": "We help with passport collection and plan your trip once approved."
+    }
+  ],
+  "included": [
+    "Eligibility assessment",
+    "DS-160 form completion",
+    "Appointment booking",
+    "Interview preparation session",
+    "Document review"
+  ],
+  "excluded": [
+    "US visa application fee",
+    "Flights and hotels (we can quote separately)"
+  ],
+  "faqs": [
+    {
+      "q": "How long is the wait for an interview?",
+      "a": "Wait times change often. We check the current wait for Lagos and Abuja and tell you before you pay the fee."
+    }
+  ]
+}

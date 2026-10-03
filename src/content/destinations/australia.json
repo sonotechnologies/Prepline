@@ -1,0 +1,9 @@
+{
+  "name": "Australia",
+  "short": "Australia",
+  "countryCode": "AU",
+  "region": "Oceania",
+  "popular": false,
+  "image": "/images/destinations/australia/image.webp",
+  "imageAlt": "Sydney Opera House"
+}

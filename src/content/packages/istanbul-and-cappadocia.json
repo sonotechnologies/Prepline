@@ -1,42 +1,129 @@
 {
-  "slug": "istanbul-and-cappadocia",
   "title": "Istanbul and Cappadocia",
+  "featured": true,
   "country": "Türkiye",
   "countryCode": "TR",
   "city": "Istanbul and Cappadocia",
   "region": "Europe",
-  "tripTypes": ["Adventure", "Group"],
+  "tripTypes": [
+    "Adventure",
+    "Group"
+  ],
   "durationDays": 6,
   "nights": 5,
   "priceFrom": 2750000,
   "currency": "NGN",
   "priceNote": "per person",
-  "dates": ["2026-10-17", "2027-04-17", "2027-05-29"],
-  "featured": true,
-  "coverImage": "/images/packages/istanbul-and-cappadocia/1.webp",
-  "coverAlt": "Hot-air balloons over Cappadocia at sunrise",
-  "gallery": [
-    { "src": "/images/packages/istanbul-and-cappadocia/1.webp", "alt": "Hot-air balloons over Cappadocia at sunrise" },
-    { "src": "/images/packages/istanbul-and-cappadocia/2.webp", "alt": "Blue Mosque and Hagia Sophia, Istanbul" },
-    { "src": "/images/packages/istanbul-and-cappadocia/3.webp", "alt": "Ferry on the Bosphorus" },
-    { "src": "/images/packages/istanbul-and-cappadocia/4.webp", "alt": "Lamps in the Grand Bazaar" },
-    { "src": "/images/packages/istanbul-and-cappadocia/5.webp", "alt": "Cave hotel terrace in Göreme" }
+  "departures": [
+    {
+      "date": "2026-10-17",
+      "note": ""
+    },
+    {
+      "date": "2027-04-17",
+      "note": ""
+    },
+    {
+      "date": "2027-05-29",
+      "note": ""
+    }
   ],
-  "highlights": ["Balloon ride", "Bosphorus cruise", "Grand Bazaar"],
+  "gallery": [
+    {
+      "image": "/images/packages/istanbul-and-cappadocia/gallery/0/image.webp",
+      "alt": "Hot-air balloons over Cappadocia at sunrise"
+    },
+    {
+      "image": "/images/packages/istanbul-and-cappadocia/gallery/1/image.webp",
+      "alt": "Blue Mosque and Hagia Sophia, Istanbul"
+    },
+    {
+      "image": "/images/packages/istanbul-and-cappadocia/gallery/2/image.webp",
+      "alt": "Ferry on the Bosphorus"
+    },
+    {
+      "image": "/images/packages/istanbul-and-cappadocia/gallery/3/image.webp",
+      "alt": "Lamps in the Grand Bazaar"
+    },
+    {
+      "image": "/images/packages/istanbul-and-cappadocia/gallery/4/image.webp",
+      "alt": "Cave hotel terrace in Göreme"
+    }
+  ],
+  "highlights": [
+    "Balloon ride",
+    "Bosphorus cruise",
+    "Grand Bazaar"
+  ],
   "overview": "Where Europe meets Asia. Three nights in Istanbul cover the Blue Mosque, Hagia Sophia, a Bosphorus cruise and the Grand Bazaar, then a short flight takes you to Cappadocia for two nights in a cave hotel and a sunrise balloon ride over the fairy chimneys.",
   "itinerary": [
-    { "day": 1, "title": "Arrive in Istanbul", "description": "Airport pick-up and transfer to your hotel in Sultanahmet.", "meta": "Stay: 4-star hotel, Sultanahmet" },
-    { "day": 2, "title": "Old City tour", "description": "Blue Mosque, Hagia Sophia, Topkapı Palace and the Grand Bazaar with a guide.", "meta": "Meals: breakfast · Stay: 4-star hotel, Sultanahmet" },
-    { "day": 3, "title": "Bosphorus cruise", "description": "Morning cruise between Europe and Asia, afternoon at the Spice Bazaar and Galata.", "meta": "Meals: breakfast · Stay: 4-star hotel, Sultanahmet" },
-    { "day": 4, "title": "Fly to Cappadocia", "description": "Short flight to Kayseri, then Göreme open-air museum and the valleys.", "meta": "Meals: breakfast, dinner · Stay: cave hotel, Göreme" },
-    { "day": 5, "title": "Sunrise balloon ride", "description": "Hot-air balloon flight at dawn, then an underground city and pottery village.", "meta": "Meals: breakfast · Stay: cave hotel, Göreme" },
-    { "day": 6, "title": "Departure", "description": "Flight back via Istanbul to Lagos.", "meta": "Meals: breakfast" }
+    {
+      "day": 1,
+      "title": "Arrive in Istanbul",
+      "description": "Airport pick-up and transfer to your hotel in Sultanahmet.",
+      "meta": "Stay: 4-star hotel, Sultanahmet"
+    },
+    {
+      "day": 2,
+      "title": "Old City tour",
+      "description": "Blue Mosque, Hagia Sophia, Topkapı Palace and the Grand Bazaar with a guide.",
+      "meta": "Meals: breakfast · Stay: 4-star hotel, Sultanahmet"
+    },
+    {
+      "day": 3,
+      "title": "Bosphorus cruise",
+      "description": "Morning cruise between Europe and Asia, afternoon at the Spice Bazaar and Galata.",
+      "meta": "Meals: breakfast · Stay: 4-star hotel, Sultanahmet"
+    },
+    {
+      "day": 4,
+      "title": "Fly to Cappadocia",
+      "description": "Short flight to Kayseri, then Göreme open-air museum and the valleys.",
+      "meta": "Meals: breakfast, dinner · Stay: cave hotel, Göreme"
+    },
+    {
+      "day": 5,
+      "title": "Sunrise balloon ride",
+      "description": "Hot-air balloon flight at dawn, then an underground city and pottery village.",
+      "meta": "Meals: breakfast · Stay: cave hotel, Göreme"
+    },
+    {
+      "day": 6,
+      "title": "Departure",
+      "description": "Flight back via Istanbul to Lagos.",
+      "meta": "Meals: breakfast"
+    }
   ],
-  "included": ["Return economy flights from Lagos", "Domestic flights to Cappadocia", "3 nights in Istanbul, 2 nights in a cave hotel", "Daily breakfast", "Guided Old City tour", "Bosphorus cruise", "Sunrise balloon ride", "Türkiye visa support"],
-  "excluded": ["Travel insurance", "Most lunches and dinners", "Museum entry not listed", "Tips"],
+  "included": [
+    "Return economy flights from Lagos",
+    "Domestic flights to Cappadocia",
+    "3 nights in Istanbul, 2 nights in a cave hotel",
+    "Daily breakfast",
+    "Guided Old City tour",
+    "Bosphorus cruise",
+    "Sunrise balloon ride",
+    "Türkiye visa support"
+  ],
+  "excluded": [
+    "Travel insurance",
+    "Most lunches and dinners",
+    "Museum entry not listed",
+    "Tips"
+  ],
   "addOns": [
-    { "title": "Turkish bath (hammam)", "priceFrom": 65000 },
-    { "title": "Whirling dervish show", "priceFrom": 40000 }
+    {
+      "title": "Turkish bath (hammam)",
+      "priceFrom": 65000
+    },
+    {
+      "title": "Whirling dervish show",
+      "priceFrom": 40000
+    }
   ],
-  "quickFacts": { "groupSize": "2 to 20 travellers", "bestSeason": "April to June, September to October", "visaRequired": true }
+  "faqs": [],
+  "quickFacts": {
+    "groupSize": "2 to 20 travellers",
+    "bestSeason": "April to June, September to October",
+    "visaRequired": true
+  }
 }

@@ -1,43 +1,134 @@
 {
-  "slug": "cape-town-and-garden-route",
   "title": "Cape Town and Garden Route",
+  "featured": true,
   "country": "South Africa",
   "countryCode": "ZA",
   "city": "Cape Town",
   "region": "Africa",
-  "tripTypes": ["Adventure", "Family"],
+  "tripTypes": [
+    "Adventure",
+    "Family"
+  ],
   "durationDays": 7,
   "nights": 6,
   "priceFrom": 3200000,
   "currency": "NGN",
   "priceNote": "per person",
-  "dates": ["2026-11-21", "2027-01-16", "2027-03-20"],
-  "featured": true,
-  "coverImage": "/images/packages/cape-town-and-garden-route/1.webp",
-  "coverAlt": "Table Mountain seen from across the bay",
-  "gallery": [
-    { "src": "/images/packages/cape-town-and-garden-route/1.webp", "alt": "Table Mountain seen from across the bay" },
-    { "src": "/images/packages/cape-town-and-garden-route/2.webp", "alt": "Penguins at Boulders Beach" },
-    { "src": "/images/packages/cape-town-and-garden-route/3.webp", "alt": "Vineyards in Stellenbosch" },
-    { "src": "/images/packages/cape-town-and-garden-route/4.webp", "alt": "Coastal road on the Garden Route" },
-    { "src": "/images/packages/cape-town-and-garden-route/5.webp", "alt": "Cape Point lighthouse" }
+  "departures": [
+    {
+      "date": "2026-11-21",
+      "note": ""
+    },
+    {
+      "date": "2027-01-16",
+      "note": ""
+    },
+    {
+      "date": "2027-03-20",
+      "note": ""
+    }
   ],
-  "highlights": ["Table Mountain", "Coastal drive", "Wine tasting"],
+  "gallery": [
+    {
+      "image": "/images/packages/cape-town-and-garden-route/gallery/0/image.webp",
+      "alt": "Table Mountain seen from across the bay"
+    },
+    {
+      "image": "/images/packages/cape-town-and-garden-route/gallery/1/image.webp",
+      "alt": "Penguins at Boulders Beach"
+    },
+    {
+      "image": "/images/packages/cape-town-and-garden-route/gallery/2/image.webp",
+      "alt": "Vineyards in Stellenbosch"
+    },
+    {
+      "image": "/images/packages/cape-town-and-garden-route/gallery/3/image.webp",
+      "alt": "Coastal road on the Garden Route"
+    },
+    {
+      "image": "/images/packages/cape-town-and-garden-route/gallery/4/image.webp",
+      "alt": "Cape Point lighthouse"
+    }
+  ],
+  "highlights": [
+    "Table Mountain",
+    "Coastal drive",
+    "Wine tasting"
+  ],
   "overview": "A week of mountains, ocean and open road. Four nights in Cape Town cover Table Mountain, Cape Point and the Winelands, then you drive the famous Garden Route to Knysna for lagoons, forests and whale-watching bays.",
   "itinerary": [
-    { "day": 1, "title": "Arrive in Cape Town", "description": "Airport pick-up and transfer to your hotel at the V&A Waterfront.", "meta": "Stay: 4-star hotel, Waterfront" },
-    { "day": 2, "title": "Table Mountain and city", "description": "Cable car up Table Mountain, then the colourful Bo-Kaap and the Company's Garden.", "meta": "Meals: breakfast · Stay: 4-star hotel, Waterfront" },
-    { "day": 3, "title": "Cape Peninsula", "description": "Chapman's Peak drive, Cape Point and the penguins at Boulders Beach.", "meta": "Meals: breakfast · Stay: 4-star hotel, Waterfront" },
-    { "day": 4, "title": "Winelands", "description": "Wine and chocolate tastings in Stellenbosch and Franschhoek.", "meta": "Meals: breakfast, lunch · Stay: 4-star hotel, Waterfront" },
-    { "day": 5, "title": "Garden Route drive", "description": "Scenic drive east along the coast to Knysna.", "meta": "Meals: breakfast · Stay: lodge, Knysna" },
-    { "day": 6, "title": "Knysna and Plettenberg Bay", "description": "Lagoon cruise and a visit to Robberg Nature Reserve.", "meta": "Meals: breakfast · Stay: lodge, Knysna" },
-    { "day": 7, "title": "Departure from George", "description": "Short flight from George back via Johannesburg to Lagos.", "meta": "Meals: breakfast" }
+    {
+      "day": 1,
+      "title": "Arrive in Cape Town",
+      "description": "Airport pick-up and transfer to your hotel at the V&A Waterfront.",
+      "meta": "Stay: 4-star hotel, Waterfront"
+    },
+    {
+      "day": 2,
+      "title": "Table Mountain and city",
+      "description": "Cable car up Table Mountain, then the colourful Bo-Kaap and the Company's Garden.",
+      "meta": "Meals: breakfast · Stay: 4-star hotel, Waterfront"
+    },
+    {
+      "day": 3,
+      "title": "Cape Peninsula",
+      "description": "Chapman's Peak drive, Cape Point and the penguins at Boulders Beach.",
+      "meta": "Meals: breakfast · Stay: 4-star hotel, Waterfront"
+    },
+    {
+      "day": 4,
+      "title": "Winelands",
+      "description": "Wine and chocolate tastings in Stellenbosch and Franschhoek.",
+      "meta": "Meals: breakfast, lunch · Stay: 4-star hotel, Waterfront"
+    },
+    {
+      "day": 5,
+      "title": "Garden Route drive",
+      "description": "Scenic drive east along the coast to Knysna.",
+      "meta": "Meals: breakfast · Stay: lodge, Knysna"
+    },
+    {
+      "day": 6,
+      "title": "Knysna and Plettenberg Bay",
+      "description": "Lagoon cruise and a visit to Robberg Nature Reserve.",
+      "meta": "Meals: breakfast · Stay: lodge, Knysna"
+    },
+    {
+      "day": 7,
+      "title": "Departure from George",
+      "description": "Short flight from George back via Johannesburg to Lagos.",
+      "meta": "Meals: breakfast"
+    }
   ],
-  "included": ["Return economy flights from Lagos", "6 nights in 4-star hotels and lodges with breakfast", "Private transfers and Garden Route driver", "Table Mountain cable car", "Cape Point entry", "Winelands tasting tour", "Knysna lagoon cruise"],
-  "excluded": ["Travel insurance", "Most lunches and dinners", "Visa embassy fees", "Tips"],
+  "included": [
+    "Return economy flights from Lagos",
+    "6 nights in 4-star hotels and lodges with breakfast",
+    "Private transfers and Garden Route driver",
+    "Table Mountain cable car",
+    "Cape Point entry",
+    "Winelands tasting tour",
+    "Knysna lagoon cruise"
+  ],
+  "excluded": [
+    "Travel insurance",
+    "Most lunches and dinners",
+    "Visa embassy fees",
+    "Tips"
+  ],
   "addOns": [
-    { "title": "Shark cage diving, Gansbaai", "priceFrom": 180000 },
-    { "title": "Robben Island tour", "priceFrom": 55000 }
+    {
+      "title": "Shark cage diving, Gansbaai",
+      "priceFrom": 180000
+    },
+    {
+      "title": "Robben Island tour",
+      "priceFrom": 55000
+    }
   ],
-  "quickFacts": { "groupSize": "2 to 24 travellers", "bestSeason": "October to April", "visaRequired": true }
+  "faqs": [],
+  "quickFacts": {
+    "groupSize": "2 to 24 travellers",
+    "bestSeason": "October to April",
+    "visaRequired": true
+  }
 }

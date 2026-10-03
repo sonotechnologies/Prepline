@@ -5,7 +5,7 @@
  */
 
 :root,
-[data-theme='a'] {
+[data-theme='a'] {    
   --primary: #0e7c86;
   --accent: #ff6b4a;
   --hi: #ffc857;

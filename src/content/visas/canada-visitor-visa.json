@@ -1,0 +1,72 @@
+{
+  "title": "Canada Visitor Visa",
+  "featured": true,
+  "country": "Canada",
+  "countryCode": "CA",
+  "region": "Americas",
+  "purposes": [
+    "Tourism",
+    "Visiting family",
+    "Business"
+  ],
+  "priceFrom": 180000,
+  "currency": "NGN",
+  "priceNote": "per applicant",
+  "feeNote": "Canadian visa and biometrics fees are paid separately.",
+  "processingTime": "Several weeks to a few months, depending on current IRCC processing times",
+  "validity": "Set by IRCC",
+  "stay": "Usually up to 6 months",
+  "entries": "Single or multiple",
+  "appointment": "Biometrics at a visa application centre in Lagos or Abuja",
+  "image": "/images/visas/canada-visitor-visa/image.webp",
+  "imageAlt": "Lake Louise and the Rocky Mountains",
+  "summary": "For holidays and family visits to Canada. We prepare your online application, supporting letters and biometrics booking.",
+  "overview": "The Canadian visitor visa (temporary resident visa) is applied for online and needs strong financial and personal documents. We organise your evidence, write your letter of explanation and submit a complete application so it is assessed on its strengths.",
+  "requirements": [
+    "Valid international passport",
+    "Bank statements and proof of funds",
+    "Employment letter or business documents",
+    "Travel history, if any",
+    "Letter of invitation, if visiting family",
+    "Passport photographs"
+  ],
+  "steps": [
+    {
+      "title": "Free assessment on WhatsApp",
+      "description": "We review your situation and travel plans."
+    },
+    {
+      "title": "Documents and letter of explanation",
+      "description": "We tell you what to gather and write a clear letter of explanation."
+    },
+    {
+      "title": "Online application",
+      "description": "We submit your application through your IRCC account."
+    },
+    {
+      "title": "Biometrics",
+      "description": "We book your biometrics appointment."
+    },
+    {
+      "title": "Decision",
+      "description": "We watch for updates and help you plan the trip once approved."
+    }
+  ],
+  "included": [
+    "Eligibility assessment",
+    "Document checklist and review",
+    "Letter of explanation",
+    "Online submission",
+    "Biometrics booking"
+  ],
+  "excluded": [
+    "Canadian government visa and biometrics fees",
+    "Flights and hotels (we can quote separately)"
+  ],
+  "faqs": [
+    {
+      "q": "Can my family apply together?",
+      "a": "Yes. We can prepare linked applications for your spouse and children, and quote per applicant."
+    }
+  ]
+}

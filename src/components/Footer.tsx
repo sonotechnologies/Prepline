@@ -2,16 +2,17 @@ import Link from 'next/link';
 import { site } from '@/content/site';
 
 const EXPLORE = [
-  { label: 'Packages', href: '/packages/' },
-  { label: 'Destinations', href: '/destinations/' },
-  { label: 'Custom trip', href: '/custom-trip/' },
-  { label: 'Services', href: '/services/' }
+  { label: 'Packages', href: '/packages' },
+  { label: 'Visas', href: '/visas' },
+  { label: 'Destinations', href: '/destinations' },
+  { label: 'Custom trip', href: '/custom-trip' },
+  { label: 'Services', href: '/services' }
 ];
 const COMPANY = [
-  { label: 'About', href: '/about/' },
+  { label: 'About', href: '/about' },
   { label: 'Reviews', href: '/#reviews' },
   { label: 'FAQs', href: '/#faqs' },
-  { label: 'Contact', href: '/contact/' }
+  { label: 'Contact', href: '/contact' }
 ];
 
 const heading = 'mb-2 text-sm font-semibold uppercase tracking-[.08em] text-hi';
@@ -65,7 +66,10 @@ export function Footer() {
       <div className="border-t border-white/15">
         <div className="container-site flex flex-wrap items-center justify-between gap-x-6 gap-y-3 pb-6 pt-4">
           <span className="text-sm text-on-dark-muted">
-            © {new Date().getFullYear()} {site.name}
+            © {new Date().getFullYear()} {site.name} ·{' '}
+            <Link href="/photo-credits" className="text-on-dark-muted underline-offset-4 hover:text-on-dark">
+              Photos from Pexels
+            </Link>
           </span>
           <ul className="flex gap-2" aria-label="Social media">
             {site.socials.map((s) => (

@@ -9,7 +9,20 @@ import { waLink } from '@/lib/whatsapp';
  * floating WhatsApp button above it (see globals.css) so the two never overlap; once measured,
  * the exact bar height replaces the CSS fallback, even when the price line wraps.
  */
-export function StickyEnquiryBar({ priceText, priceNote, message, slug }: { priceText: string; priceNote: string; message: string; slug: string }) {
+export function StickyEnquiryBar({
+  priceText,
+  priceNote,
+  message,
+  label,
+  cta = 'Chat about this package'
+}: {
+  priceText: string;
+  priceNote: string;
+  message: string;
+  /** Analytics label, e.g. "sticky-bar:dubai-city-escape". */
+  label: string;
+  cta?: string;
+}) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -40,9 +53,9 @@ export function StickyEnquiryBar({ priceText, priceNote, message, slug }: { pric
         </span>
         <span className="text-sm text-muted">Final quote on WhatsApp</span>
       </div>
-      <a href={waLink(message)} target="_blank" rel="noopener" data-wa-label={`sticky-bar:${slug}`} className="btn btn-primary">
+      <a href={waLink(message)} target="_blank" rel="noopener" data-wa-label={label} className="btn btn-primary">
         <WhatsAppIcon />
-        Chat about this package
+        {cta}
       </a>
     </div>
   );

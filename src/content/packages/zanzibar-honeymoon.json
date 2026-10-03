@@ -1,49 +1,145 @@
 {
-  "slug": "zanzibar-honeymoon",
   "title": "Zanzibar Honeymoon",
+  "featured": true,
   "country": "Tanzania",
   "countryCode": "TZ",
   "city": "Zanzibar",
   "region": "Africa",
-  "tripTypes": ["Honeymoon", "Luxury"],
+  "tripTypes": [
+    "Honeymoon",
+    "Luxury"
+  ],
   "durationDays": 6,
   "nights": 5,
   "priceFrom": 2400000,
   "currency": "NGN",
   "priceNote": "per person",
-  "dates": ["2026-10-24", "2026-12-05", "2027-02-13"],
-  "dateNotes": { "2027-02-13": "Valentine's trip" },
-  "featured": true,
-  "coverImage": "/images/packages/zanzibar-honeymoon/1.webp",
-  "coverAlt": "White-sand beach and turquoise water in Zanzibar",
-  "gallery": [
-    { "src": "/images/packages/zanzibar-honeymoon/1.webp", "alt": "White-sand beach and turquoise water in Zanzibar" },
-    { "src": "/images/packages/zanzibar-honeymoon/2.webp", "alt": "Carved wooden doors in Stone Town" },
-    { "src": "/images/packages/zanzibar-honeymoon/3.webp", "alt": "Private beach villa with plunge pool" },
-    { "src": "/images/packages/zanzibar-honeymoon/4.webp", "alt": "Dhow sailing at sunset off Nungwi" },
-    { "src": "/images/packages/zanzibar-honeymoon/5.webp", "alt": "Candlelit dinner on the beach" }
+  "departures": [
+    {
+      "date": "2026-10-24",
+      "note": ""
+    },
+    {
+      "date": "2026-12-05",
+      "note": ""
+    },
+    {
+      "date": "2027-02-13",
+      "note": "Valentine's trip"
+    }
   ],
-  "highlights": ["Stone Town", "Beach villa", "Sunset cruise"],
+  "gallery": [
+    {
+      "image": "/images/packages/zanzibar-honeymoon/gallery/0/image.webp",
+      "alt": "White-sand beach and turquoise water in Zanzibar"
+    },
+    {
+      "image": "/images/packages/zanzibar-honeymoon/gallery/1/image.webp",
+      "alt": "Carved wooden doors in Stone Town"
+    },
+    {
+      "image": "/images/packages/zanzibar-honeymoon/gallery/2/image.webp",
+      "alt": "Private beach villa with plunge pool"
+    },
+    {
+      "image": "/images/packages/zanzibar-honeymoon/gallery/3/image.webp",
+      "alt": "Dhow sailing at sunset off Nungwi"
+    },
+    {
+      "image": "/images/packages/zanzibar-honeymoon/gallery/4/image.webp",
+      "alt": "Candlelit dinner on the beach"
+    }
+  ],
+  "highlights": [
+    "Stone Town",
+    "Beach villa",
+    "Sunset cruise"
+  ],
   "overview": "Six slow days on the Spice Island, planned for two. After a night in historic Stone Town you move to a beach villa on the north coast for four nights of white sand, warm water and quiet dinners. A sunset dhow cruise, a spice farm visit and a private beach dinner are included, with free days to simply rest.",
   "itinerary": [
-    { "day": 1, "title": "Arrive in Zanzibar, Stone Town stay", "description": "Your driver meets you at Abeid Amani Karume Airport and takes you to a boutique hotel in Stone Town. Evening walk to the Forodhani food market.", "meta": "Meals: dinner · Stay: boutique hotel, Stone Town" },
-    { "day": 2, "title": "Stone Town and spice farm", "description": "A guided walk through Stone Town's alleys, the old slave market and the House of Wonders, then a spice farm tour. Afternoon transfer to your beach villa in Nungwi.", "meta": "Meals: breakfast, lunch · Stay: beach villa, Nungwi" },
-    { "day": 3, "title": "Free beach day", "description": "A full day to rest by the pool or on the beach. Optional snorkelling at Mnemba Atoll can be added.", "meta": "Meals: breakfast, dinner · Stay: beach villa, Nungwi" },
-    { "day": 4, "title": "Sunset dhow cruise", "description": "Late afternoon sailing on a traditional dhow with drinks and fruit as the sun sets over the Indian Ocean.", "meta": "Meals: breakfast, dinner · Stay: beach villa, Nungwi" },
-    { "day": 5, "title": "Private beach dinner", "description": "Free day, followed by a private candlelit dinner set up on the sand.", "meta": "Meals: breakfast, dinner · Stay: beach villa, Nungwi" },
-    { "day": 6, "title": "Departure", "description": "Relaxed morning, then your transfer to the airport for your flight back to Lagos.", "meta": "Meals: breakfast" }
+    {
+      "day": 1,
+      "title": "Arrive in Zanzibar, Stone Town stay",
+      "description": "Your driver meets you at Abeid Amani Karume Airport and takes you to a boutique hotel in Stone Town. Evening walk to the Forodhani food market.",
+      "meta": "Meals: dinner · Stay: boutique hotel, Stone Town"
+    },
+    {
+      "day": 2,
+      "title": "Stone Town and spice farm",
+      "description": "A guided walk through Stone Town's alleys, the old slave market and the House of Wonders, then a spice farm tour. Afternoon transfer to your beach villa in Nungwi.",
+      "meta": "Meals: breakfast, lunch · Stay: beach villa, Nungwi"
+    },
+    {
+      "day": 3,
+      "title": "Free beach day",
+      "description": "A full day to rest by the pool or on the beach. Optional snorkelling at Mnemba Atoll can be added.",
+      "meta": "Meals: breakfast, dinner · Stay: beach villa, Nungwi"
+    },
+    {
+      "day": 4,
+      "title": "Sunset dhow cruise",
+      "description": "Late afternoon sailing on a traditional dhow with drinks and fruit as the sun sets over the Indian Ocean.",
+      "meta": "Meals: breakfast, dinner · Stay: beach villa, Nungwi"
+    },
+    {
+      "day": 5,
+      "title": "Private beach dinner",
+      "description": "Free day, followed by a private candlelit dinner set up on the sand.",
+      "meta": "Meals: breakfast, dinner · Stay: beach villa, Nungwi"
+    },
+    {
+      "day": 6,
+      "title": "Departure",
+      "description": "Relaxed morning, then your transfer to the airport for your flight back to Lagos.",
+      "meta": "Meals: breakfast"
+    }
   ],
-  "included": ["Return economy flights from Lagos", "1 night in Stone Town with breakfast", "4 nights in a beach villa, half board", "Airport and hotel transfers", "Stone Town walking tour and spice farm", "Sunset dhow cruise", "Private beach dinner"],
-  "excluded": ["Travel insurance", "Zanzibar entry insurance fee", "Lunches except on day 2", "Tips and personal spending"],
+  "included": [
+    "Return economy flights from Lagos",
+    "1 night in Stone Town with breakfast",
+    "4 nights in a beach villa, half board",
+    "Airport and hotel transfers",
+    "Stone Town walking tour and spice farm",
+    "Sunset dhow cruise",
+    "Private beach dinner"
+  ],
+  "excluded": [
+    "Travel insurance",
+    "Zanzibar entry insurance fee",
+    "Lunches except on day 2",
+    "Tips and personal spending"
+  ],
   "addOns": [
-    { "title": "Mnemba Atoll snorkelling", "priceFrom": 85000 },
-    { "title": "Couples spa treatment", "priceFrom": 110000 },
-    { "title": "Prison Island and giant tortoises", "priceFrom": 60000 }
+    {
+      "title": "Mnemba Atoll snorkelling",
+      "priceFrom": 85000
+    },
+    {
+      "title": "Couples spa treatment",
+      "priceFrom": 110000
+    },
+    {
+      "title": "Prison Island and giant tortoises",
+      "priceFrom": 60000
+    }
   ],
   "faqs": [
-    { "q": "Do Nigerians need a visa for Tanzania?", "a": "Yes. Nigerian passport holders need a Tanzanian e-visa. We prepare and submit it with you." },
-    { "q": "Is this only for newlyweds?", "a": "No. Anniversaries and couples' trips are welcome. We adjust the extras to suit you." },
-    { "q": "Can we extend the beach stay?", "a": "Yes. Extra nights can be added and we include them in your quote." }
+    {
+      "q": "Do Nigerians need a visa for Tanzania?",
+      "a": "Yes. Nigerian passport holders need a Tanzanian e-visa. We prepare and submit it with you."
+    },
+    {
+      "q": "Is this only for newlyweds?",
+      "a": "No. Anniversaries and couples' trips are welcome. We adjust the extras to suit you."
+    },
+    {
+      "q": "Can we extend the beach stay?",
+      "a": "Yes. Extra nights can be added and we include them in your quote."
+    }
   ],
-  "quickFacts": { "groupSize": "2 travellers (private)", "bestSeason": "June to October, December to February", "visaRequired": true }
+  "quickFacts": {
+    "groupSize": "2 travellers (private)",
+    "bestSeason": "June to October, December to February",
+    "visaRequired": true
+  }
 }

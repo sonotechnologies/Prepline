@@ -67,13 +67,13 @@ export function Header() {
                 key={n.href}
                 href={n.href}
                 aria-current={active ? 'page' : undefined}
-                className={`relative flex min-h-[44px] items-center px-3.5 text-base font-medium no-underline xl:text-[16px] ${
+                className={`relative flex min-h-[44px] items-center px-2.5 text-base font-medium xl:px-3.5 no-underline xl:text-[16px] ${
                   transparent ? 'text-white hover:text-white/80' : 'text-ink hover:text-primary'
                 }`}
               >
                 {n.label}
                 {active && (
-                  <span aria-hidden="true" className="absolute inset-x-3.5 bottom-1 h-[3px] rounded-[3px] bg-[var(--accent-line)]" />
+                  <span aria-hidden="true" className="absolute inset-x-2.5 bottom-1 xl:inset-x-3.5 h-[3px] rounded-[3px] bg-[var(--accent-line)]" />
                 )}
               </Link>
             );

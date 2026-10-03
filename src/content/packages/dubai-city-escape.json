@@ -1,49 +1,145 @@
 {
-  "slug": "dubai-city-escape",
   "title": "Dubai City Escape",
+  "featured": true,
   "country": "United Arab Emirates",
   "countryCode": "AE",
   "city": "Dubai",
   "region": "Middle East",
-  "tripTypes": ["Family", "Luxury"],
+  "tripTypes": [
+    "Family",
+    "Luxury"
+  ],
   "durationDays": 5,
   "nights": 4,
   "priceFrom": 1850000,
   "currency": "NGN",
   "priceNote": "per person",
-  "dates": ["2026-11-14", "2026-12-12", "2026-12-27"],
-  "dateNotes": { "2026-11-14": "8 seats left", "2026-12-12": "Filling fast", "2026-12-27": "New Year trip" },
-  "featured": true,
-  "coverImage": "/images/packages/dubai-city-escape/1.webp",
-  "coverAlt": "Burj Khalifa and Downtown Dubai at dusk",
-  "gallery": [
-    { "src": "/images/packages/dubai-city-escape/1.webp", "alt": "Burj Khalifa and Downtown Dubai at dusk" },
-    { "src": "/images/packages/dubai-city-escape/2.webp", "alt": "4x4 driving over red dunes on a desert safari" },
-    { "src": "/images/packages/dubai-city-escape/3.webp", "alt": "Traditional dhow cruising Dubai Creek at night" },
-    { "src": "/images/packages/dubai-city-escape/4.webp", "alt": "White domes of Sheikh Zayed Grand Mosque, Abu Dhabi" },
-    { "src": "/images/packages/dubai-city-escape/5.webp", "alt": "Dubai Marina skyline over the water" }
+  "departures": [
+    {
+      "date": "2026-11-14",
+      "note": "8 seats left"
+    },
+    {
+      "date": "2026-12-12",
+      "note": "Filling fast"
+    },
+    {
+      "date": "2026-12-27",
+      "note": "New Year trip"
+    }
   ],
-  "highlights": ["Desert safari", "Burj Khalifa", "Dhow cruise"],
+  "gallery": [
+    {
+      "image": "/images/packages/dubai-city-escape/gallery/0/image.webp",
+      "alt": "Burj Khalifa and Downtown Dubai at dusk"
+    },
+    {
+      "image": "/images/packages/dubai-city-escape/gallery/1/image.webp",
+      "alt": "4x4 driving over red dunes on a desert safari"
+    },
+    {
+      "image": "/images/packages/dubai-city-escape/gallery/2/image.webp",
+      "alt": "Traditional dhow cruising Dubai Creek at night"
+    },
+    {
+      "image": "/images/packages/dubai-city-escape/gallery/3/image.webp",
+      "alt": "White domes of Sheikh Zayed Grand Mosque, Abu Dhabi"
+    },
+    {
+      "image": "/images/packages/dubai-city-escape/gallery/4/image.webp",
+      "alt": "Dubai Marina skyline over the water"
+    }
+  ],
+  "highlights": [
+    "Desert safari",
+    "Burj Khalifa",
+    "Dhow cruise"
+  ],
   "overview": "Five days in Dubai with the big sights and time to rest. You stay four nights in a 4-star hotel near Downtown, see the city from the Burj Khalifa, cross the dunes on a desert safari and eat dinner on a dhow along the creek. A day trip to Abu Dhabi and a free final morning for shopping round off the trip. Flights from Lagos, transfers and your UAE visa are handled by our team.",
   "itinerary": [
-    { "day": 1, "title": "Arrive in Dubai, dhow cruise dinner", "description": "Your driver meets you at Dubai International and takes you to your hotel near Downtown. In the evening you board a traditional dhow for a buffet dinner along Dubai Creek.", "meta": "Meals: dinner · Stay: 4-star hotel, Downtown" },
-    { "day": 2, "title": "City tour and Burj Khalifa", "description": "A half-day guided tour covers Jumeirah Mosque, the Dubai Frame, the gold and spice souks and an abra ride across the creek. In the afternoon you go up to the Burj Khalifa observation deck on level 124.", "meta": "Meals: breakfast · Stay: 4-star hotel, Downtown" },
-    { "day": 3, "title": "Desert safari", "description": "Free morning. At 3pm a 4x4 picks you up for dune driving, camel riding and sandboarding, followed by a barbecue dinner and live shows at a desert camp.", "meta": "Meals: breakfast, dinner · Stay: 4-star hotel, Downtown" },
-    { "day": 4, "title": "Abu Dhabi day trip", "description": "Drive to Abu Dhabi to visit Sheikh Zayed Grand Mosque, Qasr Al Watan and the Corniche, with a photo stop at Ferrari World.", "meta": "Meals: breakfast · Stay: 4-star hotel, Downtown" },
-    { "day": 5, "title": "Shopping and departure", "description": "Free morning for Dubai Mall or Mall of the Emirates. Your driver takes you to the airport for your flight back to Lagos.", "meta": "Meals: breakfast" }
+    {
+      "day": 1,
+      "title": "Arrive in Dubai, dhow cruise dinner",
+      "description": "Your driver meets you at Dubai International and takes you to your hotel near Downtown. In the evening you board a traditional dhow for a buffet dinner along Dubai Creek.",
+      "meta": "Meals: dinner · Stay: 4-star hotel, Downtown"
+    },
+    {
+      "day": 2,
+      "title": "City tour and Burj Khalifa",
+      "description": "A half-day guided tour covers Jumeirah Mosque, the Dubai Frame, the gold and spice souks and an abra ride across the creek. In the afternoon you go up to the Burj Khalifa observation deck on level 124.",
+      "meta": "Meals: breakfast · Stay: 4-star hotel, Downtown"
+    },
+    {
+      "day": 3,
+      "title": "Desert safari",
+      "description": "Free morning. At 3pm a 4x4 picks you up for dune driving, camel riding and sandboarding, followed by a barbecue dinner and live shows at a desert camp.",
+      "meta": "Meals: breakfast, dinner · Stay: 4-star hotel, Downtown"
+    },
+    {
+      "day": 4,
+      "title": "Abu Dhabi day trip",
+      "description": "Drive to Abu Dhabi to visit Sheikh Zayed Grand Mosque, Qasr Al Watan and the Corniche, with a photo stop at Ferrari World.",
+      "meta": "Meals: breakfast · Stay: 4-star hotel, Downtown"
+    },
+    {
+      "day": 5,
+      "title": "Shopping and departure",
+      "description": "Free morning for Dubai Mall or Mall of the Emirates. Your driver takes you to the airport for your flight back to Lagos.",
+      "meta": "Meals: breakfast"
+    }
   ],
-  "included": ["Return economy flights from Lagos", "4 nights in a 4-star hotel with breakfast", "Airport transfers in Dubai", "Half-day city tour with guide", "Burj Khalifa level 124 ticket", "Desert safari with barbecue dinner", "Dhow cruise dinner", "UAE visa processing"],
-  "excluded": ["Travel insurance", "Lunches and most dinners", "Tourism Dirham hotel fee", "Personal shopping and tips", "Upgrades to level 148"],
+  "included": [
+    "Return economy flights from Lagos",
+    "4 nights in a 4-star hotel with breakfast",
+    "Airport transfers in Dubai",
+    "Half-day city tour with guide",
+    "Burj Khalifa level 124 ticket",
+    "Desert safari with barbecue dinner",
+    "Dhow cruise dinner",
+    "UAE visa processing"
+  ],
+  "excluded": [
+    "Travel insurance",
+    "Lunches and most dinners",
+    "Tourism Dirham hotel fee",
+    "Personal shopping and tips",
+    "Upgrades to level 148"
+  ],
   "addOns": [
-    { "title": "Burj Khalifa level 148 upgrade", "priceFrom": 120000 },
-    { "title": "Museum of the Future entry", "priceFrom": 95000 },
-    { "title": "Ferrari World day pass", "priceFrom": 140000 }
+    {
+      "title": "Burj Khalifa level 148 upgrade",
+      "priceFrom": 120000
+    },
+    {
+      "title": "Museum of the Future entry",
+      "priceFrom": 95000
+    },
+    {
+      "title": "Ferrari World day pass",
+      "priceFrom": 140000
+    }
   ],
   "faqs": [
-    { "q": "Do I need a visa for Dubai?", "a": "Yes. Nigerian passport holders need a UAE visa. We process it for you as part of the package once you send your documents." },
-    { "q": "Can I change the hotel?", "a": "Yes. We can quote 3-star, 5-star or beachfront options. Tell us on WhatsApp and we update your quote." },
-    { "q": "Can I travel on other dates?", "a": "Yes. The listed dates are group departures. Private trips can start on any date, subject to flight and hotel availability." },
-    { "q": "Is the price fixed?", "a": "The price is a starting price per person, sharing a room. Your final quote on WhatsApp reflects your dates, flights and room type." }
+    {
+      "q": "Do I need a visa for Dubai?",
+      "a": "Yes. Nigerian passport holders need a UAE visa. We process it for you as part of the package once you send your documents."
+    },
+    {
+      "q": "Can I change the hotel?",
+      "a": "Yes. We can quote 3-star, 5-star or beachfront options. Tell us on WhatsApp and we update your quote."
+    },
+    {
+      "q": "Can I travel on other dates?",
+      "a": "Yes. The listed dates are group departures. Private trips can start on any date, subject to flight and hotel availability."
+    },
+    {
+      "q": "Is the price fixed?",
+      "a": "The price is a starting price per person, sharing a room. Your final quote on WhatsApp reflects your dates, flights and room type."
+    }
   ],
-  "quickFacts": { "groupSize": "2 to 16 travellers", "bestSeason": "November to March", "visaRequired": true }
+  "quickFacts": {
+    "groupSize": "2 to 16 travellers",
+    "bestSeason": "November to March",
+    "visaRequired": true
+  }
 }

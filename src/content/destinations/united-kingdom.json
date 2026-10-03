@@ -1,0 +1,9 @@
+{
+  "name": "United Kingdom",
+  "short": "the UK",
+  "countryCode": "GB",
+  "region": "Europe",
+  "popular": false,
+  "image": "/images/destinations/united-kingdom/image.webp",
+  "imageAlt": "London's Tower Bridge"
+}
