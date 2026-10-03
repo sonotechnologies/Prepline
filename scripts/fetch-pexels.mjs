@@ -11,6 +11,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
+
+sharp.cache(false);
 import { images, isPlaceholder, jsonFiles, specFor } from './generate-placeholders.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
@@ -87,7 +89,26 @@ async function saveWebp(buffer, file, w, h, maxBytes) {
     quality -= 6;
   } while (maxBytes && out.length > maxBytes && quality > 40);
   fs.mkdirSync(path.dirname(file), { recursive: true });
-  fs.writeFileSync(file, out);
+  // Write to a temporary file, then swap it in. On Windows, antivirus or file sync can briefly
+  // lock the old file, so retry the swap a few times before giving up.
+  const tmp = `${file}.tmp`;
+  fs.writeFileSync(tmp, out);
+  for (let attempt = 1; ; attempt++) {
+    try {
+      fs.rmSync(file, { force: true });
+      fs.renameSync(tmp, file);
+      break;
+    } catch (err) {
+      if (attempt >= 5) {
+        fs.rmSync(tmp, { force: true });
+        throw new Error(
+          `Could not replace ${path.relative(root, file)} (${err.code}). Close any program showing that image ` +
+            '(or pause OneDrive sync) and run the command again; finished photos are kept.'
+        );
+      }
+      await sleep(500 * attempt);
+    }
+  }
   return out.length;
 }
 

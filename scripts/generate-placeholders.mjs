@@ -6,6 +6,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 
+// Don't keep image files open between calls: on Windows an open file can't be overwritten.
+sharp.cache(false);
+
 const root = path.resolve(import.meta.dirname, '..');
 const pub = path.join(root, 'public');
 const content = path.join(root, 'src', 'content');
@@ -20,7 +23,8 @@ export const PLACEHOLDER_MARK = 'ptt-placeholder';
 /** True if the file is a generated placeholder (never true for uploaded or fetched photos). */
 export async function isPlaceholder(file) {
   if (!fs.existsSync(file)) return true;
-  const { exif } = await sharp(file).metadata();
+  // Read into memory first so no file handle stays open (Windows would then refuse to overwrite it).
+  const { exif } = await sharp(fs.readFileSync(file)).metadata();
   return !!exif && exif.includes(Buffer.from(PLACEHOLDER_MARK));
 }
 
