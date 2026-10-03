@@ -76,7 +76,7 @@ Locally, the admin reads and writes files on disk and needs no setup. For produc
    | `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` | from `.env` |
    | `NEXT_PUBLIC_SITE_URL` | `https://<your-domain>` |
 
-   Set all four Keystatic secrets together. If `NEXT_PUBLIC_KEYSTATIC_STORAGE=github` is set without them, the build fails on purpose with a message listing what's missing.
+   In Vercel, add the three `NEXT_PUBLIC_…` variables with type **Config**: they're built into the public pages, so the build must be able to read them. Add `KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET` and `KEYSTATIC_SECRET` with type **Secret**: the admin reads them only while the site is running. If `NEXT_PUBLIC_KEYSTATIC_STORAGE` isn't visible to the build, `/keystatic` shows "Admin not connected yet".
 4. Redeploy, open `https://<your-domain>/keystatic` and sign in with GitHub.
 
 `.env` holds secrets. It's git-ignored; never commit it.
