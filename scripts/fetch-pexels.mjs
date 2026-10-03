@@ -21,9 +21,15 @@ const overridesFile = path.join(root, 'scripts', 'pexels-queries.json');
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
 const only = args.find((a) => a.startsWith('--only='))?.slice(7);
-const key = process.env.PEXELS_API_KEY;
+// Read PEXELS_API_KEY from a .env file in the project folder, if there is one (it is git-ignored).
+try {
+  process.loadEnvFile(path.join(root, '.env'));
+} catch {
+  /* no .env file: use the variable set in the terminal */
+}
+const key = process.env.PEXELS_API_KEY?.trim();
 if (!key) {
-  console.error('Set PEXELS_API_KEY (free at https://www.pexels.com/api/).');
+  console.error('No PEXELS_API_KEY found. Add a line PEXELS_API_KEY=your-key to a .env file in the project folder (free key at https://www.pexels.com/api/).');
   process.exit(1);
 }
 

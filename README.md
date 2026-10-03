@@ -99,11 +99,25 @@ Visa pages link from the navigation, the Home page, the "Visa assistance" servic
 
 Until real photos are added, every image is a striped placeholder labelled with the photo it should become. Placeholders carry a hidden marker in their metadata. Photos uploaded in the admin or fetched from Pexels don't have it, so the scripts below never overwrite them.
 
+Put your key in a `.env` file in the project folder (it is git-ignored, never commit it):
+
+```
+PEXELS_API_KEY=your-key-here
+```
+
 ```bash
-PEXELS_API_KEY=xxxx npm run images:pexels -- --dry-run   # preview the photo each image would get
-PEXELS_API_KEY=xxxx npm run images:pexels                # replace every placeholder
-PEXELS_API_KEY=xxxx npm run images:pexels -- --only=visas
-npm run images                                            # make placeholders for any missing image
+npm run images:pexels -- --dry-run   # preview the photo each image would get
+npm run images:pexels                # replace every placeholder
+npm run images:pexels -- --only=visas
+npm run images                       # make placeholders for any missing image
+```
+
+You can also set `PEXELS_API_KEY` in the terminal instead of using `.env`:
+
+```bash
+export PEXELS_API_KEY="your-key"          # Mac / Linux
+$env:PEXELS_API_KEY="your-key"            # Windows PowerShell
+set PEXELS_API_KEY=your-key               # Windows Command Prompt
 ```
 
 - Get a free key at https://www.pexels.com/api/.
