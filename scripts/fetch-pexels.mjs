@@ -43,18 +43,39 @@ function orientation(w, h) {
   return w > h ? 'landscape' : 'portrait';
 }
 
+/**
+ * fetch() with a 30-second timeout and up to 6 attempts, waiting longer each time. Covers slow or
+ * dropped connections and Pexels' rate limit (429), so one network hiccup doesn't stop the run.
+ */
+async function fetchWithRetry(url, options = {}, what = 'request') {
+  const attempts = 6;
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const res = await fetch(url, { ...options, signal: AbortSignal.timeout(30_000) });
+      if (res.status === 429 || res.status >= 500) throw new Error(`HTTP ${res.status}`);
+      return res;
+    } catch (err) {
+      if (attempt >= attempts) {
+        throw new Error(
+          `Could not reach Pexels for ${what} after ${attempts} tries (${err.cause?.code ?? err.message}). ` +
+            'Check your internet connection and run the command again; finished photos are kept.'
+        );
+      }
+      const wait = Math.min(60, 2 ** attempt) * 1000;
+      console.warn(`  network problem (${err.cause?.code ?? err.message}), retrying in ${wait / 1000}s…`);
+      await sleep(wait);
+    }
+  }
+}
+
 async function search(query, orient) {
   const url = `https://api.pexels.com/v1/search?${new URLSearchParams({ query, orientation: orient, per_page: '15' })}`;
-  for (let attempt = 0; attempt < 4; attempt++) {
-    const res = await fetch(url, { headers: { Authorization: key } });
-    if (res.status === 429) {
-      await sleep(2000 * 2 ** attempt);
-      continue;
-    }
-    if (!res.ok) throw new Error(`Pexels search failed (${res.status}) for "${query}"`);
-    return (await res.json()).photos ?? [];
+  const res = await fetchWithRetry(url, { headers: { Authorization: key } }, `"${query}"`);
+  if (res.status === 401 || res.status === 403) {
+    throw new Error('Pexels rejected the API key (401/403). Check PEXELS_API_KEY in your .env file.');
   }
-  throw new Error('Pexels rate limit reached; try again later.');
+  if (!res.ok) throw new Error(`Pexels search failed (${res.status}) for "${query}"`);
+  return (await res.json()).photos ?? [];
 }
 
 /** WebP at the target size; heroes are kept under 250 KB. */
@@ -104,7 +125,7 @@ for (const job of jobs) {
     continue;
   }
   const src = `${photo.src.original}?auto=compress&cs=tinysrgb&w=${Math.round(spec.w * 1.25)}`;
-  const res = await fetch(src);
+  const res = await fetchWithRetry(src, {}, `the photo ${photo.url}`);
   if (!res.ok) throw new Error(`Download failed (${res.status}) for ${photo.url}`);
   const bytes = await saveWebp(
     Buffer.from(await res.arrayBuffer()),
