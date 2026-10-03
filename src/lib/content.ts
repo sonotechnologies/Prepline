@@ -1,4 +1,5 @@
 import 'server-only';
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { z } from 'zod';
@@ -33,7 +34,35 @@ function parseOrThrow<S extends z.ZodTypeAny>(schema: S, data: unknown, source: 
     const issues = result.error.issues.map((i) => `  - ${i.path.join('.') || '(root)'}: ${i.message}`).join('\n');
     throw new Error(`Invalid content in ${source}:\n${issues}`);
   }
-  return result.data;
+  return withImageVersions(result.data);
+}
+
+/**
+ * Appends a short fingerprint of the file's contents to every image path ("…/image.webp?v=3f9a2c1b").
+ * The admin saves a replacement photo under the same file name, and image caches (the browser's,
+ * Next.js's and Vercel's) key on the address, so without this a replaced photo could keep showing
+ * the old one. A new fingerprint means a new address, so the new photo shows straight away.
+ */
+const imageVersions = new Map<string, string>();
+function versioned(src: string) {
+  if (!src.startsWith('/images/') || src.includes('?')) return src;
+  let v = imageVersions.get(src);
+  if (v === undefined) {
+    const file = path.join(process.cwd(), 'public', src);
+    v = fs.existsSync(file) ? crypto.createHash('sha1').update(fs.readFileSync(file)).digest('hex').slice(0, 8) : '';
+    imageVersions.set(src, v);
+  }
+  return v ? `${src}?v=${v}` : src;
+}
+
+function withImageVersions<T>(value: T): T {
+  if (Array.isArray(value)) return value.map(withImageVersions) as T;
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([k, v]) => [k, k === 'image' && typeof v === 'string' ? versioned(v) : withImageVersions(v)])
+    ) as T;
+  }
+  return value;
 }
 
 function readJson(rel: string) {
