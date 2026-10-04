@@ -99,6 +99,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       if (await out(img.src, specFor(img.src, img.shape), img.alt || path.basename(file, '.json'))) made++;
     }
   }
-  if (await out('/images/og-default.jpg', { w: 1200, h: 630, prefix: 'Prepping Travel and Tours' }, 'Share image', 'jpg')) made++;
+  if (await out('/images/og-default.jpg', { w: 1200, h: 630, prefix: 'Prepline Travel and Tours' }, 'Share image', 'jpg')) made++;
   console.log(`Placeholders: ${made} generated, ${total + 1 - made} already present.`);
 }
