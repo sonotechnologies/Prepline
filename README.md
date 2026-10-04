@@ -45,6 +45,10 @@ The admin edits the JSON files in `src/content` and the images in `public/images
 
 Every field has help text in the admin. Saving validates the entry, and the build validates it again.
 
+### Admin password
+
+`/keystatic` sits behind a password page at `/admin`, before the GitHub sign-in. Set the password in Vercel as **`ADMIN_PASSWORD`** (type **Secret**) and redeploy. A correct password signs you in for 12 hours, and changing the password signs everyone out. If `ADMIN_PASSWORD` isn't set, the live admin stays locked. Locally, the page is skipped unless `ADMIN_PASSWORD` is in your `.env`. To sign out, open `/api/admin-logout`.
+
 ### How editing works in production
 
 In production the admin saves by **committing to the GitHub repo**. Vercel sees the commit and redeploys, so changes are live in about 1–2 minutes. Every edit is in the Git history, so any change can be undone.
