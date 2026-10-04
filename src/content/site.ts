@@ -12,14 +12,14 @@ const s = settings as typeof settings & { ga4Id?: string; metaPixelId?: string; 
 const clean = (v: string | null | undefined) => (v && v.trim() ? v.trim() : '');
 
 export const site = {
-  name: 'Prepping Travel and Tours',
-  shortName: 'Prepping',
+  name: 'Prepline Travel and Tours',
+  shortName: 'Prepline',
   tagline: clean(s.tagline) || 'Trips to any country, planned with you on WhatsApp from our office in Lagos.',
   description:
-    'Prepping Travel and Tours is a Lagos travel agency planning holidays, honeymoons, group tours and visa applications for 60+ countries. Pick a trip and chat with us on WhatsApp.',
+    'Prepline Travel and Tours is a Lagos travel agency planning holidays, honeymoons, group tours and visa applications for 60+ countries. Pick a trip and chat with us on WhatsApp.',
 
   // Public URL of the live site, used for canonical links, the sitemap and WhatsApp package links.
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.preppingtravel.ng',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://prepline-sage.vercel.app',
 
   whatsappNumber: s.whatsappNumber,
   phone: { display: s.phoneDisplay, tel: s.phoneTel },

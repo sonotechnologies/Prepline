@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { site } from '@/content/site';
 import { adminPassword, safeNext } from '@/lib/admin-session';
 import '@/app/globals.css';
 
@@ -22,7 +23,7 @@ export default async function AdminLoginPage({
   return (
     <main className="flex min-h-screen items-center justify-center bg-bg px-gut py-16">
       <div className="card w-full max-w-[420px] p-8 shadow-card">
-        <p className="h-bold text-2xl leading-none text-primary">Prepping</p>
+        <p className="h-bold text-2xl leading-none text-primary">{site.shortName}</p>
         <p className="mt-1 font-heading text-[11px] font-medium uppercase tracking-[.18em] text-ink">Travel and Tours</p>
         <h1 className="h3 mt-8">Admin sign-in</h1>
         <p className="mt-2 text-muted">Enter the admin password to continue. You&apos;ll then sign in with GitHub.</p>

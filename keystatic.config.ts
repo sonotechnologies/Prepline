@@ -52,7 +52,7 @@ const storage =
 export default config({
   storage,
   ui: {
-    brand: { name: 'Prepping Travel and Tours' },
+    brand: { name: 'Prepline Travel and Tours' },
     navigation: {
       'Trips and visas': ['packages', 'visas', 'destinations'],
       'Page content': ['home', 'about', 'services', 'reviews', 'faqs'],

@@ -1,4 +1,4 @@
-# Prepping Travel and Tours website
+# Prepline Travel and Tours website
 
 A mobile-first showcase site for a Lagos travel agency: holiday packages, visa services and destinations. Nothing is sold online. Every call to action opens a prefilled WhatsApp chat.
 
